@@ -1,12 +1,14 @@
-"use client"
-
-import { useState } from "react"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Badge } from "@/components/ui/badge"
+"use client";
+import { useState } from "react";
+import { Footer } from "@/components/footer";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   BarChart,
   Bar,
@@ -16,119 +18,12 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  PieChart,
-  Pie,
-  Cell,
-  LineChart,
-  Line,
-} from "recharts"
-
-const floraData = [
-  {
-    id: 1,
-    scientificName: "Ficus benjamina",
-    commonName: "Beringin",
-    family: "Moraceae",
-    status: "Stabil",
-    habitat: "Hutan Sekunder",
-    abundance: 45,
-  },
-  {
-    id: 2,
-    scientificName: "Swietenia mahagoni",
-    commonName: "Mahoni",
-    family: "Meliaceae",
-    status: "Stabil",
-    habitat: "Area Terbuka",
-    abundance: 32,
-  },
-  {
-    id: 3,
-    scientificName: "Tectona grandis",
-    commonName: "Jati",
-    family: "Lamiaceae",
-    status: "Perlu Perhatian",
-    habitat: "Hutan Sekunder",
-    abundance: 28,
-  },
-  {
-    id: 4,
-    scientificName: "Albizia saman",
-    commonName: "Trembesi",
-    family: "Fabaceae",
-    status: "Stabil",
-    habitat: "Area Terbuka",
-    abundance: 38,
-  },
-  {
-    id: 5,
-    scientificName: "Pterocarpus indicus",
-    commonName: "Angsana",
-    family: "Fabaceae",
-    status: "Terancam",
-    habitat: "Zona Riparian",
-    abundance: 15,
-  },
-  {
-    id: 6,
-    scientificName: "Samanea saman",
-    commonName: "Ki Hujan",
-    family: "Fabaceae",
-    status: "Stabil",
-    habitat: "Area Terbuka",
-    abundance: 42,
-  },
-  {
-    id: 7,
-    scientificName: "Cassia siamea",
-    commonName: "Johar",
-    family: "Fabaceae",
-    status: "Stabil",
-    habitat: "Hutan Sekunder",
-    abundance: 35,
-  },
-  {
-    id: 8,
-    scientificName: "Leucaena leucocephala",
-    commonName: "Petai Cina",
-    family: "Fabaceae",
-    status: "Stabil",
-    habitat: "Area Terbuka",
-    abundance: 55,
-  },
-]
-
-const habitatDistribution = [
-  { name: "Hutan Sekunder", value: 108, color: "#10b981" },
-  { name: "Area Terbuka", value: 167, color: "#3b82f6" },
-  { name: "Zona Riparian", value: 45, color: "#f59e0b" },
-]
-
-const conservationStatus = [
-  { name: "Stabil", value: 85, color: "#10b981" },
-  { name: "Perlu Perhatian", value: 12, color: "#f59e0b" },
-  { name: "Terancam", value: 3, color: "#ef4444" },
-]
-
-const diversityTrend = [
-  { year: "2020", shannon: 3.12, simpson: 0.85 },
-  { year: "2021", shannon: 3.28, simpson: 0.87 },
-  { year: "2022", shannon: 3.35, simpson: 0.88 },
-  { year: "2023", shannon: 3.42, simpson: 0.89 },
-  { year: "2024", shannon: 3.45, simpson: 0.9 },
-]
+} from "recharts";
+import { Navbar } from "@/components/navbar";
+import { floraData } from "@/data/flora.js";
 
 export default function IndeksFloraPage() {
-  const [activeTab, setActiveTab] = useState("data")
-
-  const getStatusBadge = (status: string) => {
-    const variants = {
-      Stabil: "bg-green-100 text-green-800",
-      "Perlu Perhatian": "bg-yellow-100 text-yellow-800",
-      Terancam: "bg-red-100 text-red-800",
-    }
-    return <Badge className={variants[status as keyof typeof variants]}>{status}</Badge>
-  }
+  const [activeTab, setActiveTab] = useState("faba-disposal");
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -136,211 +31,347 @@ export default function IndeksFloraPage() {
       <main className="py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">INDEKS KEANEKARAGAMAN FLORA</h1>
-            <h2 className="text-2xl font-semibold text-gray-700">KAWASAN PLN CIRATA</h2>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              INDEKS KEANEKARAGAMAN FLORA KAWASAN
+            </h1>
+            <h2 className="text-2xl font-semibold text-gray-700">
+              PT PLN NUSANTARA POWER UP KALTIM TELUK
+            </h2>
           </div>
 
-          <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="data">Data Spesies</TabsTrigger>
-              <TabsTrigger value="distribusi">Distribusi Habitat</TabsTrigger>
-              <TabsTrigger value="konservasi">Status Konservasi</TabsTrigger>
-              <TabsTrigger value="trend">Trend Keanekaragaman</TabsTrigger>
+          <Tabs
+            value={activeTab}
+            onValueChange={setActiveTab}
+            className="space-y-6"
+          >
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 pb-24 sm:pb-16 md:pb-1">
+              <TabsTrigger value="faba-disposal">FABA Disposal</TabsTrigger>
+              <TabsTrigger value="eks-adhi">EKS Adhi Karya</TabsTrigger>
+              <TabsTrigger value="helipad">Helipad</TabsTrigger>
+              <TabsTrigger value="outfall">Outfall & Pembangkit</TabsTrigger>
+              <TabsTrigger value="konservasi-pohon">
+                Status Konservasi
+              </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="data" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Data Spesies Flora</CardTitle>
-                  <CardDescription>Daftar lengkap spesies flora yang ditemukan di kawasan PLN Cirata</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Nama Ilmiah</TableHead>
-                        <TableHead>Nama Umum</TableHead>
-                        <TableHead>Famili</TableHead>
-                        <TableHead>Habitat</TableHead>
-                        <TableHead>Kelimpahan</TableHead>
-                        <TableHead>Status</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {floraData.map((species) => (
-                        <TableRow key={species.id}>
-                          <TableCell className="font-medium italic">{species.scientificName}</TableCell>
-                          <TableCell>{species.commonName}</TableCell>
-                          <TableCell>{species.family}</TableCell>
-                          <TableCell>{species.habitat}</TableCell>
-                          <TableCell>{species.abundance}</TableCell>
-                          <TableCell>{getStatusBadge(species.status)}</TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="distribusi" className="space-y-6">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Distribusi Berdasarkan Habitat</CardTitle>
-                    <CardDescription>Jumlah spesies per tipe habitat</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ResponsiveContainer width="100%" height={300}>
-                      <PieChart>
-                        <Pie
-                          data={habitatDistribution}
-                          cx="50%"
-                          cy="50%"
-                          labelLine={false}
-                          label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                          outerRadius={80}
-                          fill="#8884d8"
-                          dataKey="value"
-                        >
-                          {habitatDistribution.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={entry.color} />
-                          ))}
-                        </Pie>
-                        <Tooltip />
-                      </PieChart>
-                    </ResponsiveContainer>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Kelimpahan per Habitat</CardTitle>
-                    <CardDescription>Grafik batang distribusi spesies</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ResponsiveContainer width="100%" height={300}>
-                      <BarChart data={habitatDistribution}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Bar dataKey="value" fill="#3b82f6" />
-                      </BarChart>
-                    </ResponsiveContainer>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="konservasi" className="space-y-6">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Status Konservasi</CardTitle>
-                    <CardDescription>Persentase spesies berdasarkan status konservasi</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ResponsiveContainer width="100%" height={300}>
-                      <PieChart>
-                        <Pie
-                          data={conservationStatus}
-                          cx="50%"
-                          cy="50%"
-                          labelLine={false}
-                          label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                          outerRadius={80}
-                          fill="#8884d8"
-                          dataKey="value"
-                        >
-                          {conservationStatus.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={entry.color} />
-                          ))}
-                        </Pie>
-                        <Tooltip />
-                      </PieChart>
-                    </ResponsiveContainer>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Ringkasan Status</CardTitle>
-                    <CardDescription>Detail status konservasi flora</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {conservationStatus.map((status) => (
-                      <div key={status.name} className="flex items-center justify-between p-4 border rounded-lg">
-                        <div className="flex items-center space-x-3">
-                          <div className="w-4 h-4 rounded-full" style={{ backgroundColor: status.color }}></div>
-                          <span className="font-medium">{status.name}</span>
-                        </div>
-                        <div className="text-right">
-                          <div className="text-2xl font-bold">{status.value}%</div>
-                          <div className="text-sm text-gray-500">dari total spesies</div>
-                        </div>
+            {Object.entries(floraData).map(([key, area]) => (
+              <TabsContent key={key} value={key} className="space-y-6">
+                <div className="space-y-6">
+                  {key === "konservasi-pohon" ? (
+                    <>
+                      {/* Chart Section untuk konservasi-pohon */}
+                      <div>
+                        <Card>
+                          <CardHeader>
+                            <CardTitle className="text-lg font-bold text-center">
+                              Indeks Jenis Pohon di Wilayah PT PLN Nusantara
+                              Power
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <ResponsiveContainer width="100%" height={400}>
+                              <BarChart
+                                data={area.chartData}
+                                margin={{
+                                  top: 20,
+                                  right: 30,
+                                  left: 20,
+                                  bottom: 60,
+                                }}
+                              >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis
+                                  dataKey="name"
+                                  fontSize={12}
+                                  label={{
+                                    value: "Lokasi Studi",
+                                    position: "insideBottom",
+                                    offset: -50,
+                                  }}
+                                />
+                                {"vadas"}
+                                <YAxis
+                                  label={{
+                                    value: "Nilai Indeks",
+                                    angle: -90,
+                                    position: "insideLeft",
+                                  }}
+                                  fontSize={10}
+                                />
+                                <Tooltip />
+                                <Legend />
+                                <Bar
+                                  dataKey="kekayaan"
+                                  fill="#3b82f6"
+                                  name="Kekayaan (R)"
+                                  radius={[2, 2, 0, 0]}
+                                />
+                                <Bar
+                                  dataKey="keanekaragaman"
+                                  fill="#f97316"
+                                  name="Keanekaragaman (H')"
+                                  radius={[2, 2, 0, 0]}
+                                />
+                                <Bar
+                                  dataKey="kemerataan"
+                                  fill="#6b7280"
+                                  name="Kemerataan (E)"
+                                  radius={[2, 2, 0, 0]}
+                                />
+                              </BarChart>
+                            </ResponsiveContainer>
+                          </CardContent>
+                        </Card>
                       </div>
-                    ))}
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
 
-            <TabsContent value="trend" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Trend Indeks Keanekaragaman</CardTitle>
-                  <CardDescription>Perkembangan indeks Shannon dan Simpson dari tahun 2020-2024</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ResponsiveContainer width="100%" height={400}>
-                    <LineChart data={diversityTrend}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="year" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Line type="monotone" dataKey="shannon" stroke="#3b82f6" name="Indeks Shannon" strokeWidth={2} />
-                      <Line type="monotone" dataKey="simpson" stroke="#10b981" name="Indeks Simpson" strokeWidth={2} />
-                    </LineChart>
-                  </ResponsiveContainer>
-                </CardContent>
-              </Card>
+                      {/* Table Section untuk konservasi-pohon */}
+                      <div>
+                        <Card>
+                          <CardHeader>
+                            <CardTitle className="text-lg font-bold text-center">
+                              {area.title}
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="overflow-x-auto">
+                              <table className="min-w-full bg-white border border-gray-300">
+                                <thead className="bg-blue-50">
+                                  <tr className="border-b-2 border-gray-300">
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      No
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      Nama Jenis
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      Famili
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      IUCN
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      CITES
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700">
+                                      P.106
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody className="bg-white">
+                                  {area.data.map((species, index) => (
+                                    <tr
+                                      key={index}
+                                      className="border-b border-gray-200 hover:bg-gray-50"
+                                    >
+                                      <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                        {species.no}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs italic border-r border-gray-200">
+                                        {species.namaJenis}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs border-r border-gray-200">
+                                        {species.family}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                        {species.iucn}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                        {species.cites}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs text-center">
+                                        {species.p106}
+                                      </td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      {/* Chart Section untuk tab lain */}
+                      <div>
+                        <Card>
+                          <CardHeader>
+                            <CardTitle className="text-sm font-bold text-center">
+                              {area.title}
+                            </CardTitle>
+                            <div className="text-center">
+                              <p className="text-xs text-gray-600 mb-2">
+                                Nama Jenis
+                              </p>
+                              <p className="text-xs font-medium text-gray-800">
+                                NPI (%)
+                              </p>
+                            </div>
+                          </CardHeader>
+                          <CardContent>
+                            <ResponsiveContainer width="100%" height={400}>
+                              <BarChart
+                                data={area.chartData}
+                                margin={{
+                                  top: 20,
+                                  right: 30,
+                                  left: 20,
+                                  bottom: 80,
+                                }}
+                              >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis
+                                  dataKey="name"
+                                  angle={-45}
+                                  textAnchor="end"
+                                  height={80}
+                                  interval={0}
+                                  fontSize={10}
+                                />
+                                <YAxis
+                                  label={{
+                                    value: "NPI (%)",
+                                    angle: -90,
+                                    position: "insideLeft",
+                                  }}
+                                  fontSize={10}
+                                />
+                                <Tooltip
+                                  formatter={(value) => [`${value}%`, "NPI"]}
+                                  labelFormatter={(label) =>
+                                    `Spesies: ${label}`
+                                  }
+                                />
+                                <Bar
+                                  dataKey="npi"
+                                  fill="#3b82f6"
+                                  name="NPI (%)"
+                                  radius={[2, 2, 0, 0]}
+                                />
+                              </BarChart>
+                            </ResponsiveContainer>
+                          </CardContent>
+                        </Card>
+                      </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Total Spesies</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-3xl font-bold text-blue-600">127</div>
-                    <p className="text-sm text-gray-500">spesies tercatat</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Indeks Shannon</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-3xl font-bold text-green-600">3.45</div>
-                    <p className="text-sm text-gray-500">nilai terkini 2024</p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Indeks Simpson</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-3xl font-bold text-purple-600">0.90</div>
-                    <p className="text-sm text-gray-500">nilai terkini 2024</p>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
+                      {/* Table Section untuk tab lain */}
+                      <div>
+                        <Card>
+                          <CardHeader>
+                            <CardTitle className="text-lg font-bold text-center">
+                              {area.title}
+                            </CardTitle>
+                            <CardDescription className="text-center text-sm">
+                              {area.subtitle}
+                            </CardDescription>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="overflow-x-auto">
+                              <table className="min-w-full bg-white border border-gray-300">
+                                <thead className="bg-blue-50">
+                                  <tr className="border-b-2 border-gray-300">
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      No
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      Nama Jenis
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      Family
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      Kerapatan (pohon/ha) (K)
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      Frekuensi (F)
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300">
+                                      BA (m²/ha) (D)
+                                    </th>
+                                    <th className="px-3 py-2 text-xs font-medium text-gray-700">
+                                      NPI (%)
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody className="bg-white">
+                                  {area.data.map((species, index) => (
+                                    <tr
+                                      key={index}
+                                      className="border-b border-gray-200 hover:bg-gray-50"
+                                    >
+                                      <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                        {species.no}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs italic border-r border-gray-200">
+                                        {species.namaJenis}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs border-r border-gray-200">
+                                        {species.family}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                        {species.kerapatan}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                        {species.frekuensi}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                        {species.ba}
+                                      </td>
+                                      <td className="px-3 py-2 text-xs text-center font-medium text-blue-600">
+                                        {species.npi}
+                                      </td>
+                                    </tr>
+                                  ))}
+                                  <tr className="border-t-2 border-gray-400 bg-blue-50 font-bold">
+                                    <td
+                                      className="px-3 py-2 text-xs text-center"
+                                      colSpan={2}
+                                    >
+                                      Jumlah
+                                    </td>
+                                    <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                      {area.data.reduce(
+                                        (sum, species) =>
+                                          sum + species.kerapatan,
+                                        0,
+                                      )}
+                                    </td>
+                                    <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                      {area.data
+                                        .reduce(
+                                          (sum, species) =>
+                                            sum + species.frekuensi,
+                                          0,
+                                        )
+                                        .toFixed(1)}
+                                    </td>
+                                    <td className="px-3 py-2 text-xs text-center border-r border-gray-200">
+                                      {area.data
+                                        .reduce(
+                                          (sum, species) => sum + species.ba,
+                                          0,
+                                        )
+                                        .toFixed(2)}
+                                    </td>
+                                    <td className="px-3 py-2 text-xs text-center">
+                                      300
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </TabsContent>
+            ))}
           </Tabs>
         </div>
       </main>
       <Footer />
     </div>
-  )
+  );
 }

@@ -314,7 +314,7 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-400/20 bg-slate-900 text-white md:py-0 py-3 sm">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1800px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link
@@ -371,11 +371,13 @@ export function Navbar() {
           <div className="fixed left-0 top-0 z-50 h-full w-80 bg-slate-900 p-4 text-white transform transition-transform md:hidden">
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
-              <div className="inline-block rounded-lg bg-cyan-500 p-2 shadow-lg">
-                <span className="text-xl font-bold text-slate-900">
-                  {navigationData.brand.name}
-                </span>
-              </div>
+              <Image
+                src={navigationData.brand.logo}
+                width={72}
+                height={72}
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
               <Button
                 variant="ghost"
                 size="sm"

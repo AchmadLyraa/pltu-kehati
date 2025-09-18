@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import {
   Card,
   CardContent,
@@ -202,42 +203,50 @@ export default function IndeksFaunaPage() {
 
     return (
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-200">
-          <thead className="bg-gray-50">
-            <tr>
+        <table className="min-w-full bg-white border border-gray-300">
+          <thead className="bg-blue-50">
+            <tr className="border-b-2 border-gray-300">
               {columns.map((column) => (
                 <th
                   key={column}
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b"
+                  className="px-3 py-2 text-xs font-medium text-gray-700 border-r border-gray-300"
                 >
                   {column === "scientificName"
                     ? "Nama Ilmiah"
-                    : column === "commonName"
-                      ? "Nama Umum"
+                    : column === "localName"
+                      ? "Nama Lokal"
                       : column === "order"
-                        ? "Ordo"
-                        : column === "family"
-                          ? "Famili"
-                          : column === "abundance"
-                            ? "Kelimpahan"
-                            : column === "status"
-                              ? "Status"
-                              : column === "location"
-                                ? "Lokasi"
-                                : column === "habitat"
-                                  ? "Habitat"
-                                  : column}
+                        ? "Famili"
+                        : column === "p106"
+                          ? "P 106"
+                          : column === "no"
+                            ? "No"
+                            : column === "iucn"
+                              ? "IUCN"
+                              : column === "cites"
+                                ? "CITES"
+                                : column}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
+          <tbody className="bg-white">
             {data.map((item, index) => (
-              <tr key={item.id || index} className="hover:bg-gray-50">
+              <tr
+                key={item.id || index}
+                className="border-b border-gray-200 hover:bg-gray-50"
+              >
                 {columns.map((column) => (
                   <td
                     key={column}
-                    className="px-6 py-4 whitespace-nowrap text-sm text-gray-900"
+                    className={`px-3 py-2 text-xs border-r border-gray-200 ${
+                      column === "no" ||
+                      column === "p106" ||
+                      column === "iucn" ||
+                      column === "cites"
+                        ? "text-center"
+                        : ""
+                    }`}
                   >
                     {column === "scientificName" ? (
                       <span className="italic">{item[column]}</span>
@@ -275,7 +284,7 @@ export default function IndeksFaunaPage() {
             onValueChange={setActiveTab}
             className="space-y-6"
           >
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-5">
+            <TabsList className="grid w-full grid-cols-3 md:grid-cols-5 pb-16 md:pb-1">
               {" "}
               <TabsTrigger value="mamalia">
                 Mamalia (
@@ -331,6 +340,7 @@ export default function IndeksFaunaPage() {
           </Tabs>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
