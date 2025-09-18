@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 // Manual Button component
 const Button = ({
@@ -71,7 +72,7 @@ const X = ({ className }) => (
 // Struktur data yang sama
 const navigationData = {
   brand: {
-    logo: "/logo-2.png",
+    logo: "/final-logo-kehati.png",
     href: "/",
   },
   menuItems: [
@@ -320,8 +321,10 @@ export function Navbar() {
             href={navigationData.brand.href}
             className="flex items-center space-x-2"
           >
-            <img
+            <Image
               src={navigationData.brand.logo}
+              width={72}
+              height={72}
               alt="Logo"
               className="h-10 w-auto object-contain"
             />

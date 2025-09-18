@@ -1,31 +1,38 @@
-"use client"
+"use client";
 
 export function ContentSection() {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto">
       <div className="prose prose-lg max-w-none">
         <p className="text-gray-700 leading-relaxed mb-6">
-          Keanekaragaman hayati Indonesia adalah sumber daya yang penting bagi pembangunan nasional. Keanekaragaman
-          hayati ini perlu dilakukan untuk menjaga keseimbangan ekosistem. Keanekaragaman hayati sangat penting bagi
-          kelangsungan hidup manusia karena dapat memberikan manfaat ekonomi, ekologi, dan sosial budaya. Oleh karena
-          itu, perlu dilakukan upaya konservasi untuk menjaga kelestarian keanekaragaman hayati untuk menunjang
-          pengembangan teknologi kesehatan dan sumberdaya alam dan lingkungan hidup yang berkelanjutan serta
-          pengembangan ekosistem yang ada saat ini, serta menunjang konservasi keanekaragaman hayati yang berkelanjutan
-          untuk menjamin ketersediaan sumberdaya hayati bagi kepentingan generasi sekarang dan yang akan datang.
-          Keanekaragaman hayati, sehingga dapat diketahui dari pendataan keanekaragaman hayati dan pemantauan
-          pengelolaan lingkungan untuk mencapai tujuan pembangunan berkelanjutan.
+          Keanekaragaman hayati Indonesia merupakan aset penting bagi
+          pembangunan nasional. Upaya pelestarian diperlukan untuk menjaga
+          keberlangsungan gen, spesies, habitat, serta ekosistem. Keanekaragaman
+          hayati memiliki peranan krusial dalam mendukung kehidupan manusia dan
+          menjaga keseimbangan alam. PT PLN Nusantara Power Unit Pembangkitan
+          Kaltim Teluk tengah melaksanakan program pembangunan berkelanjutan
+          yang menitikberatkan pada perlindungan sumber daya alam, kelestarian
+          lingkungan, serta pencegahan kerusakan ekosistem. Salah satu langkah
+          strategis dalam mendukung pembangunan berkelanjutan sekaligus selaras
+          dengan pencapaian Sustainable Development Goals (SDGs) adalah
+          melakukan pemantauan terhadap keanekaragaman hayati, baik flora maupun
+          fauna, di kawasan konservasi. Melalui kegiatan monitoring ini, dapat
+          diidentifikasi tren perubahan keanekaragaman hayati dan dirumuskan
+          strategi pengelolaan lingkungan yang lebih efektif guna menunjang
+          pembangunan berkelanjutan.
         </p>
 
         <p className="text-gray-700 leading-relaxed mb-8">
-          Kegiatan monitoring keanekaragaman hayati dilakukan di areal hutan HTR (Hak Tanah Rakyat/Hutan Tanaman
-          Rakyat), di daerah aliran sungai (DAS) Citarum di Desa Cipeusing, Kecamatan Tegal Waru, Kabupaten Purwakarta,
-          Jawa Barat. Kegiatan hutan ini merupakan area hutan di areal yang telah ditetapkan sebagai kawasan hutan
-          berdasarkan Keputusan Menteri Kehutanan Republik Indonesia Nomor 44/Menhut-II/2005 tentang Penunjukan Kawasan
-          Hutan di Wilayah Provinsi Jawa Barat seluas 764.387,15 Ha, yang terdiri dari hutan konservasi seluas
-          229.343,15 Ha, hutan lindung seluas 401.699,15 Ha, hutan produksi seluas 133.345,15 Ha, dan hutan produksi
-          terbatas seluas 0 Ha.
+          Kegiatan monitoring keanekaragaman hayati dilakukan di wilayah
+          perusahaan dengan luasan berizin sebesar 91,83 Ha, dengan fokus
+          monitoring di BEBERAPA bagian yakni, Perkantoran (PR), FABA Disposal
+          (FB-HS), Eks Adhi Karya (AK-BLK), Gardu Induk (GU-BLK), Helipad
+          (HP-HS), Outfall dan Pembangkitan (OP-HS), dan Jetty Temporaty
+          (JT-MG), di mana dalam wilayahnya terdapat tutupan lahan yang
+          bervariasi yaitu infrastruktur perkantoran dan pembangkit, hutan
+          sekunder, belukar, area terbuka dan mangrove.
         </p>
       </div>
     </section>
-  )
+  );
 }
