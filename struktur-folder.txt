@@ -14,6 +14,7 @@
 │   │   │   └── page.tsx
 │   │   └── kehati
 │   │       └── page.tsx
+│   ├── favicon.ico
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
@@ -71,12 +72,16 @@
 │   │   └── use-toast.ts
 │   ├── advanced-image-modal.tsx
 │   ├── content-section.tsx
+│   ├── footer-main.tsx
 │   ├── footer.tsx
 │   ├── gallery-section.tsx
 │   ├── hero-section.tsx
 │   ├── map-section.tsx
 │   ├── navbar.tsx
 │   └── theme-provider.tsx
+├── data
+│   ├── fauna.js
+│   └── flora.js
 ├── hooks
 │   ├── use-mobile.ts
 │   └── use-toast.ts
@@ -87,9 +92,12 @@
 │   ├── caryanda-spuria-spider-species-detailed.jpg
 │   ├── caryanda-spuria-spider-species.jpg
 │   ├── detailed-topographic-map-of-cirata-area-with-river.jpg
+│   ├── final-logo-kehati.png
 │   ├── gyphinopsis-brevilobatus-insect-species-detailed.jpg
 │   ├── gyphinopsis-brevilobatus-insect-species.jpg
+│   ├── lambor.jpg
 │   ├── land-classification-map-with-legend-showing-differ.jpg
+│   ├── logo-2.png
 │   ├── lychas-mucronatus-scorpion-species.jpg
 │   ├── monkey-eating-leaves-in-forest.jpg
 │   ├── placeholder.jpg
@@ -115,4 +123,4 @@
 ├── struktur-folder.txt
 └── tsconfig.json
 
-16 directories, 100 files
+17 directories, 107 files
