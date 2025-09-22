@@ -155,7 +155,7 @@ export function HeroSection() {
                 "1px 1px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.6)",
             }}
           >
-            UNIT PEMBANGKITAN CIRATA
+            UNIT PEMBANGKITAN KALTIM TELUK
           </h3>
         </div>
       </div>
