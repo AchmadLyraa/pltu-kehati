@@ -679,7 +679,7 @@ export default function GaleriFaunaPage() {
                               width={400} // sesuaikan ukuran ideal
                               height={400}
                               loading="lazy"
-                              className="rounded-lg w-full h-auto object-cover"
+                              className="rounded-lg w-full"
                               placeholder="blur"
                               blurDataURL="/placeholder.jpg" // opsional: bisa pakai 1x1 placeholder kecil
                             />
