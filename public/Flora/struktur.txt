@@ -1,0 +1,45 @@
+Flora Folder
+
+.
+├── Jenis Pohon
+│   ├── Acacia auriculiformis.JPG
+│   ├── Acacia mangium.JPG
+│   ├── Aegiceras sp.JPG
+│   ├── Alstonia scholaris.jpg
+│   ├── Archidendron sp.JPG
+│   ├── Avicinea marina.JPG
+│   ├── Cratoxyllum arborescens.JPG
+│   ├── Dillenia grandiflora.JPG
+│   ├── Dysoxyllum sp.JPG
+│   ├── Fordia splendidissima.JPG
+│   ├── Garcinia dulcis.JPG
+│   ├── Glochidion serriceum.JPG
+│   ├── Helicia sp.JPG
+│   ├── Hibiscus tiliaceus.JPG
+│   ├── IMG_3792.JPG
+│   ├── Litsea sp.JPG
+│   ├── Macaranga hypoleuca.JPG
+│   ├── Macaranga pearsonii.JPG
+│   ├── Macaranga trichocarpa.JPG
+│   ├── Palaquium sp.JPG
+│   ├── Rhizophora apiculata.JPG
+│   ├── Rhizophora mucronata.JPG
+│   ├── Soneratia alba.JPG
+│   ├── Syzygium pearsonii.JPG
+│   ├── Syzygium salictoides.JPG
+│   ├── Syzygium tawahense.JPG
+│   ├── Vitex pinnata.JPG
+│   └── Xylocarpus granatum.JPG
+├── Jenis Tumbuhan Bawah
+│   ├── Asplenium nidus.JPG
+│   ├── Blechnum orientale.JPG
+│   ├── Calamus sp.JPG
+│   ├── Clidemia hirta.JPG
+│   ├── Daemonorops sp.JPG
+│   ├── Lycopodium cernuum.JPG
+│   ├── Melastoma malabathricum.JPG
+│   ├── Mimusa pudica.JPG
+│   ├── Nepenthes mirabilis.JPG
+│   ├── Stachytarpeta jamaicensis.JPG
+│   ├── Stenochlaena palutris.jpg
+│   └── Tetracera scandens.JPG

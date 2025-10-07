@@ -1,0 +1,145 @@
+.
+├── app
+│   ├── about-us
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── galeri-foto
+│   │   ├── fauna
+│   │   │   └── page.tsx
+│   │   └── flora
+│   │       └── page.tsx
+│   ├── globals.css
+│   ├── indeks-data
+│   │   ├── fauna
+│   │   │   └── page.tsx
+│   │   ├── flora
+│   │   │   └── page.tsx
+│   │   └── kehati
+│   │       └── page.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── advanced-image-modal.tsx
+│   ├── content-section.tsx
+│   ├── footer-main.tsx
+│   ├── footer.tsx
+│   ├── gallery-section.tsx
+│   ├── hero-section.tsx
+│   ├── kehati-table-absolut.tsx
+│   ├── kehati-table-status.tsx
+│   ├── kehati-tabs-hidroton-anggrek.tsx
+│   ├── kehati-tabs-mangrove-kariangau.tsx
+│   ├── kehati-tabs-mangrove-pltu.tsx
+│   ├── kehati-tabs-penanaman.tsx
+│   ├── kehati-tabs-pohon-biomassa.tsx
+│   ├── map-section.tsx
+│   ├── navbar.tsx
+│   ├── program-kehati.tsx
+│   ├── theme-provider.tsx
+│   └── ui
+│       ├── accordion.tsx
+│       ├── alert-dialog.tsx
+│       ├── alert.tsx
+│       ├── aspect-ratio.tsx
+│       ├── avatar.tsx
+│       ├── badge.tsx
+│       ├── breadcrumb.tsx
+│       ├── button.tsx
+│       ├── calendar.tsx
+│       ├── card.tsx
+│       ├── carousel.tsx
+│       ├── chart.tsx
+│       ├── checkbox.tsx
+│       ├── collapsible.tsx
+│       ├── command.tsx
+│       ├── context-menu.tsx
+│       ├── dialog.tsx
+│       ├── drawer.tsx
+│       ├── dropdown-menu.tsx
+│       ├── form.tsx
+│       ├── hover-card.tsx
+│       ├── input-otp.tsx
+│       ├── input.tsx
+│       ├── label.tsx
+│       ├── menubar.tsx
+│       ├── navigation-menu.tsx
+│       ├── pagination.tsx
+│       ├── popover.tsx
+│       ├── progress.tsx
+│       ├── radio-group.tsx
+│       ├── resizable.tsx
+│       ├── scroll-area.tsx
+│       ├── select.tsx
+│       ├── separator.tsx
+│       ├── sheet.tsx
+│       ├── sidebar.tsx
+│       ├── skeleton.tsx
+│       ├── slider.tsx
+│       ├── sonner.tsx
+│       ├── switch.tsx
+│       ├── table.tsx
+│       ├── tabs.tsx
+│       ├── textarea.tsx
+│       ├── toast.tsx
+│       ├── toaster.tsx
+│       ├── toggle-group.tsx
+│       ├── toggle.tsx
+│       ├── tooltip.tsx
+│       ├── use-mobile.tsx
+│       └── use-toast.ts
+├── components.json
+├── data
+│   ├── HidrotonAnggrekData.js
+│   ├── dataFaunaFlora.js
+│   ├── fauna.js
+│   ├── flora.js
+│   ├── kehatiData.js
+│   ├── mangroveData.js
+│   ├── mangroveKariangauData.js
+│   ├── penanamanData.js
+│   └── pohonBiomassaData.js
+├── hooks
+│   ├── use-mobile.ts
+│   └── use-toast.ts
+├── lib
+│   └── utils.ts
+├── next-env.d.ts
+├── next.config.mjs
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── public
+│   ├── abstract-geometric-shapes.png
+│   ├── caryanda-spuria-spider-species-detailed.jpg
+│   ├── caryanda-spuria-spider-species.jpg
+│   ├── detailed-topographic-map-of-cirata-area-with-river.jpg
+│   ├── final-logo-kehati.png
+│   ├── gyphinopsis-brevilobatus-insect-species-detailed.jpg
+│   ├── gyphinopsis-brevilobatus-insect-species.jpg
+│   ├── lambor.jpg
+│   ├── land-classification-map-with-legend-showing-differ.jpg
+│   ├── logo-2.png
+│   ├── lychas-mucronatus-scorpion-species.jpg
+│   ├── monkey-eating-leaves-in-forest.jpg
+│   ├── placeholder-logo.png
+│   ├── placeholder-logo.svg
+│   ├── placeholder-user.jpg
+│   ├── placeholder.jpg
+│   ├── placeholder.svg
+│   ├── pln-cirata-power-plant-facility-with-transmission-.jpg
+│   ├── program-tabs-penanaman-1.png
+│   ├── program-tabs-penanaman-2.png
+│   ├── program-tabs-penanaman-3.png
+│   ├── tachygraphus-sommaderi-crab-species-detailed.jpg
+│   ├── tachygraphus-sommaderi-crab-species.jpg
+│   ├── tegenaria-domestica-house-spider.jpg
+│   ├── thelyphonus-asperatus-whip-scorpion.jpg
+│   ├── tropical-forest-biodiversity.jpg
+│   └── wildlife-conservation-area.jpg
+├── struktur-folder.txt
+├── struktur.py
+├── struktur2.txt
+├── styles
+│   └── globals.css
+├── tree.txt
+└── tsconfig.json

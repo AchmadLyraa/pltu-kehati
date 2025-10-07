@@ -1,0 +1,88 @@
+Folder Fauna
+.
+├── Biota air (Nekton)
+│   ├── Aurigequula fasciata.JPG
+│   ├── Chanos chanos.JPG
+│   ├── Cloridopsis scorpio.JPG
+│   ├── Nuchequula gerreoides.JPG
+│   ├── Parambassis siamensis.JPG
+│   ├── Penaeus monodon.JPG
+│   ├── Planiliza subviridis.JPG
+│   ├── Portunus pelagicus.JPG
+│   ├── Sepiella inermis.JPG
+│   ├── Siganus sp.JPG
+│   ├── Terapon jarbua.JPG
+│   ├── Triacanthus biaculeatus.JPG
+│   ├── Upeneus vittatus.JPG
+│   └── scylla serrata.JPG
+├── Burung (Avifauna)
+│   ├── Blekok Sawah.JPG
+│   ├── Bondol Kalimantan.JPG
+│   ├── Burung Cabe Bunga Api.JPG
+│   ├── Burung Caladi Tilik.JPG
+│   ├── Burung Cekakak Sungai.JPG
+│   ├── Burung Cinenen Kelabu.JPG
+│   ├── Burung Ciung Air Kalimantan.JPG
+│   ├── Burung Cucak Kutilang.JPG
+│   ├── Burung Elang Bondol.JPG
+│   ├── Burung Gereja Erasia.JPG
+│   ├── Burung Kapasan Kemiri.JPG
+│   ├── Burung Kekep Babi.JPG
+│   ├── Burung Kerak Kerbau.JPG
+│   ├── Burung Kipasan Belang.JPG
+│   ├── Burung Kirik-Kirik Biru.JPG
+│   ├── Burung Kokokan Laut.JPG
+│   ├── Burung Madi Sepah Raja.JPG
+│   ├── Burung Madu Kelapa.JPG
+│   ├── Burung Merbah Belukar.JPG
+│   ├── Burung Merbah Cerukcuk.JPG
+│   ├── Burung Perling Kumbang.JPG
+│   ├── Burung Rametuk Laut.JPG
+│   ├── Burung Tekukur Biasa.JPG
+│   └── Burung Trinil Pantai.JPG
+├── Mamalia
+│   ├── Bajing Kelapa (Callosciurus notatus).JPG
+│   ├── Monyet beruk (Macaca nemestrina).JPG
+│   ├── Monyet ekor panjang (Macaca fascicularis).JPG
+│   ├── TUPAI TERCAT 1.jpg
+│   └── Tupai Indocina.JPG
+├── Reptil dan Amfibi
+│   ├── Dassia vittata.JPG
+│   └── Duttaphrynus melanostictus.JPG
+├── Serangga
+│   ├── Acisoma Panorpoides.JPG
+│   ├── Aetholix Flavibasalis.JPG
+│   ├── Agriocnemis Femina.JPG
+│   ├── Agrionoptera Insignis.JPG
+│   ├── Asota Heliconia.JPG
+│   ├── Bothrogonia Addita.JPG
+│   ├── Brachydiplax Chalybea.JPG
+│   ├── Ceriagrion Cerinorubellum.JPG
+│   ├── Chalciope Mygdon.JPG
+│   ├── Cnaphalocrocis Patnalis.JPG
+│   ├── Comibaena Attenuata.JPG
+│   ├── Cosmodela Aurulenta.JPG
+│   ├── Diplacodes Trivialis.JPG
+│   ├── Ercheia Cyllaria.JPG
+│   ├── Euchrysops Cnejus.JPG
+│   ├── Eurema Hecabe.JPG
+│   ├── Flammona Quadrifasciata.JPG
+│   ├── Hypolimnas Bolina.JPG
+│   ├── Macrodiplax cora.JPG
+│   ├── Mocis undata.JPG
+│   ├── Nacaduba biocellata.JPG
+│   ├── Neptis hylas.JPG
+│   ├── Neurothemis fluctuans.JPG
+│   ├── Neurothemis ramburii.JPG
+│   ├── Neurothemis terminata.JPG
+│   ├── Oechophylla smaragdina.JPG
+│   ├── Orthetrum sabina.JPG
+│   ├── Orthetrum testaceum.JPG
+│   ├── Oxya japonica.JPG
+│   ├── Pagyda poeasalis.JPG
+│   ├── Phlaeoba infumata.JPG
+│   ├── Polytremis lubricans.JPG
+│   ├── Potanthus omaha.JPG
+│   ├── Provespa anomala.JPG
+│   ├── Tropidomantis tenera.JPG
+│   └── Zizina otis.JPG
