@@ -45,43 +45,7 @@ const kehatiCategories = [
   { id: "status", name: "STATUS" },
   { id: "absolut", name: "ABSOLUT" },
   { id: "program", name: "PROGRAM" },
-  { id: "sdgs", name: "SDGS" },
   { id: "rekap", name: "REKAP SDG" },
-];
-
-const programData = [
-  { program: "Monitoring Rutin", target: 100, realisasi: 95, efektivitas: 95 },
-  {
-    program: "Restorasi Habitat",
-    target: 80,
-    realisasi: 78,
-    efektivitas: 97.5,
-  },
-  {
-    program: "Konservasi Ex-situ",
-    target: 60,
-    realisasi: 52,
-    efektivitas: 86.7,
-  },
-  {
-    program: "Edukasi Masyarakat",
-    target: 120,
-    realisasi: 118,
-    efektivitas: 98.3,
-  },
-  {
-    program: "Penelitian Kolaboratif",
-    target: 40,
-    realisasi: 35,
-    efektivitas: 87.5,
-  },
-];
-
-const sdgsData = [
-  { sdg: "SDG 6", nama: "Air Bersih", skor: 85, target: 90 },
-  { sdg: "SDG 13", nama: "Aksi Iklim", skor: 78, target: 85 },
-  { sdg: "SDG 14", nama: "Kehidupan Bawah Air", skor: 72, target: 80 },
-  { sdg: "SDG 15", nama: "Kehidupan Darat", skor: 88, target: 90 },
 ];
 
 const rekapSDG = [
@@ -95,20 +59,6 @@ const rekapSDG = [
 
 export default function IndeksKehatiPage() {
   const [activeCategory, setActiveCategory] = useState("status");
-
-  const getStatusBadge = (status: string) => {
-    const variants = {
-      "Sangat Baik": "bg-green-100 text-green-800",
-      Baik: "bg-blue-100 text-blue-800",
-      Cukup: "bg-yellow-100 text-yellow-800",
-      Kurang: "bg-red-100 text-red-800",
-    };
-    return (
-      <Badge className={variants[status as keyof typeof variants]}>
-        {status}
-      </Badge>
-    );
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -160,147 +110,375 @@ export default function IndeksKehatiPage() {
             </div>
           )}
 
-          {activeCategory === "sdgs" && (
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>
-                    Pencapaian SDGs Terkait Keanekaragaman Hayati
-                  </CardTitle>
-                  <CardDescription>
-                    Skor pencapaian vs target SDGs
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    {sdgsData.map((sdg, index) => (
-                      <div key={index} className="p-4 border rounded-lg">
-                        <div className="flex justify-between items-center mb-2">
-                          <div>
-                            <h4 className="font-medium">
-                              {sdg.sdg}: {sdg.nama}
-                            </h4>
-                            <p className="text-sm text-gray-500">
-                              Skor: {sdg.skor} / Target: {sdg.target}
-                            </p>
-                          </div>
-                          <Badge
-                            className={
-                              sdg.skor >= sdg.target
-                                ? "bg-green-100 text-green-800"
-                                : "bg-yellow-100 text-yellow-800"
-                            }
-                          >
-                            {((sdg.skor / sdg.target) * 100).toFixed(1)}%
-                          </Badge>
-                        </div>
-                        <Progress
-                          value={(sdg.skor / sdg.target) * 100}
-                          className="h-3"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Grafik Pencapaian SDGs</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={sdgsData}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="sdg" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Bar dataKey="skor" fill="#3b82f6" name="Skor Saat Ini" />
-                      <Bar dataKey="target" fill="#94a3b8" name="Target" />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </CardContent>
-              </Card>
-            </div>
-          )}
-
           {activeCategory === "rekap" && (
             <div className="space-y-6">
+              {/* Tabel SDG 15 */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Rekap Pencapaian SDGs</CardTitle>
+                  <CardTitle className="text-lg md:text-xl">SDG</CardTitle>
                   <CardDescription>
-                    Radar chart perbandingan pencapaian berbagai indikator
+                    Target dan Capaian Indikator Keanekaragaman Hayati
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ResponsiveContainer width="100%" height={400}>
-                    <RadarChart data={rekapSDG}>
-                      <PolarGrid />
-                      <PolarAngleAxis dataKey="indikator" />
-                      <PolarRadiusAxis angle={90} domain={[0, 100]} />
-                      <Radar
-                        name="Pencapaian 2024"
-                        dataKey="A"
-                        stroke="#3b82f6"
-                        fill="#3b82f6"
-                        fillOpacity={0.3}
-                      />
-                      <Radar
-                        name="Target 2025"
-                        dataKey="B"
-                        stroke="#10b981"
-                        fill="#10b981"
-                        fillOpacity={0.3}
-                      />
-                      <Legend />
-                    </RadarChart>
-                  </ResponsiveContainer>
+                <CardContent className="overflow-x-auto">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead
+                          rowSpan={2}
+                          className="border text-center align-middle"
+                        >
+                          Tujuan dan Indikator
+                        </TableHead>
+                        <TableHead colSpan={3} className="border text-center">
+                          2023
+                        </TableHead>
+                        <TableHead colSpan={3} className="border text-center">
+                          2024
+                        </TableHead>
+                        <TableHead colSpan={3} className="border text-center">
+                          2025
+                        </TableHead>
+                      </TableRow>
+                      <TableRow>
+                        <TableHead className="border text-center">
+                          Target
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Capaian
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Persentase
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Target
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Capaian
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Persentase
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Target
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Capaian
+                        </TableHead>
+                        <TableHead className="border text-center">
+                          Persentase
+                        </TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell
+                          colSpan={10}
+                          className="border bg-blue-100 font-semibold text-xs md:text-sm"
+                        >
+                          15.3 Pada tahun 2030, menghentikan penggurunan,
+                          memulihkan lahan dan tanah kritis, termasuk lahan yang
+                          terkena penggurunan, kekeringan, banjir, dan berusaha
+                          mencapai dunia yang bebas dari lahan terdegradasi
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell
+                          colSpan={10}
+                          className="border bg-gray-50 font-medium text-xs md:text-sm"
+                        >
+                          15.3.1 Proporsi lahan yang terdegradasi terhadap luas
+                          lahan keseluruhan
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="border text-xs md:text-sm">
+                          Ha
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          450,000
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          2.41
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.0005%
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          475,000
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          2.41
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.0005%
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          528,000
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          2.41
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.0005%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell
+                          colSpan={10}
+                          className="border bg-blue-100 font-semibold text-xs md:text-sm"
+                        >
+                          15.5 Melakukan tindakan cepat dan signifikan untuk
+                          mengurangi degradasi habitat alami, menghentikan
+                          kehilangan keanekaragaman hayati, dan, pada tahun
+                          2030, melindungi dan mencegah kepunahan spesies yang
+                          terancam punah
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell
+                          colSpan={10}
+                          className="border bg-gray-50 font-medium text-xs md:text-sm"
+                        >
+                          15.5.1 Indeks daftar merah (Red-list index)
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="border text-xs md:text-sm">
+                          Jenis
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          25
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.00
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.00%
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          25
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.00%
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          25
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          1
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          4.00%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell
+                          colSpan={10}
+                          className="border bg-blue-100 font-semibold text-xs md:text-sm"
+                        >
+                          15.9 Pada tahun 2030, mengintegrasikan nilai-nilai
+                          ekosistem dan keanekaragaman hayati ke dalam
+                          perencanaan pembangunan nasional dan lokal, proses
+                          pengurangan kemiskinan, dan strategi pembangunan
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell
+                          colSpan={10}
+                          className="border bg-gray-50 font-medium text-xs md:text-sm"
+                        >
+                          15.9.1 Jumlah negara yang menetapkan target yang jelas
+                          tentang integrasi nilai keanekaragaman hayati ke dalam
+                          kebijakan nasional dan perencanaan pembangunan
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="border text-xs md:text-sm">
+                          Indeks (H')
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.40
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          2.73
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          681.91%
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.42
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          2.92
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          694.47%
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          0.44
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          3.58
+                        </TableCell>
+                        <TableCell className="border text-right text-xs md:text-sm">
+                          814.27%
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="border text-xs md:text-sm">
+                          Jumlah Program
+                        </TableCell>
+                        <TableCell
+                          colSpan={3}
+                          className="border text-center text-xs md:text-sm"
+                        >
+                          3
+                        </TableCell>
+                        <TableCell
+                          colSpan={3}
+                          className="border text-center text-xs md:text-sm"
+                        >
+                          3
+                        </TableCell>
+                        <TableCell
+                          colSpan={3}
+                          className="border text-center text-xs md:text-sm"
+                        >
+                          5
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
                 </CardContent>
               </Card>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Grafik Section */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+                {/* Grafik 1: Proporsi lahan terdegradasi */}
                 <Card>
                   <CardHeader>
-                    <CardTitle>SDG 6</CardTitle>
-                    <CardDescription>Air Bersih</CardDescription>
+                    <CardTitle className="text-sm md:text-base">
+                      Capaian Kontribusi Program Terhadap SDG's
+                    </CardTitle>
+                    <CardDescription className="text-xs md:text-sm">
+                      Indikator Proporsi lahan yang terdegradasi terhadap luas
+                      lahan keseluruhan
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-blue-600">85%</div>
-                    <Progress value={85} className="mt-2" />
+                    <ResponsiveContainer width="100%" height={250}>
+                      <BarChart
+                        data={[
+                          { tahun: "2023", capaian: 0.0005 },
+                          { tahun: "2024", capaian: 0.0005 },
+                          { tahun: "2025", capaian: 0.0005 },
+                        ]}
+                        margin={{ top: 20, right: 10, left: 10, bottom: 20 }}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="tahun" style={{ fontSize: "12px" }} />
+                        <YAxis
+                          domain={[0, 0.001]}
+                          tickFormatter={(value) =>
+                            `${(value * 100).toFixed(5)}%`
+                          }
+                          style={{ fontSize: "10px" }}
+                        />
+                        <Tooltip
+                          formatter={(value) => `${(value * 100).toFixed(5)}%`}
+                          contentStyle={{ fontSize: "12px" }}
+                        />
+                        <Bar
+                          dataKey="capaian"
+                          fill="#3b82f6"
+                          label={{ position: "top", fontSize: 10 }}
+                        />
+                      </BarChart>
+                    </ResponsiveContainer>
                   </CardContent>
                 </Card>
+
+                {/* Grafik 2: Indeks daftar merah */}
                 <Card>
                   <CardHeader>
-                    <CardTitle>SDG 13</CardTitle>
-                    <CardDescription>Aksi Iklim</CardDescription>
+                    <CardTitle className="text-sm md:text-base">
+                      Capaian Kontribusi Program Terhadap SDG's
+                    </CardTitle>
+                    <CardDescription className="text-xs md:text-sm">
+                      Indikator Indeks daftar merah (Red-list index)
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-green-600">78%</div>
-                    <Progress value={78} className="mt-2" />
+                    <ResponsiveContainer width="100%" height={250}>
+                      <BarChart
+                        data={[
+                          { tahun: "2023", capaian: 0 },
+                          { tahun: "2024", capaian: 0 },
+                          { tahun: "2025", capaian: 0.04 },
+                        ]}
+                        margin={{ top: 20, right: 10, left: 10, bottom: 20 }}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="tahun" style={{ fontSize: "12px" }} />
+                        <YAxis
+                          domain={[0, 0.05]}
+                          style={{ fontSize: "10px" }}
+                        />
+                        <Tooltip contentStyle={{ fontSize: "12px" }} />
+                        <Bar
+                          dataKey="capaian"
+                          fill="#3b82f6"
+                          label={{ position: "top", fontSize: 10 }}
+                        />
+                      </BarChart>
+                    </ResponsiveContainer>
                   </CardContent>
                 </Card>
+
+                {/* Grafik 3: Integrasi nilai keanekaragaman */}
                 <Card>
                   <CardHeader>
-                    <CardTitle>SDG 14</CardTitle>
-                    <CardDescription>Kehidupan Bawah Air</CardDescription>
+                    <CardTitle className="text-sm md:text-base">
+                      Capaian Kontribusi Program Terhadap SDG's
+                    </CardTitle>
+                    <CardDescription className="text-xs md:text-sm">
+                      Indikator Jumlah negara yang menetapkan target yang jelas
+                      tentang integrasi nilai keanekaragaman hayati ke dalam
+                      kebijakan nasional dan perencanaan pembangunan
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-cyan-600">72%</div>
-                    <Progress value={72} className="mt-2" />
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>SDG 15</CardTitle>
-                    <CardDescription>Kehidupan Darat</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold text-emerald-600">
-                      88%
-                    </div>
-                    <Progress value={88} className="mt-2" />
+                    <ResponsiveContainer width="100%" height={250}>
+                      <BarChart
+                        data={[
+                          { tahun: "2023", capaian: 6.819057527344497 },
+                          { tahun: "2024", capaian: 6.944696150194496 },
+                          { tahun: "2025", capaian: 8.142696819127726 },
+                        ]}
+                        margin={{ top: 20, right: 10, left: 10, bottom: 20 }}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="tahun" style={{ fontSize: "12px" }} />
+                        <YAxis domain={[6, 9]} style={{ fontSize: "10px" }} />
+                        <Tooltip
+                          formatter={(value) => value.toFixed(2)}
+                          contentStyle={{ fontSize: "12px" }}
+                        />
+                        <Bar
+                          dataKey="capaian"
+                          fill="#3b82f6"
+                          label={{
+                            position: "top",
+                            fontSize: 10,
+                            formatter: (value) => value.toFixed(2),
+                          }}
+                        />
+                      </BarChart>
+                    </ResponsiveContainer>
                   </CardContent>
                 </Card>
               </div>
