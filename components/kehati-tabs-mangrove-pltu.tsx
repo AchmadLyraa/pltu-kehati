@@ -47,21 +47,28 @@ const dokumentasiItems = [
   {
     id: 1,
     title: "Kegiatan Penanaman",
-    src: "/placeholder.jpg",
+    src: "/program-kehati/mangrove-pltu-1.png",
     alt: "Dokumentasi kegiatan penanaman pohon",
     description: "Kegiatan penanaman pohon oleh tim",
   },
   {
     id: 2,
     title: "Pemeliharaan Tanaman",
-    src: "/placeholder.jpg",
+    src: "/program-kehati/mangrove-pltu-2.png",
     alt: "Kegiatan pemeliharaan tanaman",
     description: "Aktivitas perawatan dan pemeliharaan pohon",
   },
   {
     id: 3,
     title: "Monitoring Pertumbuhan",
-    src: "/placeholder.jpg",
+    src: "/program-kehati/mangrove-pltu-3.png",
+    alt: "Monitoring pertumbuhan pohon",
+    description: "Kegiatan monitoring perkembangan tanaman",
+  },
+  {
+    id: 4,
+    title: "Monitoring Pertumbuhan",
+    src: "/program-kehati/mangrove-pltu-4.png",
     alt: "Monitoring pertumbuhan pohon",
     description: "Kegiatan monitoring perkembangan tanaman",
   },
@@ -276,7 +283,7 @@ export default function PenanamanPage() {
       {/* Gallery Sections */}
       <div className="mt-8 space-y-8">
         {/* Section 1: Skema Sebelum Program */}
-        <div>
+        {/*<div>
           <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
             <h3 className="font-semibold text-red-800 mb-2">
               1. Skema Sebelum Program
@@ -314,10 +321,10 @@ export default function PenanamanPage() {
               />
             ))}
           </div>
-        </div>
+        </div>*/}
 
         {/* Section 2: Skema Sesudah Program */}
-        <div>
+        {/*<div>
           <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
             <h3 className="font-semibold text-green-800 mb-2">
               2. Skema Sesudah Program
@@ -355,37 +362,38 @@ export default function PenanamanPage() {
               />
             ))}
           </div>
-        </div>
+        </div>*/}
 
         {/* Section 3: Dokumentasi */}
         <div>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
-            <h3 className="font-semibold text-blue-800 mb-2">3. Dokumentasi</h3>
+            <h3 className="font-semibold text-blue-800 mb-2">Dokumentasi</h3>
             <p className="text-sm text-blue-700 leading-relaxed">
               Dokumentasi kegiatan pelaksanaan program penanaman dan
               penghijauan.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {dokumentasiItems.map((item) => (
+            {dokumentasiItems.map((item, index) => (
               <AdvancedImageModal
                 key={item.id}
                 images={dokumentasiItems}
+                initialIndex={index}
                 trigger={
-                  <div className="cursor-pointer group">
-                    <div className="relative overflow-hidden rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group hover:shadow-xl transition-shadow">
+                    <div className="relative overflow-hidden">
                       <img
-                        src={item.src}
+                        src={item.src || "/placeholder.svg"}
                         alt={item.alt}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                     </div>
-                    <div className="mt-2">
-                      <h4 className="font-medium text-sm text-gray-900 group-hover:text-blue-700 transition-colors">
+                    <div className="p-4">
+                      <h3 className="font-bold text-lg text-gray-900 italic mb-1">
                         {item.title}
-                      </h4>
-                      <p className="text-xs text-gray-600 mt-1">
+                      </h3>
+                      <p className="text-gray-600 text-sm">
                         {item.description}
                       </p>
                     </div>

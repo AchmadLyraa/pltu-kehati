@@ -274,7 +274,7 @@ export default function PenanamanPage() {
       {/* Gallery Sections */}
       <div className="mt-8 space-y-8">
         {/* Section 1: Skema Sebelum Program */}
-        <div>
+        {/*<div>
           <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
             <h3 className="font-semibold text-red-800 mb-2">
               1. Skema Sebelum Program
@@ -313,10 +313,10 @@ export default function PenanamanPage() {
               />
             ))}
           </div>
-        </div>
+        </div>*/}
 
         {/* Section 2: Skema Sesudah Program */}
-        <div>
+        {/*<div>
           <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
             <h3 className="font-semibold text-green-800 mb-2">
               2. Skema Sesudah Program
@@ -355,12 +355,12 @@ export default function PenanamanPage() {
               />
             ))}
           </div>
-        </div>
+        </div>*/}
 
         {/* Section 3: Dokumentasi */}
         <div>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
-            <h3 className="font-semibold text-blue-800 mb-2">3. Dokumentasi</h3>
+            <h3 className="font-semibold text-blue-800 mb-2">Dokumentasi</h3>
             <p className="text-sm text-blue-700 leading-relaxed">
               Dokumentasi kegiatan pelaksanaan program penanaman dan
               penghijauan.
