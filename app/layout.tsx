@@ -5,8 +5,9 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PLTU Kehati",
-  description: "Created with Next.js",
+  title: "PLN Kaltim Teluk",
+  description:
+    "Keanekaragaman hayati Indonesia merupakan aset penting bagi pembangunan nasional. PT PLN Nusantara Power Unit Pembangkitan Kaltim Teluk",
   generator: "Next.js",
 };
 
