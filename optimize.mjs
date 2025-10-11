@@ -20,7 +20,7 @@ const files = await glob(inputPattern);
 console.log(`Found ${files.length} images`);
 
 for (const file of files) {
-  const filename = path.basename(file, ".JPG");
+  const filename = path.basename(file, ".jpg");
   const outputPath = path.join(outputDir, `${filename}.webp`);
 
   await sharp(file)
