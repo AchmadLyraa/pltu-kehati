@@ -741,7 +741,7 @@ export default function GaleriFaunaPage() {
               GALERI FAUNA
             </h1>
             <h2 className="text-2xl font-semibold text-gray-700">
-              KAWASAN PLN CIRATA
+              KAWASAN PLN NUSANTARA POWER UP KALTIM TELUK
             </h2>
           </div>
 

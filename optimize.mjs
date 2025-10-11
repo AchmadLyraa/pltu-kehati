@@ -6,12 +6,8 @@ import fs from "fs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const inputPattern = "public/Fauna/Serangga/*.JPG";
-const outputDir = "public/Fauna/Serangga Optimized";
-// Burung (Avifauna) -done
-// Mamalia  -done
-// Reptil dan Amfibi -done
-// Serangga -done
+const inputPattern = "public/temp/*.jpg";
+const outputDir = "public/temp-2";
 
 // Buat folder output
 if (!fs.existsSync(outputDir)) {

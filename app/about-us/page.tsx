@@ -12,13 +12,13 @@ export default function AboutUsPage() {
               PT PLN NUSANTARA POWER
             </h1>
             <h2 className="text-2xl font-semibold text-gray-700">
-              UNIT PEMBANGKITAN CIRATA
+              UNIT PEMBANGKITAN KALTIM TELUK
             </h2>
           </header>
 
           <figure className="mb-12">
             <img
-              src="/pln-cirata-power-plant-facility-with-transmission-.jpg"
+              src="/about-us.png"
               alt="Fasilitas PLN Cirata"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />
@@ -26,52 +26,56 @@ export default function AboutUsPage() {
 
           <article className="prose prose-lg max-w-none space-y-8">
             <p className="text-gray-700 leading-relaxed">
-              PLN UP (Pembangkit Tenaga Listrik Pembangkitan) UP Cirata adalah
+              PT PLN Nusantara Power Unit Pembangkitan (UP) Kaltim Teluk adalah
               salah satu unit pembangkit yang dimiliki oleh PT PLN Nusantara
-              Power, anak perusahaan PT PLN (Persero). Pembangkit Listrik Tenaga
-              Air (PLTA) Cirata yang berlokasi di Waduk Cirata, Kabupaten
-              Purwakarta, Jawa Barat, merupakan salah satu pembangkit listrik
-              terbesar di Indonesia dengan kapasitas total 1.008 MW.
+              Power yang mengoperasikan PLTU Teluk Balikpapan, yang menjadi
+              bagian dari subholding PT PLN (Persero). Pembangkit Listrik Tenaga
+              Uap (PLTU) Batubara yang berlokasi di Kecamatan Kariangau, Kota
+              Balikpapan, Provinsi Kalimantan Timur merupakan salah satu
+              pembangkit listrik terbesar di Kalimantan Timur dengan kapasitas
+              2x110 MW.
             </p>
 
             <section>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Sejarah Pembangunan PLTA UP Cirata
+                Sejarah Pembangunan PLTU Teluk Balikpapan
               </h3>
               <ol className="list-decimal list-inside space-y-6 text-gray-700">
                 <li>
                   <strong className="text-lg text-gray-800">
-                    Awal Konsep dan Perencanaan (1970-an – 1982-an)
+                    Awal Konsep dan Perencanaan (2005-2010)
                   </strong>
                   <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
                     <li>
-                      Konsep pembangunan PLTA Cirata mulai digagas pada tahun
-                      1970-an untuk mengoptimalkan potensi energi air dari
-                      Sungai Citarum.
+                      PLTU Teluk Balikpapan masuk pada perencanaan Fast Track
+                      Project-1 (FTP-1) atau Proyek Percepatan Diversifikasi
+                      Energi (PPDE) tahap 1 berdasarkan Keputusan Presiden No.63
+                      Tahun 2007
                     </li>
                     <li>
-                      Studi kelayakan dimulai pada 1975 dan selesai 1982,
-                      mencakup hidrologi, dampak lingkungan, dan aspek teknis.
+                      Tanggal 21 Desember 2010 dimulai penandatangan kontrak
+                      antara PT PLN (Persero) dengan Kontraktor Sinohydro dan
+                      Adhi Karya
                     </li>
                   </ul>
                 </li>
 
                 <li>
                   <strong className="text-lg text-gray-800">
-                    Pembangunan PLTA Cirata (1983–1988)
+                    Pembangunan PLTU Teluk Balikpapan (2010-2015)
                   </strong>
                   <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
                     <li>
-                      Dimulai 1983 dan selesai 1988 dengan bantuan Japan Bank
-                      for International Cooperation (JBIC).
+                      Fist Pilling (penancapan tiang pancang pertama) yang
+                      menandakan dimulainya proyek pada tanggal 04 Februari 2012
+                      dan tahun pada tahun 2015 (first syncrone) dengan bantuan
+                      Republik Rakyat China dengan Kontraktor Sinohydro dan Adhi
+                      Karya{" "}
                     </li>
                     <li>
-                      Tahap I (1983–1988) kapasitas 504 MW, Tahap II menambah
-                      hingga 1.008 MW.
-                    </li>
-                    <li>
-                      Membangun bendungan 125 m, terowongan 11,2 km, serta 8
-                      turbin 126 MW.
+                      Tahun 2017 PLTU Teluk Balikpapan pertama kali Commercial
+                      of Date (COD) dengan masuk ke jaringan 150 Kv interkoneksi
+                      Kalimantan.{" "}
                     </li>
                   </ul>
                 </li>
@@ -81,16 +85,17 @@ export default function AboutUsPage() {
                     Pengembangan dan Operasional (Sekarang)
                   </strong>
                   <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
+                    <li>Beroperasi dengan 2 unit pembangkit, 2x110 MW</li>
                     <li>
-                      Beroperasi dengan 8 unit pembangkit, total 1.008 MW.
+                      Menggunakan Boiler Circulating Fluidized Bed CFB yang
+                      mampu membakar berbagai jenis bahan bakar padat (seperti
+                      batubara kualitas rendah dan biomassa), emisi polutan yang
+                      rendah (NOx), serta efisiensi pembakaran yang tinggi
+                      karena temperatur rendah dan sirkulasi material bed
                     </li>
                     <li>
-                      Menggunakan teknologi canggih untuk efisiensi dan
-                      keandalan.
-                    </li>
-                    <li>
-                      Waduk Cirata juga berfungsi untuk pengendali banjir,
-                      irigasi, budidaya ikan, dan pariwisata.
+                      Berkontirbusi 26% terhadap subsistem Mahakam dan 12%
+                      terhadap sistem interkoneksi Kalimantan
                     </li>
                   </ul>
                 </li>
@@ -101,9 +106,11 @@ export default function AboutUsPage() {
                   </strong>
                   <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
                     <li>
-                      Pada 2020, PT PLN (Persero) membentuk anak perusahaan PT
-                      PLN Nusantara Power yang mengelola aset-aset pembangkit
-                      termasuk PLTA Cirata.
+                      Pada tahun 2015 PT Pembangkitan Jawa Bali (PJB) menjadi
+                      asset Operator & Maintenance (O&M) di PLTU Teluk
+                      Balikpapan dan pada 2023 PT PJB bertransformasi menjadi PT
+                      PLN Nusantara Power dan mengambil alih asset PLTU Teluk
+                      Balikpapan.
                     </li>
                     <li>
                       Transformasi ini bertujuan meningkatkan efisiensi
@@ -118,16 +125,20 @@ export default function AboutUsPage() {
                   </strong>
                   <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
                     <li>
-                      PLTA Cirata jadi salah satu pembangkit andalan Jawa-Bali
-                      dengan keandalan tinggi.
+                      PLTU jadi salah satu pembangkit andalan (backbone) di
+                      Kalimantan Timur dengan keandalan tinggi dengan kontribusi
+                      sebesar 26% terhadap subsistem Mahakam dan 12% terhadap
+                      sistem interkoneksi Kalimantan
                     </li>
                     <li>
                       Ke depan akan tetap mendukung transisi energi bersih
-                      nasional.
+                      nasional dengan terus berusaha mencapai target co-firing
+                      sampai dengan 30%.{" "}
                     </li>
                     <li>
                       Komitmen pada kelestarian lingkungan lewat konservasi dan
-                      monitoring biodiversitas sekitar waduk.
+                      monitoring biodiversitas di dalam area PLTU Teluk
+                      Balikpapan dan area Kota Balikpapan
                     </li>
                   </ul>
                 </li>
@@ -135,12 +146,13 @@ export default function AboutUsPage() {
             </section>
 
             <p className="text-gray-700 leading-relaxed">
-              Dengan sejarah panjang dan peran strategisnya, PLTA Cirata tidak
-              hanya berkontribusi dalam penyediaan energi listrik, tetapi juga
-              dalam pengembangan ekonomi regional dan pelestarian lingkungan.
-              Komitmen terhadap operasional yang berkelanjutan dan ramah
-              lingkungan menjadikan PLTA Cirata sebagai contoh pembangkit
-              listrik yang bertanggung jawab terhadap lingkungan dan masyarakat.
+              Dengan sejarah panjang dan peran strategisnya, UP Kaltim Teluk
+              tidak hanya berkontribusi dalam penyediaan energi listrik, tetapi
+              juga dalam pengembangan ekonomi regional dan pelestarian
+              lingkungan. Komitmen terhadap operasional yang berkelanjutan dan
+              ramah lingkungan menjadikan UP Kaltim Teluk sebagai contoh
+              pembangkit listrik yang bertanggung jawab terhadap lingkungan dan
+              masyarakat.
             </p>
           </article>
         </div>

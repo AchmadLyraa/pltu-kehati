@@ -1,4 +1,4 @@
-import { Mail, Instagram, Youtube } from "lucide-react";
+import { Mail, Instagram, Phone } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -9,37 +9,38 @@ export function Footer() {
           {/* Logo and Company Name */}
           <div className="flex items-center space-x-4">
             <Image
-              src="/logo-2.png"
+              src="/final-logo-kehati.png"
               alt="PLN Logo"
               width={48} // set ukuran biar ga error
               height={48}
-              className="h-16 w-auto object-contain"
+              className="h-64 w-auto object-contain"
             />
           </div>
 
           {/* Contact Information */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-slate-800">
-              PT PLN Nusantara Power Unit Pembangkitan Cirata
+              PT PLN NP UP KALTIM TELUK
             </h4>
-            <p className="text-slate-600">
-              Jalan Desa Cadas Sari, Kecamatan Tegal Waru, Kabupaten Purwakarta,
+            <p className="text-slate-800">
+              Jl. PLTU No. 1 KM. 13, TELUK WARU,
               <br />
-              Jawa Barat 41162
+              Kawasan Indurstri Kariangau, Kelurahan Kariangau, Kecamatan
+              Balikpapan Barat, 76134
             </p>
 
             <div className="flex flex-col space-y-2">
-              <div className="flex items-center space-x-2 text-slate-600 hover:text-emerald-600 transition-colors">
+              <div className="flex items-center space-x-2 text-slate-600 hover:text-emerald-400 transition-colors">
                 <Mail className="h-4 w-4" />
-                <span>ucrt@plnnusantarapower.co.id</span>
+                <span>upkt@plnnusantarapower.co.id</span>
               </div>
-              <div className="flex items-center space-x-2 text-slate-600 hover:text-emerald-600 transition-colors">
+              <div className="flex items-center space-x-2 text-slate-600 hover:text-emerald-400 transition-colors">
                 <Instagram className="h-4 w-4" />
-                <span>@plnnp_upcirata</span>
+                <span>@plnnp_upkaltimteluk</span>
               </div>
-              <div className="flex items-center space-x-2 text-slate-600 hover:text-emerald-600 transition-colors">
-                <Youtube className="h-4 w-4" />
-                <span>PT PLN Nusantara Power UP Cirata</span>
+              <div className="flex items-center space-x-2 text-slate-600 hover:text-emerald-400 transition-colors">
+                <Phone className="h-4 w-4" />
+                <span>0542 8530818</span>
               </div>
             </div>
           </div>

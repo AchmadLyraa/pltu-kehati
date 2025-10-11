@@ -35,7 +35,7 @@ export default function IndeksFloraPage() {
               INDEKS KEANEKARAGAMAN FLORA KAWASAN
             </h1>
             <h2 className="text-2xl font-semibold text-gray-700">
-              PT PLN NUSANTARA POWER UP KALTIM TELUK
+              PT PLN NUSANTARA POWER UP KALTIM TELUK BALIKPAPAN
             </h2>
           </div>
 
@@ -65,7 +65,7 @@ export default function IndeksFloraPage() {
                           <CardHeader>
                             <CardTitle className="text-lg font-bold text-center">
                               Indeks Jenis Pohon di Wilayah PT PLN Nusantara
-                              Power
+                              Power Kaltim Teluk Balikpapan
                             </CardTitle>
                           </CardHeader>
                           <CardContent>

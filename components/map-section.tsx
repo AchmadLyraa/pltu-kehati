@@ -9,23 +9,24 @@ export function MapSection() {
   const mapImages = [
     {
       id: 1,
-      src: "/detailed-topographic-map-of-cirata-area-with-river.jpg",
-      alt: "Peta Kawasan PLN Cirata",
-      title: "Peta Kawasan PLN Cirata",
-      description: "Peta topografi detail kawasan PLN Cirata dengan sungai",
+      src: "/homepage-1.jpeg",
+      alt: "Peta Area Konservasi PT PLN Nusantara Power UP Kaltim Teluk",
+      title: "Peta Konservasi",
+      description:
+        "Peta topografi detail kawasan PT PLN Nusantara Power UP Kaltim Teluk",
     },
     {
       id: 2,
-      src: "/land-classification-map-with-legend-showing-differ.jpg",
-      alt: "Peta Klasifikasi Tutupan Lahan",
-      title: "Peta Klasifikasi Tutupan Lahan",
+      src: "/homepage-2.jpeg",
+      alt: "Peta Area Kawasan Kariangau",
+      title: "Peta Area Kawasan Kariangau",
       description:
         "Peta klasifikasi dengan legenda menunjukkan berbagai jenis tutupan lahan",
     },
   ];
 
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto">
+    <section className="pb-16 px-4 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         {mapImages.map((image, index) => (
           <AdvancedImageModal

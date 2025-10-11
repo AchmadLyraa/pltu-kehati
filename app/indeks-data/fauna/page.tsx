@@ -73,15 +73,20 @@ export default function IndeksFaunaPage() {
 
   const getCategoryTitle = (category: string) => {
     const categoryMap: { [key: string]: string } = {
-      mamalia: "Kehadiran Mamalia di Wilayah PT PLN Nusantara Power",
-      burung: "Kehadiran Avifauna di Wilayah PT PLN Nusantara Power",
-      herpetofauna: "Kehadiran Herpetofaauna di Wilayah PT PLN Nusantara Power",
-      insecta: "Indeks Jenis Serangga di Wilayah PT PLN Nusantara Power",
-      nekton: "Indeks Jenis Nekton di Wilayah PT PLN Nusantara Power",
+      mamalia:
+        "Kehadiran Mamalia di Wilayah PT PLN Nusantara Power UP Kaltim Teluk",
+      burung:
+        "Kehadiran Avifauna di Wilayah PT PLN Nusantara Power UP Kaltim Teluk",
+      herpetofauna:
+        "Kehadiran Herpetofaauna di Wilayah PT PLN Nusantara Power UP Kaltim Teluk",
+      insecta:
+        "Indeks Jenis Serangga di Wilayah PT PLN Nusantara Power UP Kaltim Teluk",
+      nekton:
+        "Indeks Jenis Nekton di Wilayah PT PLN Nusantara Power UP Kaltim Teluk",
     };
     return (
       categoryMap[category] ||
-      "Kehadiran Fauna di Wilayah PT PLN Nusantara Power"
+      "Kehadiran Fauna di Wilayah PT PLN Nusantara Power UP Kaltim Teluk"
     );
   };
 
@@ -275,7 +280,7 @@ export default function IndeksFaunaPage() {
               INDEKS KEANEKARAGAMAN FAUNA
             </h1>
             <h2 className="text-2xl font-semibold text-gray-700">
-              KAWASAN PLN CIRATA
+              KAWASAN PT PLN NUSANTARA POWER UP KALTIM TELUK
             </h2>
           </div>
 
@@ -330,7 +335,8 @@ export default function IndeksFaunaPage() {
                   <CardHeader>
                     <CardTitle>Data Spesies {category.name}</CardTitle>
                     <CardDescription>
-                      Daftar spesies yang ditemukan di kawasan PLN Cirata
+                      Daftar spesies yang ditemukan di kawasan PLN NUSANTARA
+                      POWER UP KALTIM TELUK
                     </CardDescription>
                   </CardHeader>
                   <CardContent>{renderTable(category.id)}</CardContent>
