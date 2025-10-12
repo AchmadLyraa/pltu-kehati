@@ -25,7 +25,7 @@ export function Footer() {
             <p className="text-slate-800">
               Jl. PLTU No. 1 KM. 13, TELUK WARU,
               <br />
-              Kawasan Indurstri Kariangau, Kelurahan Kariangau, Kecamatan
+              Kawasan Industri Kariangau, Kelurahan Kariangau, Kecamatan
               Balikpapan Barat, 76134
             </p>
 
