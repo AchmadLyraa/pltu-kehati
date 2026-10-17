@@ -1,11 +1,12 @@
 // app/(tabs)/penanaman/page.tsx
 "use client";
-import { useState } from "react";
+import { useYearParam } from "@/hooks/use-query-state";
 import HidrotonAnggrekData from "@/data/HidrotonAnggrekData";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { yearTabsStyle } from "@/lib/year-tabs";
 
 import { AdvancedImageModal } from "@/components/advanced-image-modal";
 
@@ -82,8 +83,8 @@ const dokumentasiItems = [
 ];
 
 export default function PenanamanPage() {
-  const [selectedYear, setSelectedYear] = useState("2021");
   const years = Object.keys(HidrotonAnggrekData);
+  const [selectedYear, setSelectedYear] = useYearParam(years);
 
   return (
     <Card className="p-4 shadow-lg rounded-2xl">
@@ -143,8 +144,8 @@ export default function PenanamanPage() {
       </div>
 
       {/* Tabs untuk Data */}
-      <Tabs defaultValue="2025" onValueChange={setSelectedYear}>
-        <TabsList className="grid grid-cols-1 gap-2 mb-4">
+      <Tabs value={selectedYear} onValueChange={setSelectedYear}>
+        <TabsList className="grid h-auto gap-2 mb-4" style={yearTabsStyle(years.length)}>
           {years.map((year) => (
             <TabsTrigger key={year} value={year}>
               {year}

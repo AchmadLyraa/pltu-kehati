@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
+import { useYearParam } from "@/hooks/use-query-state";
 import kehatiData from "@/data/kehatiData";
 
 export default function KehatiTable() {
-  const [tahun, setTahun] = useState(2025);
-
   const tahunList = [2021, 2022, 2023, 2024, 2025];
+  const [tahunParam, setTahunParam] = useYearParam(tahunList);
+  const tahun = Number(tahunParam);
 
   return (
     <div className="w-full">
@@ -14,7 +15,7 @@ export default function KehatiTable() {
         <label className="font-semibold">Pilih Tahun:</label>
         <select
           value={tahun}
-          onChange={(e) => setTahun(Number(e.target.value))}
+          onChange={(e) => setTahunParam(e.target.value)}
           className="border rounded p-2"
         >
           {tahunList.map((t) => (

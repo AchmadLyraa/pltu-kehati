@@ -15,11 +15,25 @@ import {
   TableBody,
   TableCell,
 } from "@/components/ui/table";
+import { useQueryState } from "@/hooks/use-query-state";
+
+const SUB_IDS = [
+  "penanaman",
+  "mangrove-pltu",
+  "pohon-biomassa",
+  "hidroten-anggrek",
+  "mangrove-kariangau",
+];
 
 export default function ProgramKehati() {
+  const [sub, setSub] = useQueryState("sub", "penanaman", SUB_IDS, {
+    resetOnChange: ["year"],
+  });
+
   return (
     <div className="w-full">
-      <Tabs defaultValue="penanaman" className="w-full">
+      {/* GANTI defaultValue dengan value + onValueChange */}
+      <Tabs value={sub} onValueChange={setSub} className="w-full">
         <TabsList className="grid grid-cols-5">
           <TabsTrigger value="penanaman">Penanaman</TabsTrigger>
           <TabsTrigger value="mangrove-pltu">Mangrove PLTU</TabsTrigger>

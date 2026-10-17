@@ -65,7 +65,7 @@ function IndeksKehatiContent() {
     "tab",
     "status",
     CATEGORY_IDS,
-    { resetOnChange: ["sub"] }
+    { resetOnChange: ["sub", "year"] }
   );
 
   return (
