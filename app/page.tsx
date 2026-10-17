@@ -1,9 +1,9 @@
-import { Navbar } from "@/components/navbar";
-import { HeroSection } from "@/components/hero-section";
-import { ContentSection } from "@/components/content-section";
-import { MapSection } from "@/components/map-section";
-import { GallerySection } from "@/components/gallery-section";
-import { Footer } from "@/components/footer-main";
+import { Navbar } from "@/components/layout/navbar";
+import { HeroSection } from "@/components/home/hero-section";
+import { ContentSection } from "@/components/home/content-section";
+import { MapSection } from "@/components/home/map-section";
+import { GallerySection } from "@/components/home/gallery-section";
+import { Footer } from "@/components/home/footer-main";
 
 export default function HomePage() {
   return (

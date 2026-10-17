@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/layout/footer";
 import {
   Card,
   CardContent,
@@ -19,8 +19,8 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { Navbar } from "@/components/navbar";
-import { floraData } from "@/data/flora.js";
+import { Navbar } from "@/components/layout/navbar";
+import { floraData } from "@/data/flora/flora.js";
 
 export default function IndeksFloraPage() {
   const [activeTab, setActiveTab] = useState("faba-disposal");

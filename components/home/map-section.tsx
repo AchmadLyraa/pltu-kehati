@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AdvancedImageModal } from "@/components/advanced-image-modal";
+import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 
 export function MapSection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

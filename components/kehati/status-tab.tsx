@@ -21,7 +21,7 @@ import {
   YAxis,
 } from "recharts";
 
-import dataFaunaFlora from "@/data/dataFaunaFlora";
+import dataFaunaFlora from "@/data/kehati/dataFaunaFlora";
 
 const COLORS = { flora: "#0891b2", fauna: "#059669", luas: "#d97706" };
 

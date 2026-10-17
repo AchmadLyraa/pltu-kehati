@@ -1,5 +1,5 @@
 "use client";
-import { AdvancedImageModal } from "@/components/advanced-image-modal";
+import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 
 const galleryItems = [
   {

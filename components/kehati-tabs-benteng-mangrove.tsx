@@ -5,7 +5,7 @@ import bentengMangroveData, {
 } from "@/data/bentengMangroveData";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
-import { AdvancedImageModal } from "@/components/advanced-image-modal";
+import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 
 type Row = {
   no: number;

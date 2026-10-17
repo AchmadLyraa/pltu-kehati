@@ -1,13 +1,14 @@
+// app/(tabs)/penanaman/page.tsx
 "use client";
 import { useYearParam } from "@/hooks/use-query-state";
-import pohonBiomassaData from "@/data/pohonBiomassaData";
+import penanamanData from "@/data/kehati/penanamanData";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { yearTabsStyle } from "@/lib/year-tabs";
 
-import { AdvancedImageModal } from "@/components/advanced-image-modal";
+import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 
 const skemaSebelumItems = [
   {
@@ -47,21 +48,28 @@ const dokumentasiItems = [
   {
     id: 1,
     title: "Kegiatan Penanaman",
-    src: "/program-kehati/pohon-biomassa-1.png",
+    src: "/program-tabs-penanaman-1.png",
     alt: "Dokumentasi kegiatan penanaman pohon",
     description: "Kegiatan penanaman pohon oleh tim",
   },
   {
     id: 2,
     title: "Pemeliharaan Tanaman",
-    src: "/program-kehati/pohon-biomassa-2.png",
+    src: "/program-tabs-penanaman-2.png",
     alt: "Kegiatan pemeliharaan tanaman",
     description: "Aktivitas perawatan dan pemeliharaan pohon",
+  },
+  {
+    id: 3,
+    title: "Monitoring Pertumbuhan",
+    src: "/program-tabs-penanaman-3.png",
+    alt: "Monitoring pertumbuhan pohon",
+    description: "Kegiatan monitoring perkembangan tanaman",
   },
 ];
 
 export default function PenanamanPage() {
-  const years = Object.keys(pohonBiomassaData);
+  const years = Object.keys(penanamanData);
   const [selectedYear, setSelectedYear] = useYearParam(years);
 
   return (
@@ -74,29 +82,30 @@ export default function PenanamanPage() {
           </h3>
           <p className="text-sm text-blue-700 leading-relaxed">
             Area konsesi PT PLN NP UP Kaltim Teluk Balikpapan dikelola dengan
-            menyediakan ruang terbuka hijau yang cukup sebagai upaya pengelolaan
-            berkelanjutan sehingga diharapkan membentuk ekosistem yang baik.
-            Program penanaman pohon energi di area perusahaan berupaya untuk
-            memperkaya keanekaragaman hayati yang ada. Pada program juga
-            dilakukan perawatan, monitoring, dan upaya evaluasi dalam pengadaan
-            dan penanaman flora serta area prioritas di lingkup area perusahaan.
-            Hal tersebut dilakukan agar dapat mencapai sasaran berupa
-            peningkatan kualitas hayati dan ekosistem di area perusahaan.
+            menyediakan ruang terbuka hijau yang cukup sebagai upaya
+            pengembangan berkelanjutan sehingga diharapkan memberikan kontribusi
+            ekosistem yang baik. Program penghijauan dan penanaman pohon di
+            kawasan ini adalah bentuk komitmen perusahaan untuk menjaga
+            kelestarian lingkungan. Sebagai upaya pelaksanaan perawatan,
+            monitoring, dan upaya evaluasi dalam pengadaan dan penanaman flora
+            serta area prioritas di lingkungan area perusahaan. Hal tersebut
+            dilakukan agar dapat mencapai sasaran berupa peningkatan kualitas
+            hayati dan ekosistem di area perusahaan.
           </p>
         </div>
 
         <div className="bg-green-50 border border-green-200 rounded-lg p-4">
           <h3 className="font-semibold text-green-800 mb-2">
-            Metode Perhitungan Absolut
+            Perhitungan Absolut
           </h3>
           <div className="text-sm text-green-700 space-y-2">
             <p>
-              Perhitungan absolut merupakan <strong>akumulatif individu</strong>{" "}
-              dari berbagai spesies yang dilaksanakan sesuai program. Kemudian,
-              dilakukan peritungan{" "}
+              Perhitungan indeks menggunakan akumulatif individu dari berbagai
+              species yang ditanamkan sesuai program. Kemudian, dilakukan
+              perhitungan{" "}
               <strong>indeks flora keanekaragaman jenis (H')</strong>. Indeks
-              keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner
-              (Odum, 1996) dengan rumus:
+              keragaman jenis dapat diketahui dengan menggunakan metode
+              Shannon-Wiener (Odum, 1996) dengan rumus:
             </p>
             <div className="bg-white p-3 rounded border font-mono text-center">
               H' = -∑ Pi Ln (Pi), dimana Pi = (ni/N)
@@ -105,8 +114,8 @@ export default function PenanamanPage() {
               <div>
                 <p className="font-medium">Keterangan:</p>
                 <ul className="text-xs space-y-1 mt-1">
-                  <li>H' = Indeks keanekaragaman Shannon-Wienner</li>
-                  <li>ni = Jumlah individu jenis ke-i</li>
+                  <li>H' = Indeks keanekaragaman Shannon-Wiener</li>
+                  <li>Ni = Jumlah individu jenis ke-i</li>
                   <li>N = Jumlah individu seluruh jenis</li>
                 </ul>
               </div>
@@ -115,9 +124,9 @@ export default function PenanamanPage() {
                   Kriteria nilai indeks keanekaragaman Shannon-Wiener (H'):
                 </p>
                 <ul className="text-xs space-y-1 mt-1">
-                  <li>H' ≤ 1 = keanekaragaman rendah</li>
+                  <li>H' &lt; 1 = keanekaragaman rendah</li>
                   <li>1 &lt; H' &lt; 3 = keanekaragaman sedang</li>
-                  <li>H' ≥ 3 = keanekaragaman tinggi</li>
+                  <li>H' &gt; 3 = keanekaragaman tinggi</li>
                 </ul>
               </div>
             </div>
@@ -127,8 +136,8 @@ export default function PenanamanPage() {
               </p>
               <ul className="text-xs mt-1 space-y-1 text-yellow-700">
                 <li>
-                  1) Total individu pada tahun 2025 →{" "}
-                  <strong>1494 pohon</strong>
+                  1) Total individu pada tahun 2025 ={" "}
+                  <strong>1217 pohon</strong>
                 </li>
                 <li>
                   2) Perhitungan{" "}
@@ -136,36 +145,32 @@ export default function PenanamanPage() {
                   2025:
                 </li>
                 <li>
-                  - Contoh spesies <em>Wodyetia bifurcata</em> (Lamtoro) di
-                  tahun 2025 → <strong>1225 Individu</strong>
+                  - Contoh species <em>Wodyetia bifurcata</em> (Palem Ekor
+                  Tupai) di tahun 2025 = <strong>75 individu</strong>
                 </li>
                 <li>
-                  - Total individu flora di tahun 2025 →{" "}
-                  <strong>1494 Individu</strong>
+                  - Total individu flora di tahun 2024 ={" "}
+                  <strong>1217 individu</strong>
                 </li>
               </ul>
               <div className="mt-2 font-mono text-center text-xs bg-white p-2 rounded">
-                maka :
-              </div>
-              <div className="mt-2 font-mono text-center text-xs bg-white p-2 rounded">
-                <em>pi</em> = jumlah individu suatu spesies/jumlah total seluruh
-                spesies
+                maka: pi = jumlah individu suatu species/jumlah total seluruh
+                species
               </div>
               <div className="mt-2 text-xs text-yellow-700 space-y-1">
-                <p>185</p>
                 <p>
-                  - Kemudian dilakukan perhitungan <em>h' (Pi x ln pi)</em> pada
-                  setiap spesies dan mengakumulasi nilai{" "}
-                  <em>h' (Pi x ln pi)</em> dari masing-masing spesies
+                  - Kemudian dilakukan perhitungan h' <em>(Pi x ln pi)</em> pada
+                  setiap species dan mengakumulasi nilai h'{" "}
+                  <em>(Pi x ln pi)</em> dari masing-masing species
                 </p>
                 <p>
                   Sehingga <strong>indeks keanekaragaman hayati</strong> tahun
                   2024 berdasarkan <em>Shannon-Wiener</em> adalah:
                 </p>
                 <p>
-                  <strong>→</strong> indeks keanekaragaman hayati fauna tahun
-                  2024 adalah <strong>0,591</strong> dengan{" "}
-                  <strong>keanekaragaman rendah</strong>
+                  → Indeks keanekaragaman hayati fauna tahun 2024 adalah{" "}
+                  <strong>1,964</strong> dengan{" "}
+                  <strong>keanekaragaman sedang</strong>
                 </p>
               </div>
             </div>
@@ -184,8 +189,7 @@ export default function PenanamanPage() {
         </TabsList>
 
         {years.map((year) => {
-          const { species, akumulasiSpesies, indeksH } =
-            pohonBiomassaData[year];
+          const { species, akumulasiSpesies, indeksH } = penanamanData[year];
           return (
             <TabsContent key={year} value={year}>
               <div className="rounded-md border overflow-auto max-h-[600px]">
@@ -282,10 +286,11 @@ export default function PenanamanPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {skemaSebelumItems.map((item) => (
+            {skemaSebelumItems.map((item, index) => (
               <AdvancedImageModal
                 key={item.id}
                 images={skemaSebelumItems}
+                initialIndex={index}
                 trigger={
                   <div className="cursor-pointer group">
                     <div className="relative overflow-hidden rounded-lg border border-gray-200 hover:border-red-300 transition-colors">
@@ -323,25 +328,26 @@ export default function PenanamanPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {skemaSesudahItems.map((item) => (
+            {skemaSesudahItems.map((item, index) => (
               <AdvancedImageModal
                 key={item.id}
                 images={skemaSesudahItems}
+                initialIndex={index}
                 trigger={
-                  <div className="cursor-pointer group">
-                    <div className="relative overflow-hidden rounded-lg border border-gray-200 hover:border-green-300 transition-colors">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group hover:shadow-xl transition-shadow">
+                    <div className="relative overflow-hidden">
                       <img
-                        src={item.src}
+                        src={item.src || "/placeholder.svg"}
                         alt={item.alt}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                     </div>
-                    <div className="mt-2">
-                      <h4 className="font-medium text-sm text-gray-900 group-hover:text-green-700 transition-colors">
+                    <div className="p-4">
+                      <h3 className="font-bold text-lg text-gray-900 italic mb-1">
                         {item.title}
-                      </h4>
-                      <p className="text-xs text-gray-600 mt-1">
+                      </h3>
+                      <p className="text-gray-600 text-sm">
                         {item.description}
                       </p>
                     </div>

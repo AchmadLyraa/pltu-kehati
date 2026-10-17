@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { AdvancedImageModal } from "@/components/advanced-image-modal";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
+import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 import * as Tabs from "@radix-ui/react-tabs";
 
 // === DATA GALERI FLORA ===

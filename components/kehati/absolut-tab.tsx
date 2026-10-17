@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useYearParam } from "@/hooks/use-query-state";
-import kehatiData from "@/data/kehatiData";
+import kehatiData from "@/data/kehati/kehatiData";
 
 export default function KehatiTable() {
   const tahunList = [2021, 2022, 2023, 2024, 2025];

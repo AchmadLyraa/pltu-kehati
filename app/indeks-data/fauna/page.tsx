@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import {
   Card,
   CardContent,
@@ -36,7 +36,7 @@ import {
   herpetofaunaLocationData,
   insectaLocationData,
   nektonLocationData,
-} from "@/data/fauna";
+} from "@/data/fauna/fauna";
 
 export default function IndeksFaunaPage() {
   const [activeTab, setActiveTab] = useState("mamalia");

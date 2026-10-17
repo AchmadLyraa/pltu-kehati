@@ -1,14 +1,14 @@
 // app/(tabs)/penanaman/page.tsx
 "use client";
 import { useYearParam } from "@/hooks/use-query-state";
-import HidrotonAnggrekData from "@/data/HidrotonAnggrekData";
+import mangroveKariangauData from "@/data/kehati/mangroveKariangauData";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { yearTabsStyle } from "@/lib/year-tabs";
 
-import { AdvancedImageModal } from "@/components/advanced-image-modal";
+import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 
 const skemaSebelumItems = [
   {
@@ -48,42 +48,28 @@ const dokumentasiItems = [
   {
     id: 1,
     title: "Kegiatan Penanaman",
-    src: "/program-kehati/hidroton-anggrek-1.png",
+    src: "/program-kehati/mangrove-kariangau-1.png",
     alt: "Dokumentasi kegiatan penanaman pohon",
     description: "Kegiatan penanaman pohon oleh tim",
   },
   {
     id: 2,
     title: "Pemeliharaan Tanaman",
-    src: "/program-kehati/hidroton-anggrek-2.png",
+    src: "/program-kehati/mangrove-kariangau-2.png",
     alt: "Kegiatan pemeliharaan tanaman",
     description: "Aktivitas perawatan dan pemeliharaan pohon",
   },
   {
     id: 3,
     title: "Monitoring Pertumbuhan",
-    src: "/program-kehati/hidroton-anggrek-3.png",
-    alt: "Monitoring pertumbuhan pohon",
-    description: "Kegiatan monitoring perkembangan tanaman",
-  },
-  {
-    id: 4,
-    title: "Monitoring Pertumbuhan",
-    src: "/program-kehati/hidroton-anggrek-4.png",
-    alt: "Monitoring pertumbuhan pohon",
-    description: "Kegiatan monitoring perkembangan tanaman",
-  },
-  {
-    id: 5,
-    title: "Monitoring Pertumbuhan",
-    src: "/program-kehati/hidroton-anggrek-5.png",
+    src: "/program-kehati/mangrove-kariangau-3.png",
     alt: "Monitoring pertumbuhan pohon",
     description: "Kegiatan monitoring perkembangan tanaman",
   },
 ];
 
 export default function PenanamanPage() {
-  const years = Object.keys(HidrotonAnggrekData);
+  const years = Object.keys(mangroveKariangauData);
   const [selectedYear, setSelectedYear] = useYearParam(years);
 
   return (
@@ -95,25 +81,18 @@ export default function PenanamanPage() {
             Deskripsi Program
           </h3>
           <p className="text-sm text-blue-700 leading-relaxed">
-            PT PLN Nusantara Power UP Kaltim Teluk mengembangkan sebuah inovasi
-            pelestarian keanekaragaman hayati (KEHATI) melalui budidaya anggrek
-            hitam (Coelogyne pandurata) dengan media tanam bi-hidroton berbasis
-            limbah ramah lingkungan. Media tanam Bio-hidroton ini adalah
-            campuran dibentuk dalam bulatan dengan campuran komponen, yakni
-            kompos limbah FABA (Fly Ash Bottom Ash), penambahan vitamin anggrek,
-            dan perekat. Bio-hidroton memiliki keunggulan dalam menjaga
-            kelembapan dan meningkatkan aerasi udara dengan sifatnya yang
-            memiliki banyak pori, komponen kompos FABA di dalamnya memberikan
-            tambahan unsur hara yang mendukung pertumbuhan tanaman secara
-            optimal, vitamin yang ditambahkan di dalam berfungsi untuk
-            merangsang penyerapan nutrisi oleh akar dan membantu
-            pembelahan/pertumbuhan sel. Inovasi ini tidak hanya berkontribusi
-            terhadap pelestarian flora endemik Kalimantan yang terancam punah,
-            tetapi juga menjadi wujud nyata penerapan prinsip ekonomi sirkular
-            di lingkungan kerja melalui pemanfaatan limbah industri menjadi
-            produk bermanfaat. Langkah ini mencerminkan komitmen PLN dalam
-            menjaga lingkungan sekaligus memperkuat peran perusahaan dalam
-            konservasi keanekaragaman hayati lokal.
+            Program Penanaman dan Pelestarian Mangrove Kariangau merupakan upaya
+            PT PLN NP UP Kaltim Teluk Balikpapan dalam meningkatkan kondisi
+            keanekaragaman hayati di area Kariangau bersama stakeholder,
+            sekaligus menjadikan edukasi keanekaragaman hayati kepada
+            masyarakat. Pada program ini, tentunya perusahaan melakukan
+            konservasi dengan penanaman bibit mangrove, perawatan, dan
+            monitoring kondisi mangrove. Dalam jangka panjang mangrove di area
+            masyarakat Kariangau dapat dikembangkan menjadi area wisata, seperti
+            aktivitas dan pengalaman susur sungai, serta berdampak pada
+            perhatian dan tidak melupakan tujuan awal, yakni kepedulian,
+            perhatian, dan kontribusi nyata kepada masyarakat dalam perlindungan
+            keanekaragaman hayati.
           </p>
         </div>
 
@@ -123,21 +102,82 @@ export default function PenanamanPage() {
           </h3>
           <div className="text-sm text-green-700 space-y-2">
             <p>
-              Perhitungan absolut merupakan ak-umulatif jumlah tanaman Anggrek
-              Hitam yang berhasil dikonservasi. Dalam program ini tidak dihitung
-              Indeks Keanekaragaman Hayati (H', dikarenakan hanya satu spesies
-              (Anggrek Hitam) yang dikonservasi.
+              Perhitungan absolut merupakan <strong>akumulatif individu</strong>{" "}
+              dari berbagai spesies yang dilaksanakan sesuai program. Kemudian,
+              dilakukan peritungan{" "}
+              <strong>indeks flora keanekaragaman jenis (H')</strong>. Indeks
+              keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner
+              (Odum, 1996) dengan rumus:
             </p>
             <div className="bg-white p-3 rounded border font-mono text-center">
-              <strong>
-                Pehitungan absolut tahun ke N = jumlah Anggrek Hitam yang
-                berhasil dikonservasi
-              </strong>
+              H' = -∑ Pi Ln (Pi), dimana Pi = (ni/N)
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+              <div>
+                <p className="font-medium">Keterangan:</p>
+                <ul className="text-xs space-y-1 mt-1">
+                  <li>H' = Indeks keanekaragaman Shannon-Wienner</li>
+                  <li>ni = Jumlah individu jenis ke-i</li>
+                  <li>N = Jumlah individu seluruh jenis</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-medium">
+                  Kriteria nilai indeks keanekaragaman Shannon-Wiener (H'):
+                </p>
+                <ul className="text-xs space-y-1 mt-1">
+                  <li>H' ≤ 1 = keanekaragaman rendah</li>
+                  <li>1 &lt; H' &lt; 3 = keanekaragaman sedang</li>
+                  <li>H' ≥ 3 = keanekaragaman tinggi</li>
+                </ul>
+              </div>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded p-3 mt-3">
               <p className="font-medium text-yellow-800">
-                Absolut tahun 2025 = 20 pohon
+                Contoh perhitungan absolut pada tahun 2025 sebagai berikut:
               </p>
+              <ul className="text-xs mt-1 space-y-1 text-yellow-700">
+                <li>
+                  1) Total individu pada tahun 2025 →{" "}
+                  <strong>8000 pohon</strong>
+                </li>
+                <li>
+                  2) Perhitungan{" "}
+                  <strong>indeks flora keanekaragaman hayati (H')</strong> tahun
+                  2025:
+                </li>
+                <li>
+                  - Contoh spesies <em>Rhizspora sp</em> (Bakau) di tahun 2025 →{" "}
+                  <strong>5000 Individu</strong>
+                </li>
+                <li>
+                  - Total individu flora di tahun 2024 →{" "}
+                  <strong>8000 Individu</strong>
+                </li>
+              </ul>
+              <div className="mt-2 font-mono text-center text-xs bg-white p-2 rounded">
+                maka :
+              </div>
+              <div className="mt-2 font-mono text-center text-xs bg-white p-2 rounded">
+                <em>pi</em> = jumlah individu suatu spesies/jumlah total seluruh
+                spesies
+              </div>
+              <div className="mt-2 text-xs text-yellow-700 space-y-1">
+                <p>
+                  - Kemudian dilakukan perhitungan <em>h' (Pi x ln pi)</em> pada
+                  setiap spesies dan mengakumulasi nilai{" "}
+                  <em>h' (Pi x ln pi)</em> dari masing-masing spesies
+                </p>
+                <p>
+                  Sehingga <strong>indeks keanekaragaman hayati</strong> tahun
+                  2024 berdasarkan <em>Shannon-Wiener</em> adalah:
+                </p>
+                <p>
+                  <strong>→</strong> indeks keanekaragaman hayati fauna tahun
+                  2024 adalah <strong>0,622</strong> dengan{" "}
+                  <strong>keanekaragaman rendah</strong>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -154,8 +194,8 @@ export default function PenanamanPage() {
         </TabsList>
 
         {years.map((year) => {
-          const { species, totalSpesies, totalIndividu } =
-            HidrotonAnggrekData[year];
+          const { species, akumulasiSpesies, indeksH } =
+            mangroveKariangauData[year];
           return (
             <TabsContent key={year} value={year}>
               <div className="rounded-md border overflow-auto max-h-[600px]">
@@ -172,7 +212,16 @@ export default function PenanamanPage() {
                         Nama Ilmiah
                       </th>
                       <th className="border border-gray-300 px-3 py-2 text-right font-medium">
-                        Jumlah Individu yang berhasil dikonservasi pada 2025*
+                        Jumlah
+                      </th>
+                      <th className="border border-gray-300 px-3 py-2 text-right font-medium">
+                        Pi
+                      </th>
+                      <th className="border border-gray-300 px-3 py-2 text-right font-medium">
+                        Ln Pi
+                      </th>
+                      <th className="border border-gray-300 px-3 py-2 text-right font-medium">
+                        Pi Ln Pi
                       </th>
                     </tr>
                   </thead>
@@ -192,7 +241,16 @@ export default function PenanamanPage() {
                           {row.namaIlmiah}
                         </td>
                         <td className="border border-gray-300 px-3 py-2 text-right font-mono">
-                          {row.jumlahIndividuBerhasilDikonservasi}
+                          {row.jumlah}
+                        </td>
+                        <td className="border border-gray-300 px-3 py-2 text-right font-mono">
+                          {row.pi.toFixed(3)}
+                        </td>
+                        <td className="border border-gray-300 px-3 py-2 text-right font-mono">
+                          {row.lnPi.toFixed(3)}
+                        </td>
+                        <td className="border border-gray-300 px-3 py-2 text-right font-mono">
+                          {row.piLnPi.toFixed(3)}
                         </td>
                       </tr>
                     ))}
@@ -201,10 +259,16 @@ export default function PenanamanPage() {
                         colSpan={3}
                         className="border border-gray-300 px-3 py-2 text-blue-800"
                       >
-                        Total
+                        Akumulasi Spesies
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-right font-mono text-blue-800">
-                        {totalIndividu}
+                        {akumulasiSpesies}
+                      </td>
+                      <td
+                        colSpan={3}
+                        className="border border-gray-300 px-3 py-2 text-right font-mono text-blue-800"
+                      >
+                        Indeks H′ = {indeksH}
                       </td>
                     </tr>
                   </tbody>

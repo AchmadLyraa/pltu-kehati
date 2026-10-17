@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import rekap from "@/data/rekapSdgData";
+import rekap from "@/data/kehati/rekapSdgData";
 import {
   Card,
   CardContent,

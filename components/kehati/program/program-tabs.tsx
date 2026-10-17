@@ -2,11 +2,11 @@
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import TabPenanaman from "@/components/kehati-tabs-penanaman";
-import TabMangrovePLTU from "@/components/kehati-tabs-mangrove-pltu";
-import TabMangroveKariangau from "@/components/kehati-tabs-mangrove-kariangau";
-import TabPohonBiomassa from "@/components/kehati-tabs-pohon-biomassa";
-import TabHidrotenAnggrek from "@/components/kehati-tabs-hidroton-anggrek";
+import TabPenanaman from "@/components/kehati/program/penanaman";
+import TabMangrovePLTU from "@/components/kehati/program/mangrove-pltu";
+import TabMangroveKariangau from "@/components/kehati/program/mangrove-kariangau";
+import TabPohonBiomassa from "@/components/kehati/program/pohon-biomassa";
+import TabHidrotenAnggrek from "@/components/kehati/program/hidroton-anggrek";
 import {
   Table,
   TableHeader,

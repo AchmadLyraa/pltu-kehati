@@ -1,14 +1,14 @@
 // app/(tabs)/penanaman/page.tsx
 "use client";
 import { useYearParam } from "@/hooks/use-query-state";
-import mangroveKariangauData from "@/data/mangroveKariangauData";
+import mangroveData from "@/data/kehati/mangroveData";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { yearTabsStyle } from "@/lib/year-tabs";
 
-import { AdvancedImageModal } from "@/components/advanced-image-modal";
+import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 
 const skemaSebelumItems = [
   {
@@ -48,28 +48,35 @@ const dokumentasiItems = [
   {
     id: 1,
     title: "Kegiatan Penanaman",
-    src: "/program-kehati/mangrove-kariangau-1.png",
+    src: "/program-kehati/mangrove-pltu-1.png",
     alt: "Dokumentasi kegiatan penanaman pohon",
     description: "Kegiatan penanaman pohon oleh tim",
   },
   {
     id: 2,
     title: "Pemeliharaan Tanaman",
-    src: "/program-kehati/mangrove-kariangau-2.png",
+    src: "/program-kehati/mangrove-pltu-2.png",
     alt: "Kegiatan pemeliharaan tanaman",
     description: "Aktivitas perawatan dan pemeliharaan pohon",
   },
   {
     id: 3,
     title: "Monitoring Pertumbuhan",
-    src: "/program-kehati/mangrove-kariangau-3.png",
+    src: "/program-kehati/mangrove-pltu-3.png",
+    alt: "Monitoring pertumbuhan pohon",
+    description: "Kegiatan monitoring perkembangan tanaman",
+  },
+  {
+    id: 4,
+    title: "Monitoring Pertumbuhan",
+    src: "/program-kehati/mangrove-pltu-4.png",
     alt: "Monitoring pertumbuhan pohon",
     description: "Kegiatan monitoring perkembangan tanaman",
   },
 ];
 
 export default function PenanamanPage() {
-  const years = Object.keys(mangroveKariangauData);
+  const years = Object.keys(mangroveData);
   const [selectedYear, setSelectedYear] = useYearParam(years);
 
   return (
@@ -81,18 +88,15 @@ export default function PenanamanPage() {
             Deskripsi Program
           </h3>
           <p className="text-sm text-blue-700 leading-relaxed">
-            Program Penanaman dan Pelestarian Mangrove Kariangau merupakan upaya
-            PT PLN NP UP Kaltim Teluk Balikpapan dalam meningkatkan kondisi
-            keanekaragaman hayati di area Kariangau bersama stakeholder,
-            sekaligus menjadikan edukasi keanekaragaman hayati kepada
-            masyarakat. Pada program ini, tentunya perusahaan melakukan
+            Program konservasi hutan mangrove merupakan upaya PT PLN NP UP
+            Kaltim Teluk Balikpapan dalam meningkatkan kondisi keanekaragaman
+            hayati di area Teluk Balikpapan. Area teluk tersebut adalah area
+            perairan dengan bagian laut menjorok ke daratan, yang berada di
+            antara Balikpapan dan Kabupaten Penajam. Perairan area teluk
+            cenderung bergelombang tenang namun tidak meniadakan potensi abrasi
+            saat kondisi gelombang pasang Pada program perusahaan melakukan
             konservasi dengan penanaman bibit mangrove, perawatan, dan
-            monitoring kondisi mangrove. Dalam jangka panjang mangrove di area
-            masyarakat Kariangau dapat dikembangkan menjadi area wisata, seperti
-            aktivitas dan pengalaman susur sungai, serta berdampak pada
-            perhatian dan tidak melupakan tujuan awal, yakni kepedulian,
-            perhatian, dan kontribusi nyata kepada masyarakat dalam perlindungan
-            keanekaragaman hayati.
+            monitoring kondisi mangrove.
           </p>
         </div>
 
@@ -139,7 +143,7 @@ export default function PenanamanPage() {
               <ul className="text-xs mt-1 space-y-1 text-yellow-700">
                 <li>
                   1) Total individu pada tahun 2025 →{" "}
-                  <strong>8000 pohon</strong>
+                  <strong>4250 pohon</strong>
                 </li>
                 <li>
                   2) Perhitungan{" "}
@@ -147,12 +151,12 @@ export default function PenanamanPage() {
                   2025:
                 </li>
                 <li>
-                  - Contoh spesies <em>Rhizspora sp</em> (Bakau) di tahun 2025 →{" "}
-                  <strong>5000 Individu</strong>
+                  - Contoh spesies <em>Rhizospora sp</em> (Bakau) di tahun 2025
+                  → <strong>3740 Individu</strong>
                 </li>
                 <li>
                   - Total individu flora di tahun 2024 →{" "}
-                  <strong>8000 Individu</strong>
+                  <strong>4250 Individu</strong>
                 </li>
               </ul>
               <div className="mt-2 font-mono text-center text-xs bg-white p-2 rounded">
@@ -164,7 +168,7 @@ export default function PenanamanPage() {
               </div>
               <div className="mt-2 text-xs text-yellow-700 space-y-1">
                 <p>
-                  - Kemudian dilakukan perhitungan <em>h' (Pi x ln pi)</em> pada
+                  → Kemudian dilakukan perhitungan <em>h' (Pi x ln pi)</em> pada
                   setiap spesies dan mengakumulasi nilai{" "}
                   <em>h' (Pi x ln pi)</em> dari masing-masing spesies
                 </p>
@@ -174,7 +178,7 @@ export default function PenanamanPage() {
                 </p>
                 <p>
                   <strong>→</strong> indeks keanekaragaman hayati fauna tahun
-                  2024 adalah <strong>0,622</strong> dengan{" "}
+                  2024 adalah <strong>0,367</strong> dengan{" "}
                   <strong>keanekaragaman rendah</strong>
                 </p>
               </div>
@@ -194,8 +198,7 @@ export default function PenanamanPage() {
         </TabsList>
 
         {years.map((year) => {
-          const { species, akumulasiSpesies, indeksH } =
-            mangroveKariangauData[year];
+          const { species, akumulasiSpesies, indeksH } = mangroveData[year];
           return (
             <TabsContent key={year} value={year}>
               <div className="rounded-md border overflow-auto max-h-[600px]">

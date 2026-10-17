@@ -2,11 +2,11 @@
 
 import { Suspense } from "react";
 import { useQueryState } from "@/hooks/use-query-state";
-import KehatiTableChart from "@/components/kehati-table-status";
-import KehatiTableChart2 from "@/components/kehati-table-absolut";
-import KehatiTableChart3 from "@/components/program-kehati";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import KehatiTableChart from "@/components/kehati/status-tab";
+import KehatiTableChart2 from "@/components/kehati/absolut-tab";
+import KehatiTableChart3 from "@/components/kehati/program/program-tabs";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import {
   Card,
   CardContent,
