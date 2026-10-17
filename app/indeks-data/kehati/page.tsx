@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense } from "react";
+import { useQueryState } from "@/hooks/use-query-state";
 import KehatiTableChart from "@/components/kehati-table-status";
 import KehatiTableChart2 from "@/components/kehati-table-absolut";
 import KehatiTableChart3 from "@/components/program-kehati";
@@ -57,8 +58,15 @@ const rekapSDG = [
   { indikator: "Penelitian", A: 80, B: 75, fullMark: 100 },
 ];
 
-export default function IndeksKehatiPage() {
-  const [activeCategory, setActiveCategory] = useState("status");
+const CATEGORY_IDS = kehatiCategories.map((c) => c.id);
+
+function IndeksKehatiContent() {
+  const [activeCategory, setActiveCategory] = useQueryState(
+    "tab",
+    "status",
+    CATEGORY_IDS,
+    { resetOnChange: ["sub"] }
+  );
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -488,5 +496,13 @@ export default function IndeksKehatiPage() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+export default function IndeksKehatiPage() {
+  return (
+    <Suspense fallback={null}>
+      <IndeksKehatiContent />
+    </Suspense>
   );
 }

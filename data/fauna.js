@@ -1,6 +1,6 @@
 const faunaCategories = [
   { id: "mamalia", name: "Mamalia", count: 8 },
-  { id: "burung", name: "Avifauna", count: 40 },
+  { id: "burung", name: "Avifauna", count: 50 },
   { id: "herpetofauna", name: "Herpetofauna", count: 15 },
   { id: "insecta", name: "Insecta", count: 13 },
   { id: "nekton", name: "Nekton", count: 25 },
