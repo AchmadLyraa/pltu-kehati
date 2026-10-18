@@ -1,0 +1,4144 @@
+{
+  "meta": {
+    "sumber_file": "UPKT_2026_Pelaporan_KEHATI_15_10_26.xlsx",
+    "unit": "PT PLN Nusantara Power UP Kaltim Teluk (PLTU Teluk Balikpapan)",
+    "tahun_kolom": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026*"
+    ],
+    "catatan_tahun": "2026* = data Januari-Juni 2026",
+    "catatan_nilai": "Angka disalin apa adanya dari Excel (nilai hasil hitung, bukan rumus). null = sel kosong. 0 = nol eksplisit. Persentase SDGs dikonversi dari pecahan (format % di Excel) ke persen (x100). Karakter non-breaking space di nama dihapus.",
+    "sheet_dimasukkan": [
+      "Tabel Status",
+      "Tabel Absolut",
+      "1. Penanaman",
+      "2. Mangrove PLTU",
+      "3. Pohon Biomassa",
+      "4. Hidroton-Anggrek",
+      "5. Mangrove Kariangau",
+      "6. Benteng Mangrove",
+      "SDGs Kehati",
+      "Rekap SDGs Kehati",
+      "Metadata Kehati",
+      "RENSTRA VERSI 2.0 (tanpa kolom penanggung jawab)",
+      "KETERSEDIAAN DANA"
+    ],
+    "sheet_tidak_dimasukkan": {
+      "Raw Data / Raw Data (worked)": "tersembunyi, data mentah kerja",
+      "4. Hidroton-Anggrek (2)": "tersembunyi, salinan lama program 4",
+      "RENSTRA VERSI 1.0": "tersembunyi, versi lama",
+      "RENJA VERSI 2.0": "rencana kerja per kegiatan, sangat rinci",
+      "template di SDGs Kehati baris 18-20": "placeholder \"NAMA PROGRAM KEHATI\""
+    },
+    "penomoran_program": "id di JSON mengikuti nomor sheet program (1-6). Nomor di Tabel Absolut, SDGs Kehati, RENSTRA, dan Ketersediaan Dana tidak seragam; lihat field no_di_* dan catatan_kualitas_data.",
+    "pemetaan_ke_website": {
+      "Indeks Kehati > STATUS": "status",
+      "Indeks Kehati > ABSOLUT": "absolut",
+      "Indeks Kehati > PROGRAM": "program_detail",
+      "Indeks Kehati > REKAP SDG": "sdgs.rekap, sdgs.per_program, sdgs.metadata",
+      "tidak_ada_di_excel": "Indeks Flora (NPI, kerapatan, frekuensi, BA per lokasi), Indeks Fauna (daftar spesies hasil monitoring + P106/IUCN/CITES), Galeri, Beranda, Tentang Kami"
+    }
+  },
+  "status": {
+    "judul": "Tabel Status Keanekaragaman Hayati Tahun 2022-2026*",
+    "catatan": "*Data bulan Januari hingga Juni 2026",
+    "kawasan_konservasi_ha": {
+      "2021": 6.77,
+      "2022": 6.77,
+      "2023": 12.05,
+      "2024": 12.05,
+      "2025": 12.05,
+      "2026*": 12.05
+    },
+    "flora": [
+      {
+        "no": 1,
+        "nama": "Bakau",
+        "jumlah": {
+          "2021": 500,
+          "2022": 1250,
+          "2023": 2560,
+          "2024": 3740,
+          "2025": 8740,
+          "2026*": 15480
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 2,
+        "nama": "Lacang",
+        "jumlah": {
+          "2021": 230,
+          "2022": 300,
+          "2023": 420,
+          "2024": 510,
+          "2025": 3510,
+          "2026*": 3510
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 3,
+        "nama": "Palem Ekor Tupai",
+        "jumlah": {
+          "2021": 75,
+          "2022": 75,
+          "2023": 75,
+          "2024": 75,
+          "2025": 75,
+          "2026*": 75
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 4,
+        "nama": "Palem Sadeng",
+        "jumlah": {
+          "2021": 50,
+          "2022": 50,
+          "2023": 50,
+          "2024": 50,
+          "2025": 50,
+          "2026*": 50
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 5,
+        "nama": "Ketapang Kencana",
+        "jumlah": {
+          "2021": 20,
+          "2022": 20,
+          "2023": 21,
+          "2024": 21,
+          "2025": 40,
+          "2026*": 27
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 6,
+        "nama": "Trembesi",
+        "jumlah": {
+          "2021": 10,
+          "2022": 10,
+          "2023": 10,
+          "2024": 10,
+          "2025": 10,
+          "2026*": 10
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 7,
+        "nama": "Spatodea",
+        "jumlah": {
+          "2021": 10,
+          "2022": 10,
+          "2023": 10,
+          "2024": 10,
+          "2025": 10,
+          "2026*": 10
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 8,
+        "nama": "Palem Sikas",
+        "jumlah": {
+          "2021": 6,
+          "2022": 6,
+          "2023": 6,
+          "2024": 6,
+          "2025": 6,
+          "2026*": 6
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 9,
+        "nama": "Palem Merah",
+        "jumlah": {
+          "2021": 5,
+          "2022": 5,
+          "2023": 5,
+          "2024": 5,
+          "2025": 12,
+          "2026*": 12
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 10,
+        "nama": "Pandan Bali",
+        "jumlah": {
+          "2021": 4,
+          "2022": 4,
+          "2023": 4,
+          "2024": 4,
+          "2025": 4,
+          "2026*": 4
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 11,
+        "nama": "Cemara Udang",
+        "jumlah": {
+          "2021": 2,
+          "2022": 2,
+          "2023": 2,
+          "2024": 2,
+          "2025": 2,
+          "2026*": 2
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 12,
+        "nama": "Pucuk Merah",
+        "jumlah": {
+          "2021": 0,
+          "2022": 1,
+          "2023": 11,
+          "2024": 27,
+          "2025": 50,
+          "2026*": 67
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 13,
+        "nama": "Palem",
+        "jumlah": {
+          "2021": 0,
+          "2022": 1,
+          "2023": 1,
+          "2024": 48,
+          "2025": 175,
+          "2026*": 213
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 14,
+        "nama": "Lamtoro",
+        "jumlah": {
+          "2021": 0,
+          "2022": 800,
+          "2023": 800,
+          "2024": 1100,
+          "2025": 1225,
+          "2026*": 1225
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 15,
+        "nama": "Gamal",
+        "jumlah": {
+          "2021": 0,
+          "2022": 80,
+          "2023": 80,
+          "2024": 101,
+          "2025": 101,
+          "2026*": 1225
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 16,
+        "nama": "Kaliandra",
+        "jumlah": {
+          "2021": 0,
+          "2022": 150,
+          "2023": 150,
+          "2024": 150,
+          "2025": 168,
+          "2026*": 1225
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 17,
+        "nama": "Asoka",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 300,
+          "2024": 450,
+          "2025": 527,
+          "2026*": 549
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 18,
+        "nama": "Rambusa",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 155,
+          "2024": 155,
+          "2025": 155,
+          "2026*": 168
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 19,
+        "nama": "Tabebuya",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 8,
+          "2024": 26,
+          "2025": 54,
+          "2026*": 54
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 20,
+        "nama": "Kelapa",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 24,
+          "2026*": 24
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 21,
+        "nama": "Bintaro",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 20,
+          "2026*": 20
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 22,
+        "nama": "Palem Kipas",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 5,
+          "2026*": 9
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 23,
+        "nama": "Palem Putri",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 5,
+          "2026*": 13
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 24,
+        "nama": "Cemara Lilin",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 3,
+          "2026*": 3
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 25,
+        "nama": "Walisongo",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 3,
+          "2026*": 3
+        },
+        "satuan": "Pohon"
+      },
+      {
+        "no": 26,
+        "nama": "Anggrek Hitam",
+        "jumlah": {
+          "2021": null,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 20,
+          "2026*": 20
+        },
+        "satuan": "Pohon"
+      }
+    ],
+    "total_flora": {
+      "2021": 182,
+      "2022": 2764,
+      "2023": 4668,
+      "2024": 6490,
+      "2025": 14974,
+      "2026*": 23984
+    },
+    "fauna": [
+      {
+        "no": 1,
+        "nama": "Tupai indochina",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 5
+        },
+        "satuan": "Ekor"
+      },
+      {
+        "no": 2,
+        "nama": "Biawak",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 5
+        },
+        "satuan": "Ekor"
+      },
+      {
+        "no": 3,
+        "nama": "Cucak kutilang",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 5
+        },
+        "satuan": "Ekor"
+      },
+      {
+        "no": 4,
+        "nama": "Kadal mangrove",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 3
+        },
+        "satuan": "Ekor"
+      },
+      {
+        "no": 5,
+        "nama": "Capung Biru Rawa",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 2
+        },
+        "satuan": "Ekor"
+      },
+      {
+        "no": 6,
+        "nama": "Ikan Tembakul",
+        "jumlah": {
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 6
+        },
+        "satuan": "Ekor"
+      },
+      {
+        "no": 7,
+        "nama": "Perenjak Jawa",
+        "jumlah": {
+          "2021": null,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 5
+        },
+        "satuan": "Ekor"
+      },
+      {
+        "no": 8,
+        "nama": "Kipasan Belang",
+        "jumlah": {
+          "2021": null,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0,
+          "2025": 0,
+          "2026*": 9
+        },
+        "satuan": "Ekor"
+      }
+    ],
+    "total_fauna": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026*": 40
+    }
+  },
+  "absolut": {
+    "judul": "Tabel Absolut Keanekaragaman Hayati Tahun 2022-2026*\nPT PLN Nusantara Power UP Kaltim Teluk",
+    "catatan": "*Data Januari hingga Juni",
+    "program": [
+      {
+        "id": 1,
+        "no_di_tabel_absolut": 1,
+        "kategori": null,
+        "nama": "Penghijauan dan Pertamanan di Area Perusahaan",
+        "flora": [
+          {
+            "nama_lokal": "Palem Ekor Tupai",
+            "nama_latin": "Wodyetia bifurcata",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 75,
+              "2022": 75,
+              "2023": 75,
+              "2024": 75,
+              "2025": 75,
+              "2026*": 75
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Palem Sadeng",
+            "nama_latin": "Saribus rotundifolius",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 50,
+              "2022": 50,
+              "2023": 50,
+              "2024": 50,
+              "2025": 50,
+              "2026*": 50
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Ketapang Kencana",
+            "nama_latin": "Terminalia mantaly",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 20,
+              "2022": 20,
+              "2023": 21,
+              "2024": 21,
+              "2025": 27,
+              "2026*": 27
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Trembesi",
+            "nama_latin": "Samanea saman",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 10,
+              "2022": 10,
+              "2023": 10,
+              "2024": 10,
+              "2025": 10,
+              "2026*": 10
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Spatodea",
+            "nama_latin": "Spathodea",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 10,
+              "2022": 10,
+              "2023": 10,
+              "2024": 10,
+              "2025": 10,
+              "2026*": 10
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Palem Sikas",
+            "nama_latin": "Cycas revoluta",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 6,
+              "2022": 6,
+              "2023": 6,
+              "2024": 6,
+              "2025": 6,
+              "2026*": 6
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Palem Merah",
+            "nama_latin": "Cyrtostachys renda",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 5,
+              "2022": 5,
+              "2023": 5,
+              "2024": 5,
+              "2025": 12,
+              "2026*": 12
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Pandan Bali",
+            "nama_latin": "Cordyline australis",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 4,
+              "2022": 4,
+              "2023": 4,
+              "2024": 4,
+              "2025": 4,
+              "2026*": 4
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Cemara Udang",
+            "nama_latin": "Casuarina equisetifolia",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 2,
+              "2022": 2,
+              "2023": 2,
+              "2024": 2,
+              "2025": 2,
+              "2026*": 2
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Pucuk Merah",
+            "nama_latin": "Syzygium myrtifolium",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": 1,
+              "2023": 11,
+              "2024": 27,
+              "2025": 50,
+              "2026*": 67
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Palem",
+            "nama_latin": "Arecaceae",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": 1,
+              "2023": 1,
+              "2024": 48,
+              "2025": 175,
+              "2026*": 213
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Asoka",
+            "nama_latin": "Saraca asoca",
+            "status": {
+              "iucn": "VU",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": 300,
+              "2024": 450,
+              "2025": 527,
+              "2026*": 549
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Rambusa",
+            "nama_latin": "Passiflora foetida",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": 155,
+              "2024": 155,
+              "2025": 155,
+              "2026*": 168
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Tabebuya",
+            "nama_latin": "Tabebuia",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": 8,
+              "2024": 26,
+              "2025": 54,
+              "2026*": 54
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Kelapa",
+            "nama_latin": "Cocos nucifera",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 24,
+              "2026*": 24
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Bintaro",
+            "nama_latin": "Cerbera manghas",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 20,
+              "2026*": 20
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Palem Kipas",
+            "nama_latin": "Livistona saribus",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 5,
+              "2026*": 9
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Palem Putri",
+            "nama_latin": "Roystonea regia",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 5,
+              "2026*": 13
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Cemara Lilin",
+            "nama_latin": "Cupressus sempervirens",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 3,
+              "2026*": 3
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Walisongo",
+            "nama_latin": "Schefflera actinophylla",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 3,
+              "2026*": 3
+            },
+            "satuan": "Pohon"
+          }
+        ],
+        "fauna": [],
+        "total_flora": {
+          "2021": 182,
+          "2022": 184,
+          "2023": 658,
+          "2024": 889,
+          "2025": 1217,
+          "2026*": 1319
+        },
+        "indeks_h_flora": {
+          "2021": 1.626488421688,
+          "2022": 1.676303560322,
+          "2023": 1.639650727867,
+          "2024": 1.820283774538,
+          "2025": 1.960170082199,
+          "2026*": 2.062010971233
+        },
+        "anggaran_rp_juta": {
+          "2021": 50,
+          "2022": 50,
+          "2023": 100,
+          "2024": 125,
+          "2025": 150,
+          "2026*": 75
+        }
+      },
+      {
+        "id": 2,
+        "no_di_tabel_absolut": 2,
+        "kategori": null,
+        "nama": "Konservasi Hutan Mangrove di  PLTU Teluk Balikpapan",
+        "flora": [
+          {
+            "nama_lokal": "Bakau",
+            "nama_latin": "Rhizophora sp",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 500,
+              "2022": 1250,
+              "2023": 2560,
+              "2024": 3740,
+              "2025": 3740,
+              "2026*": 6740
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Lacang",
+            "nama_latin": "Bruguiera sp",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": 230,
+              "2022": 300,
+              "2023": 420,
+              "2024": 510,
+              "2025": 510,
+              "2026*": 510
+            },
+            "satuan": "Pohon"
+          }
+        ],
+        "fauna": [
+          {
+            "nama_lokal": "Biawak",
+            "nama_latin": "Varanus Salvator",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 1
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Kadal Mangrove",
+            "nama_latin": "Emoia Atrocostata",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 1
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Cucak Kutilang",
+            "nama_latin": "Pycnonotus Aurigaster",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 2
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Ikan Tembakul",
+            "nama_latin": "Periophthalmus sp",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 2
+            },
+            "satuan": "Ekor"
+          }
+        ],
+        "total_flora": {
+          "2021": 730,
+          "2022": 1550,
+          "2023": 2980,
+          "2024": 4250,
+          "2025": 4250,
+          "2026*": 7250
+        },
+        "indeks_h_flora": {
+          "2021": 0.623096191316,
+          "2022": 0.491327448451,
+          "2023": 0.406665467194,
+          "2024": 0.414602966066,
+          "2025": 0.366924991273,
+          "2026*": 0.254529996891
+        },
+        "total_fauna": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 6
+        },
+        "indeks_h_fauna": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 0.670401904645
+        },
+        "luas_area_ha": {
+          "2021": null,
+          "2022": 2.41,
+          "2023": 2.41,
+          "2024": 2.41,
+          "2025": 2.41,
+          "2026*": 2.95
+        },
+        "anggaran_rp_juta": {
+          "2021": 50,
+          "2022": 70,
+          "2023": 90,
+          "2024": 125,
+          "2025": 125,
+          "2026*": 62.5
+        }
+      },
+      {
+        "id": 3,
+        "no_di_tabel_absolut": 3,
+        "kategori": null,
+        "nama": "Greenhouse dan Pembibitan Pohon Biomassa",
+        "flora": [
+          {
+            "nama_lokal": "Lamtoro",
+            "nama_latin": "Leucaena leucocephala",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": 800,
+              "2023": 800,
+              "2024": 1100,
+              "2025": 1225,
+              "2026*": 1225
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Gamal",
+            "nama_latin": "Gliricidia sepium",
+            "status": {
+              "iucn": "LC",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": 80,
+              "2023": 80,
+              "2024": 101,
+              "2025": 101,
+              "2026*": 111
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Kaliandra",
+            "nama_latin": "Calliandra",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": 150,
+              "2023": 150,
+              "2024": 150,
+              "2025": 168,
+              "2026*": 168
+            },
+            "satuan": "Pohon"
+          }
+        ],
+        "fauna": [],
+        "total_flora": {
+          "2021": null,
+          "2022": 1030,
+          "2023": 1030,
+          "2024": 1351,
+          "2025": 1494,
+          "2026*": 1504
+        },
+        "indeks_h_flora": {
+          "2021": null,
+          "2022": 0.67532688994,
+          "2023": 0.67532688994,
+          "2024": 0.675643434471,
+          "2025": 0.590634138524,
+          "2026*": 0.601652507676
+        },
+        "anggaran_rp_juta": {
+          "2021": null,
+          "2022": 75,
+          "2023": 75,
+          "2024": 100,
+          "2025": 110,
+          "2026*": 55
+        }
+      },
+      {
+        "id": 4,
+        "no_di_tabel_absolut": 4,
+        "kategori": null,
+        "nama": "Implementasi Media Tanam Substrat Bio-hidroton untuk Budidaya Tanaman Anggrek Hitam (Coeloegyne Pandurata)",
+        "flora": [
+          {
+            "nama_lokal": "Anggrek Hitam",
+            "nama_latin": "Coelogyne pandurata",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "✓",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 20,
+              "2026*": 20
+            },
+            "satuan": "Pohon"
+          }
+        ],
+        "fauna": [],
+        "total_flora": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 20,
+          "2026*": 20
+        },
+        "anggaran_rp_juta": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 10,
+          "2026*": 5
+        }
+      },
+      {
+        "id": 5,
+        "no_di_tabel_absolut": 6,
+        "kategori": "Program Community Development",
+        "nama": "Penanaman dan Pelestarian Mangrove Kariangau",
+        "flora": [
+          {
+            "nama_lokal": "Bakau",
+            "nama_latin": "Rhizophora sp",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 5000,
+              "2026*": 5000
+            },
+            "satuan": "Pohon"
+          },
+          {
+            "nama_lokal": "Lacang",
+            "nama_latin": "Bruguiera sp",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": 3000,
+              "2026*": 3000
+            },
+            "satuan": "Pohon"
+          }
+        ],
+        "fauna": [
+          {
+            "nama_lokal": "Tupai Indochina",
+            "nama_latin": "Dendrogale Murina",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 5
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Biawak",
+            "nama_latin": "Varanus Salvator",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 3
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Cucak Kutilang",
+            "nama_latin": "Pycnonotus Aurigaster",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 2
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Kadal Mangrove",
+            "nama_latin": "Emoia Atrocostata",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 1
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Capung Biru Rawa",
+            "nama_latin": "Brachydiplax chalybea",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 2
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Ikan Tembakul",
+            "nama_latin": "Periophthalmus sp",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 2
+            },
+            "satuan": "Ekor"
+          }
+        ],
+        "total_flora": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 8000,
+          "2026*": 8000
+        },
+        "indeks_h_flora": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 0.661563238158,
+          "2026*": 1.674589567
+        },
+        "total_fauna": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 15
+        },
+        "indeks_h_fauna": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 1.674589567
+        },
+        "anggaran_rp_juta": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 120,
+          "2026*": 60
+        }
+      },
+      {
+        "id": 6,
+        "no_di_tabel_absolut": 5,
+        "kategori": "Program Community Development",
+        "nama": "Rekayasa Modular Cylindrical Wave Barrier Berbasis FABA Composite untuk Perlindungan Bibit dan Area Mangrove dari Abrasi",
+        "flora": [
+          {
+            "nama_lokal": "Bakau",
+            "nama_latin": "Rhizophora sp",
+            "status": {
+              "iucn": "-",
+              "cites": "-",
+              "pmlhk_106_2018": "-",
+              "pp_7_1999": "-"
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 3740
+            },
+            "satuan": "Pohon"
+          }
+        ],
+        "fauna": [
+          {
+            "nama_lokal": "Biawak",
+            "nama_latin": "Varanus Salvator",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 1
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Kadal Mangrove",
+            "nama_latin": "Emoia Atrocostata",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 1
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Cucak Kutilang",
+            "nama_latin": "Pycnonotus Aurigaster",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 1
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Ikan Tembakul",
+            "nama_latin": "Periophthalmus sp",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 2
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Perenjak Jawa",
+            "nama_latin": "Prinia familiaris",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 5
+            },
+            "satuan": "Ekor"
+          },
+          {
+            "nama_lokal": "Kipasan Belang",
+            "nama_latin": "Rhipidura javanica",
+            "status": {
+              "iucn": null,
+              "cites": null,
+              "pmlhk_106_2018": null,
+              "pp_7_1999": null
+            },
+            "absolut": {
+              "2021": null,
+              "2022": null,
+              "2023": null,
+              "2024": null,
+              "2025": null,
+              "2026*": 9
+            },
+            "satuan": "Ekor"
+          }
+        ],
+        "total_flora": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 3740
+        },
+        "total_fauna": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 19
+        },
+        "indeks_h_fauna": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 0.701889501827
+        },
+        "anggaran_rp_juta": {
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": null,
+          "2026*": 50
+        }
+      }
+    ],
+    "kebaruan_program_comdev": {
+      "keterangan": "Kebaruan Program Comdev Keanekaragaman Hayati",
+      "program_dimulai_2025_2026": [
+        {
+          "nama": "Rekayasa Modular Cylindrical Wave Barrier Berbasis FABA Composite untuk Perlindungan Bibit dan Area Mangrove dari Abrasi",
+          "absolut_2026_pohon": 3740
+        },
+        {
+          "nama": "Penanaman dan Pelestarian Mangrove Kariangau",
+          "absolut_2026_pohon": 8000
+        }
+      ],
+      "total_absolut_2026_pohon": 11740,
+      "kebaruan_program_persen_hasil": 1,
+      "rumus_teks": "Kebaharuan Program Comdev = (Hasil Absolut tahun 2026 program yang dimulai tahun 2025/2026) / (Total Absolut Tahun 2026) x 100% = 11.740/11.740 x 100% = 100%"
+    }
+  },
+  "program_detail": [
+    {
+      "id": 1,
+      "sheet": "1. Penanaman",
+      "nama": "Penghijauan dan Pertamanan di Area Perusahaan",
+      "deskripsi_program": [
+        "Area konsesi PT PLN NP UP Kaltim Teluk Balikpapan dikelola dengan menyediakan ruang terbuka hijau yang cukup sebagai upaya pengelolaan berkelanjutan sehingga diharapkan membentuk ekosistem yang baik. Program penghijauan dan pertamanan flora di area perusahaan berupaya untuk memperkaya keanekaragaman hayati yang ada. Pada program juga dilakukan perawatan, monitoring, dan upaya evaluasi dalam pengadaan dan penanaman flora serta area prioritas di lingkup area perusahaan. Hal tersebut dilakukan agar dapat mencapai sasaran berupa peningkatan kualitas hayati dan ekosistem di area perusahaan."
+      ],
+      "metode_perhitungan_absolut": [
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025\t→ 1217 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Wodyetia bifurcata (Palem Ekor Tupai) di tahun 2025 → 75 Individu",
+        "- Total individu flora di tahun 2025 → 1217  Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "→ indeks keanekaragaman hayati fauna tahun 2024 adalah 1,960 dengan keanekaragaman sedang",
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025\t→ 1217 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Wodyetia bifurcata (Palem Ekor Tupai) di tahun 2025 → 75 Individu",
+        "- Total individu flora di tahun 2025 → 1217  Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "p𝑖=75/1217=0,062",
+        "ln⁡〖𝑝𝑖=ln⁡0,062 〗=−2,787",
+        "ℎ^′=𝑃𝑖×ln⁡〖𝑝𝑖=0,062×(−2,787)〗",
+        "ℎ^′=−0,172",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies∑_(𝑖=1)^𝑆▒(𝑝𝑖)(ln⁡𝑝𝑖 ) )=−1,960",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "𝐻^′=−(−1,960)=1,960  → indeks keanekaragaman hayati fauna tahun 2024 adalah 1,960 dengan keanekaragaman sedang"
+      ],
+      "perhitungan_h_prime": [
+        {
+          "tahun": "2021",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Palem Ekor Tupai",
+              "nama_ilmiah": "Wodyetia bifurcata",
+              "jumlah": 75,
+              "pi": 0.412087912088,
+              "ln_pi": -0.88651857354,
+              "pi_x_ln_pi": -0.365323587997
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Palem Sadeng",
+              "nama_ilmiah": "Saribus rotundifolius",
+              "jumlah": 50,
+              "pi": 0.274725274725,
+              "ln_pi": -1.291983681649,
+              "pi_x_ln_pi": -0.354940571881
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Ketapang Kencana",
+              "nama_ilmiah": "Terminalia mantaly",
+              "jumlah": 20,
+              "pi": 0.10989010989,
+              "ln_pi": -2.208274413523,
+              "pi_x_ln_pi": -0.24266751797
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Trembesi",
+              "nama_ilmiah": "Samanea saman",
+              "jumlah": 10,
+              "pi": 0.054945054945,
+              "ln_pi": -2.901421594083,
+              "pi_x_ln_pi": -0.159418768906
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Spatodea",
+              "nama_ilmiah": "Spathodea",
+              "jumlah": 10,
+              "pi": 0.054945054945,
+              "ln_pi": -2.901421594083,
+              "pi_x_ln_pi": -0.159418768906
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Palem Sikas",
+              "nama_ilmiah": "Cycas revoluta",
+              "jumlah": 6,
+              "pi": 0.032967032967,
+              "ln_pi": -3.412247217849,
+              "pi_x_ln_pi": -0.112491666522
+            },
+            {
+              "no": 7,
+              "nama_lokal": "Palem Merah",
+              "nama_ilmiah": "Cyrtostachys renda",
+              "jumlah": 5,
+              "pi": 0.027472527473,
+              "ln_pi": -3.594568774643,
+              "pi_x_ln_pi": -0.098751889413
+            },
+            {
+              "no": 8,
+              "nama_lokal": "Pandan Bali",
+              "nama_ilmiah": "Cordyline australis",
+              "jumlah": 4,
+              "pi": 0.021978021978,
+              "ln_pi": -3.817712325957,
+              "pi_x_ln_pi": -0.083905765406
+            },
+            {
+              "no": 9,
+              "nama_lokal": "Cemara Udang",
+              "nama_ilmiah": "Casuarina equisetifolia",
+              "jumlah": 2,
+              "pi": 0.010989010989,
+              "ln_pi": -4.510859506517,
+              "pi_x_ln_pi": -0.049569884687
+            }
+          ],
+          "akumulasi": 182,
+          "indeks_h": 1.626488421688,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2022",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Palem Ekor Tupai",
+              "nama_ilmiah": "Wodyetia bifurcata",
+              "jumlah": 75,
+              "pi": 0.407608695652,
+              "ln_pi": -0.897447644073,
+              "pi_x_ln_pi": -0.365807463617
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Palem Sadeng",
+              "nama_ilmiah": "Saribus rotundifolius",
+              "jumlah": 50,
+              "pi": 0.271739130435,
+              "ln_pi": -1.302912752181,
+              "pi_x_ln_pi": -0.35405237831
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Ketapang Kencana",
+              "nama_ilmiah": "Terminalia mantaly",
+              "jumlah": 20,
+              "pi": 0.108695652174,
+              "ln_pi": -2.219203484055,
+              "pi_x_ln_pi": -0.241217770006
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Trembesi",
+              "nama_ilmiah": "Samanea saman",
+              "jumlah": 10,
+              "pi": 0.054347826087,
+              "ln_pi": -2.912350664615,
+              "pi_x_ln_pi": -0.158279927425
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Spatodea",
+              "nama_ilmiah": "Spathodea",
+              "jumlah": 10,
+              "pi": 0.054347826087,
+              "ln_pi": -2.912350664615,
+              "pi_x_ln_pi": -0.158279927425
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Palem Sikas",
+              "nama_ilmiah": "Cycas revoluta",
+              "jumlah": 6,
+              "pi": 0.032608695652,
+              "ln_pi": -3.423176288381,
+              "pi_x_ln_pi": -0.111625313752
+            },
+            {
+              "no": 7,
+              "nama_lokal": "Palem Merah",
+              "nama_ilmiah": "Cyrtostachys renda",
+              "jumlah": 5,
+              "pi": 0.027173913043,
+              "ln_pi": -3.605497845175,
+              "pi_x_ln_pi": -0.097975484923
+            },
+            {
+              "no": 8,
+              "nama_lokal": "Pandan Bali",
+              "nama_ilmiah": "Cordyline australis",
+              "jumlah": 4,
+              "pi": 0.021739130435,
+              "ln_pi": -3.828641396489,
+              "pi_x_ln_pi": -0.083231334706
+            },
+            {
+              "no": 9,
+              "nama_lokal": "Cemara Udang",
+              "nama_ilmiah": "Casuarina equisetifolia",
+              "jumlah": 2,
+              "pi": 0.010869565217,
+              "ln_pi": -4.521788577049,
+              "pi_x_ln_pi": -0.049149875837
+            },
+            {
+              "no": 10,
+              "nama_lokal": "Pucuk Merah",
+              "nama_ilmiah": "Syzygium myrtifolium",
+              "jumlah": 1,
+              "pi": 0.005434782609,
+              "ln_pi": -5.214935757609,
+              "pi_x_ln_pi": -0.028342042161
+            },
+            {
+              "no": 11,
+              "nama_lokal": "Palem",
+              "nama_ilmiah": "Arecaceae",
+              "jumlah": 1,
+              "pi": 0.005434782609,
+              "ln_pi": -5.214935757609,
+              "pi_x_ln_pi": -0.028342042161
+            }
+          ],
+          "akumulasi": 184,
+          "indeks_h": 1.676303560322,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2023",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Palem Ekor Tupai",
+              "nama_ilmiah": "Wodyetia bifurcata",
+              "jumlah": 75,
+              "pi": 0.113981762918,
+              "ln_pi": -2.171716817789,
+              "pi_x_ln_pi": -0.24753611145
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Palem Sadeng",
+              "nama_ilmiah": "Saribus rotundifolius",
+              "jumlah": 50,
+              "pi": 0.075987841945,
+              "ln_pi": -2.577181925897,
+              "pi_x_ln_pi": -0.195834492849
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Ketapang Kencana",
+              "nama_ilmiah": "Terminalia mantaly",
+              "jumlah": 21,
+              "pi": 0.031914893617,
+              "ln_pi": -3.444682493602,
+              "pi_x_ln_pi": -0.109936675328
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Trembesi",
+              "nama_ilmiah": "Samanea saman",
+              "jumlah": 10,
+              "pi": 0.015197568389,
+              "ln_pi": -4.186619838331,
+              "pi_x_ln_pi": -0.063626441312
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Spatodea",
+              "nama_ilmiah": "Spathodea",
+              "jumlah": 10,
+              "pi": 0.015197568389,
+              "ln_pi": -4.186619838331,
+              "pi_x_ln_pi": -0.063626441312
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Palem Sikas",
+              "nama_ilmiah": "Cycas revoluta",
+              "jumlah": 6,
+              "pi": 0.009118541033,
+              "ln_pi": -4.697445462097,
+              "pi_x_ln_pi": -0.042833849198
+            },
+            {
+              "no": 7,
+              "nama_lokal": "Palem Merah",
+              "nama_ilmiah": "Cyrtostachys renda",
+              "jumlah": 5,
+              "pi": 0.007598784195,
+              "ln_pi": -4.879767018891,
+              "pi_x_ln_pi": -0.037080296496
+            },
+            {
+              "no": 8,
+              "nama_lokal": "Pandan Bali",
+              "nama_ilmiah": "Cordyline australis",
+              "jumlah": 4,
+              "pi": 0.006079027356,
+              "ln_pi": -5.102910570205,
+              "pi_x_ln_pi": -0.03102073295
+            },
+            {
+              "no": 9,
+              "nama_lokal": "Cemara Udang",
+              "nama_ilmiah": "Casuarina equisetifolia",
+              "jumlah": 2,
+              "pi": 0.003039513678,
+              "ln_pi": -5.796057750765,
+              "pi_x_ln_pi": -0.017617196811
+            },
+            {
+              "no": 10,
+              "nama_lokal": "Pucuk Merah",
+              "nama_ilmiah": "Syzygium myrtifolium",
+              "jumlah": 11,
+              "pi": 0.016717325228,
+              "ln_pi": -4.091309658527,
+              "pi_x_ln_pi": -0.06839575417
+            },
+            {
+              "no": 11,
+              "nama_lokal": "Palem",
+              "nama_ilmiah": "Arecaceae",
+              "jumlah": 1,
+              "pi": 0.001519756839,
+              "ln_pi": -6.489204931325,
+              "pi_x_ln_pi": -0.009862013573
+            },
+            {
+              "no": 12,
+              "nama_lokal": "Asoka",
+              "nama_ilmiah": "Saraca asoca",
+              "jumlah": 300,
+              "pi": 0.455927051672,
+              "ln_pi": -0.785422456669,
+              "pi_x_ln_pi": -0.358095344986
+            },
+            {
+              "no": 13,
+              "nama_lokal": "Rambusa",
+              "nama_ilmiah": "Passiflora foetida",
+              "jumlah": 155,
+              "pi": 0.23556231003,
+              "ln_pi": -1.445779814406,
+              "pi_x_ln_pi": -0.340571232877
+            },
+            {
+              "no": 14,
+              "nama_lokal": "Tabebuya",
+              "nama_ilmiah": "Tabebuia",
+              "jumlah": 8,
+              "pi": 0.012158054711,
+              "ln_pi": -4.409763389645,
+              "pi_x_ln_pi": -0.053614144555
+            }
+          ],
+          "akumulasi": 658,
+          "indeks_h": 1.639650727867,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2024",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Palem Ekor Tupai",
+              "nama_ilmiah": "Wodyetia bifurcata",
+              "jumlah": 75,
+              "pi": 0.084364454443,
+              "ln_pi": -2.472609121978,
+              "pi_x_ln_pi": -0.208600319627
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Palem Sadeng",
+              "nama_ilmiah": "Saribus rotundifolius",
+              "jumlah": 50,
+              "pi": 0.075987841945,
+              "ln_pi": -2.577181925897,
+              "pi_x_ln_pi": -0.195834492849
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Ketapang Kencana",
+              "nama_ilmiah": "Terminalia mantaly",
+              "jumlah": 21,
+              "pi": 0.031914893617,
+              "ln_pi": -3.444682493602,
+              "pi_x_ln_pi": -0.109936675328
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Trembesi",
+              "nama_ilmiah": "Samanea saman",
+              "jumlah": 10,
+              "pi": 0.015197568389,
+              "ln_pi": -4.186619838331,
+              "pi_x_ln_pi": -0.063626441312
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Spatodea",
+              "nama_ilmiah": "Spathodea",
+              "jumlah": 10,
+              "pi": 0.015197568389,
+              "ln_pi": -4.186619838331,
+              "pi_x_ln_pi": -0.063626441312
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Palem Sikas",
+              "nama_ilmiah": "Cycas revoluta",
+              "jumlah": 6,
+              "pi": 0.009118541033,
+              "ln_pi": -4.697445462097,
+              "pi_x_ln_pi": -0.042833849198
+            },
+            {
+              "no": 7,
+              "nama_lokal": "Palem Merah",
+              "nama_ilmiah": "Cyrtostachys renda",
+              "jumlah": 5,
+              "pi": 0.007598784195,
+              "ln_pi": -4.879767018891,
+              "pi_x_ln_pi": -0.037080296496
+            },
+            {
+              "no": 8,
+              "nama_lokal": "Pandan Bali",
+              "nama_ilmiah": "Cordyline australis",
+              "jumlah": 4,
+              "pi": 0.006079027356,
+              "ln_pi": -5.102910570205,
+              "pi_x_ln_pi": -0.03102073295
+            },
+            {
+              "no": 9,
+              "nama_lokal": "Cemara Udang",
+              "nama_ilmiah": "Casuarina equisetifolia",
+              "jumlah": 2,
+              "pi": 0.003039513678,
+              "ln_pi": -5.796057750765,
+              "pi_x_ln_pi": -0.017617196811
+            },
+            {
+              "no": 10,
+              "nama_lokal": "Pucuk Merah",
+              "nama_ilmiah": "Syzygium myrtifolium",
+              "jumlah": 27,
+              "pi": 0.04103343465,
+              "ln_pi": -3.193368065321,
+              "pi_x_ln_pi": -0.131034859823
+            },
+            {
+              "no": 11,
+              "nama_lokal": "Palem",
+              "nama_ilmiah": "Arecaceae",
+              "jumlah": 48,
+              "pi": 0.072948328267,
+              "ln_pi": -2.618003920417,
+              "pi_x_ln_pi": -0.190979009392
+            },
+            {
+              "no": 12,
+              "nama_lokal": "Asoka",
+              "nama_ilmiah": "Saraca asoca",
+              "jumlah": 450,
+              "pi": 0.683890577508,
+              "ln_pi": -0.379957348561,
+              "pi_x_ln_pi": -0.259849250536
+            },
+            {
+              "no": 13,
+              "nama_lokal": "Rambusa",
+              "nama_ilmiah": "Passiflora foetida",
+              "jumlah": 155,
+              "pi": 0.23556231003,
+              "ln_pi": -1.445779814406,
+              "pi_x_ln_pi": -0.340571232877
+            },
+            {
+              "no": 14,
+              "nama_lokal": "Tabebuya",
+              "nama_ilmiah": "Tabebuia",
+              "jumlah": 26,
+              "pi": 0.039513677812,
+              "ln_pi": -3.231108393304,
+              "pi_x_ln_pi": -0.127672976027
+            }
+          ],
+          "akumulasi": 889,
+          "indeks_h": 1.820283774538,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2025",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Palem Ekor Tupai",
+              "nama_ilmiah": "Wodyetia bifurcata",
+              "jumlah": 75,
+              "pi": 0.06162695152,
+              "ln_pi": -2.786655979451,
+              "pi_x_ln_pi": -0.171733112949
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Palem Sadeng",
+              "nama_ilmiah": "Saribus rotundifolius",
+              "jumlah": 50,
+              "pi": 0.041084634347,
+              "ln_pi": -3.192121087559,
+              "pi_x_ln_pi": -0.131147127673
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Ketapang Kencana",
+              "nama_ilmiah": "Terminalia mantaly",
+              "jumlah": 27,
+              "pi": 0.022185702547,
+              "ln_pi": -3.808307226983,
+              "pi_x_ln_pi": -0.084489971346
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Trembesi",
+              "nama_ilmiah": "Samanea saman",
+              "jumlah": 10,
+              "pi": 0.008216926869,
+              "ln_pi": -4.801558999993,
+              "pi_x_ln_pi": -0.039454059162
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Spatodea",
+              "nama_ilmiah": "Spathodea",
+              "jumlah": 10,
+              "pi": 0.008216926869,
+              "ln_pi": -4.801558999993,
+              "pi_x_ln_pi": -0.039454059162
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Palem Sikas",
+              "nama_ilmiah": "Cycas revoluta",
+              "jumlah": 6,
+              "pi": 0.004930156122,
+              "ln_pi": -5.312384623759,
+              "pi_x_ln_pi": -0.026190885573
+            },
+            {
+              "no": 7,
+              "nama_lokal": "Palem Merah",
+              "nama_ilmiah": "Cyrtostachys renda",
+              "jumlah": 12,
+              "pi": 0.009860312243,
+              "ln_pi": -4.6192374432,
+              "pi_x_ln_pi": -0.045547123516
+            },
+            {
+              "no": 8,
+              "nama_lokal": "Pandan Bali",
+              "nama_ilmiah": "Cordyline australis",
+              "jumlah": 4,
+              "pi": 0.003286770748,
+              "ln_pi": -5.717849731868,
+              "pi_x_ln_pi": -0.018793261239
+            },
+            {
+              "no": 9,
+              "nama_lokal": "Cemara Udang",
+              "nama_ilmiah": "Casuarina equisetifolia",
+              "jumlah": 2,
+              "pi": 0.001643385374,
+              "ln_pi": -6.410996912428,
+              "pi_x_ln_pi": -0.010535738558
+            },
+            {
+              "no": 10,
+              "nama_lokal": "Pucuk Merah",
+              "nama_ilmiah": "Syzygium myrtifolium",
+              "jumlah": 50,
+              "pi": 0.041084634347,
+              "ln_pi": -3.192121087559,
+              "pi_x_ln_pi": -0.131147127673
+            },
+            {
+              "no": 11,
+              "nama_lokal": "Palem",
+              "nama_ilmiah": "Arecaceae",
+              "jumlah": 175,
+              "pi": 0.143796220214,
+              "ln_pi": -1.939358119064,
+              "pi_x_ln_pi": -0.278872367162
+            },
+            {
+              "no": 12,
+              "nama_lokal": "Asoka",
+              "nama_ilmiah": "Saraca asoca",
+              "jumlah": 527,
+              "pi": 0.433032046015,
+              "ln_pi": -0.836943544446,
+              "pi_x_ln_pi": -0.36242337545
+            },
+            {
+              "no": 13,
+              "nama_lokal": "Rambusa",
+              "nama_ilmiah": "Passiflora foetida",
+              "jumlah": 155,
+              "pi": 0.127362366475,
+              "ln_pi": -2.060718976068,
+              "pi_x_ln_pi": -0.262458045432
+            },
+            {
+              "no": 14,
+              "nama_lokal": "Tabebuya",
+              "nama_ilmiah": "Tabebuia",
+              "jumlah": 54,
+              "pi": 0.044371405094,
+              "ln_pi": -3.115160046423,
+              "pi_x_ln_pi": -0.138224028354
+            },
+            {
+              "no": 15,
+              "nama_lokal": "Kelapa",
+              "nama_ilmiah": "Cocos nucifera",
+              "jumlah": 24,
+              "pi": 0.019720624486,
+              "ln_pi": -3.92609026264,
+              "pi_x_ln_pi": -0.077424951769
+            },
+            {
+              "no": 16,
+              "nama_lokal": "Bintaro",
+              "nama_ilmiah": "Cerbera manghas",
+              "jumlah": 20,
+              "pi": 0.016433853739,
+              "ln_pi": -4.108411819434,
+              "pi_x_ln_pi": -0.067517038939
+            },
+            {
+              "no": 17,
+              "nama_lokal": "Palem Kipas",
+              "nama_ilmiah": "Livistona saribus",
+              "jumlah": 5,
+              "pi": 0.004108463435,
+              "ln_pi": -5.494706180553,
+              "pi_x_ln_pi": -0.022574799427
+            },
+            {
+              "no": 18,
+              "nama_lokal": "Palem Putri",
+              "nama_ilmiah": "Roystonea regia",
+              "jumlah": 5,
+              "pi": 0.004108463435,
+              "ln_pi": -5.494706180553,
+              "pi_x_ln_pi": -0.022574799427
+            },
+            {
+              "no": 19,
+              "nama_lokal": "Cemara Lilin",
+              "nama_ilmiah": "Cupressus sempervirens",
+              "jumlah": 3,
+              "pi": 0.002465078061,
+              "ln_pi": -6.005531804319,
+              "pi_x_ln_pi": -0.014804104694
+            },
+            {
+              "no": 20,
+              "nama_lokal": "Walisongo",
+              "nama_ilmiah": "Schefflera actinophylla",
+              "jumlah": 3,
+              "pi": 0.002465078061,
+              "ln_pi": -6.005531804319,
+              "pi_x_ln_pi": -0.014804104694
+            }
+          ],
+          "akumulasi": 1217,
+          "indeks_h": 1.960170082199,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2026*",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Palem Ekor Tupai",
+              "nama_ilmiah": "Wodyetia bifurcata",
+              "jumlah": 75,
+              "pi": 0.06162695152,
+              "ln_pi": -2.786655979451,
+              "pi_x_ln_pi": -0.171733112949
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Palem Sadeng",
+              "nama_ilmiah": "Saribus rotundifolius",
+              "jumlah": 50,
+              "pi": 0.041084634347,
+              "ln_pi": -3.192121087559,
+              "pi_x_ln_pi": -0.131147127673
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Ketapang Kencana",
+              "nama_ilmiah": "Terminalia mantaly",
+              "jumlah": 27,
+              "pi": 0.022185702547,
+              "ln_pi": -3.808307226983,
+              "pi_x_ln_pi": -0.084489971346
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Trembesi",
+              "nama_ilmiah": "Samanea saman",
+              "jumlah": 10,
+              "pi": 0.008216926869,
+              "ln_pi": -4.801558999993,
+              "pi_x_ln_pi": -0.039454059162
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Spatodea",
+              "nama_ilmiah": "Spathodea",
+              "jumlah": 10,
+              "pi": 0.008216926869,
+              "ln_pi": -4.801558999993,
+              "pi_x_ln_pi": -0.039454059162
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Palem Sikas",
+              "nama_ilmiah": "Cycas revoluta",
+              "jumlah": 6,
+              "pi": 0.004930156122,
+              "ln_pi": -5.312384623759,
+              "pi_x_ln_pi": -0.026190885573
+            },
+            {
+              "no": 7,
+              "nama_lokal": "Palem Merah",
+              "nama_ilmiah": "Cyrtostachys renda",
+              "jumlah": 12,
+              "pi": 0.009860312243,
+              "ln_pi": -4.6192374432,
+              "pi_x_ln_pi": -0.045547123516
+            },
+            {
+              "no": 8,
+              "nama_lokal": "Pandan Bali",
+              "nama_ilmiah": "Cordyline australis",
+              "jumlah": 4,
+              "pi": 0.003286770748,
+              "ln_pi": -5.717849731868,
+              "pi_x_ln_pi": -0.018793261239
+            },
+            {
+              "no": 9,
+              "nama_lokal": "Cemara Udang",
+              "nama_ilmiah": "Casuarina equisetifolia",
+              "jumlah": 2,
+              "pi": 0.001643385374,
+              "ln_pi": -6.410996912428,
+              "pi_x_ln_pi": -0.010535738558
+            },
+            {
+              "no": 10,
+              "nama_lokal": "Pucuk Merah",
+              "nama_ilmiah": "Syzygium myrtifolium",
+              "jumlah": 67,
+              "pi": 0.055053410025,
+              "ln_pi": -2.899451473597,
+              "pi_x_ln_pi": -0.159624690822
+            },
+            {
+              "no": 11,
+              "nama_lokal": "Palem",
+              "nama_ilmiah": "Arecaceae",
+              "jumlah": 213,
+              "pi": 0.175020542317,
+              "ln_pi": -1.742851927278,
+              "pi_x_ln_pi": -0.305034889491
+            },
+            {
+              "no": 12,
+              "nama_lokal": "Asoka",
+              "nama_ilmiah": "Saraca asoca",
+              "jumlah": 549,
+              "pi": 0.451109285127,
+              "ln_pi": -0.796045651478,
+              "pi_x_ln_pi": -0.359103584767
+            },
+            {
+              "no": 13,
+              "nama_lokal": "Rambusa",
+              "nama_ilmiah": "Passiflora foetida",
+              "jumlah": 168,
+              "pi": 0.138044371405,
+              "ln_pi": -1.980180113584,
+              "pi_x_ln_pi": -0.273352719049
+            },
+            {
+              "no": 14,
+              "nama_lokal": "Tabebuya",
+              "nama_ilmiah": "Tabebuia",
+              "jumlah": 54,
+              "pi": 0.044371405094,
+              "ln_pi": -3.115160046423,
+              "pi_x_ln_pi": -0.138224028354
+            },
+            {
+              "no": 15,
+              "nama_lokal": "Kelapa",
+              "nama_ilmiah": "Cocos nucifera",
+              "jumlah": 24,
+              "pi": 0.019720624486,
+              "ln_pi": -3.92609026264,
+              "pi_x_ln_pi": -0.077424951769
+            },
+            {
+              "no": 16,
+              "nama_lokal": "Bintaro",
+              "nama_ilmiah": "Cerbera manghas",
+              "jumlah": 20,
+              "pi": 0.016433853739,
+              "ln_pi": -4.108411819434,
+              "pi_x_ln_pi": -0.067517038939
+            },
+            {
+              "no": 17,
+              "nama_lokal": "Palem Kipas",
+              "nama_ilmiah": "Livistona saribus",
+              "jumlah": 9,
+              "pi": 0.007395234182,
+              "ln_pi": -4.906919515651,
+              "pi_x_ln_pi": -0.036287818933
+            },
+            {
+              "no": 18,
+              "nama_lokal": "Palem Putri",
+              "nama_ilmiah": "Roystonea regia",
+              "jumlah": 13,
+              "pi": 0.01068200493,
+              "ln_pi": -4.539194735526,
+              "pi_x_ln_pi": -0.048487700544
+            },
+            {
+              "no": 19,
+              "nama_lokal": "Cemara Lilin",
+              "nama_ilmiah": "Cupressus sempervirens",
+              "jumlah": 3,
+              "pi": 0.002465078061,
+              "ln_pi": -6.005531804319,
+              "pi_x_ln_pi": -0.014804104694
+            },
+            {
+              "no": 20,
+              "nama_lokal": "Walisongo",
+              "nama_ilmiah": "Schefflera actinophylla",
+              "jumlah": 3,
+              "pi": 0.002465078061,
+              "ln_pi": -6.005531804319,
+              "pi_x_ln_pi": -0.014804104694
+            }
+          ],
+          "akumulasi": 1319,
+          "indeks_h": 2.062010971233,
+          "kelompok": "flora"
+        }
+      ],
+      "catatan": "*Data bulan Januari hingga Juni",
+      "skema": {
+        "sebelum": {
+          "kiri": "Ekosistem dan eksistensi spesies flora keanekaragaman hayati",
+          "kanan": "Perawatan, perlindungan, dan penambahan populasi belum optimal dan komprehensif",
+          "keterangan": "Tidak tertatanya penanaman bibit, dan minimnya perawatan menyebabkan populasi dan keanekaragaman hayati semakin menurun"
+        },
+        "sesudah": {
+          "kiri": "Ekosistem dan eksistensi spesies flora keanekaragaman hayati",
+          "kanan": "Diupayakan pertamanan, perawatan, pelindungan, dan penambahan populasi yang maksimal",
+          "keterangan": "Adanya upaya penghijauan dan pertamanan menyebabkan populasi dan keanekaragaman hayati membaik"
+        }
+      },
+      "skema_sumber": "diagram gambar di Excel, ditranskrip manual",
+      "dokumentasi_foto": {
+        "jumlah": 3,
+        "file_di_xlsx": [
+          "xl/media/image20.jpeg",
+          "xl/media/image21.jpeg",
+          "xl/media/image22.jpeg"
+        ],
+        "catatan": "foto tertanam di Excel; tidak disalin ke JSON"
+      }
+    },
+    {
+      "id": 2,
+      "sheet": "2. Mangrove PLTU",
+      "nama": "Konservasi Hutan Mangrove di  PLTU Teluk Balikpapan",
+      "deskripsi_program": [
+        "Program konservasi hutan mangrove merupakan upaya PT PLN NP UP Kaltim Teluk Balikpapan dalam meningkatkan kondisi keanekaragaman hayati di area Teluk Balikpapan. Area teluk tersebut adalah area perairan dengan bagian laut menjorok ke daratan, yang berada di antara Balikpapan dan Kabupaten Penajam. Perairan area teluk cenderung bergelombang tenang namun tidak meniadakan potensi abrasi saat kondisi gelombang pasang Pada program perusahaan melakukan konservasi dengan penanaman bibit mangrove, perawatan, dan monitoring kondisi mangrove."
+      ],
+      "metode_perhitungan_absolut": [
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025 → 4250 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Rhizospora sp (Bakau) di tahun 2025 → 3740 Individu",
+        "- Total individu flora di tahun 2025 → 4250 Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "→ Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "→ indeks keanekaragaman hayati fauna tahun 2025 adalah 0,367 dengan keanekaragaman rendah",
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025 → 4250 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Rhizospora sp (Bakau) di tahun 2025 → 3740 Individu",
+        "- Total individu flora di tahun 2025 → 4250 Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "p𝑖=3740/4250=0,880",
+        "ln⁡〖𝑝𝑖=ln⁡0,880 〗=−0,128",
+        "ℎ^′=𝑃𝑖×ln⁡〖𝑝𝑖=0,880×(−0,128)〗",
+        "ℎ^′=−0,112",
+        "→ Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies∑_(𝑖=1)^𝑆▒(𝑝𝑖)(ln⁡𝑝𝑖 ) )=−0,367",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "𝐻^′=−(−0,367)=0,367  → indeks keanekaragaman hayati fauna tahun 2025 adalah 0,367 dengan keanekaragaman rendah"
+      ],
+      "perhitungan_h_prime": [
+        {
+          "tahun": "2021",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 500,
+              "pi": 0.684931506849,
+              "ln_pi": -0.37843643572,
+              "pi_x_ln_pi": -0.259203038165
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Lacang",
+              "nama_ilmiah": "Bruguiera sp",
+              "jumlah": 230,
+              "pi": 0.315068493151,
+              "ln_pi": -1.154965225219,
+              "pi_x_ln_pi": -0.363893153151
+            }
+          ],
+          "akumulasi": 730,
+          "indeks_h": 0.623096191316,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2022",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 1250,
+              "pi": 0.806451612903,
+              "ln_pi": -0.215111379617,
+              "pi_x_ln_pi": -0.173476919046
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Lacang",
+              "nama_ilmiah": "Bruguiera sp",
+              "jumlah": 300,
+              "pi": 0.193548387097,
+              "ln_pi": -1.642227735257,
+              "pi_x_ln_pi": -0.317850529405
+            }
+          ],
+          "akumulasi": 1550,
+          "indeks_h": 0.491327448451,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2023",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 2560,
+              "pi": 0.859060402685,
+              "ln_pi": -0.151916042026,
+              "pi_x_ln_pi": -0.130505056237
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Lacang",
+              "nama_ilmiah": "Bruguiera sp",
+              "jumlah": 420,
+              "pi": 0.140939597315,
+              "ln_pi": -1.959423868222,
+              "pi_x_ln_pi": -0.276160410957
+            }
+          ],
+          "akumulasi": 2980,
+          "indeks_h": 0.406665467194,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2024",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 3740,
+              "pi": 0.88,
+              "ln_pi": -0.12783337151,
+              "pi_x_ln_pi": -0.112493366929
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Lacang",
+              "nama_ilmiah": "Bruguiera sp",
+              "jumlah": 510,
+              "pi": 0.171140939597,
+              "ln_pi": -1.765267853781,
+              "pi_x_ln_pi": -0.302109599137
+            }
+          ],
+          "akumulasi": 4250,
+          "indeks_h": 0.414602966066,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2025",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 3740,
+              "pi": 0.88,
+              "ln_pi": -0.12783337151,
+              "pi_x_ln_pi": -0.112493366929
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Lacang",
+              "nama_ilmiah": "Bruguiera sp",
+              "jumlah": 510,
+              "pi": 0.12,
+              "ln_pi": -2.1202635362,
+              "pi_x_ln_pi": -0.254431624344
+            }
+          ],
+          "akumulasi": 4250,
+          "indeks_h": 0.366924991273,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2026*",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 6740,
+              "pi": 0.929655172414,
+              "ln_pi": -0.072941543942,
+              "pi_x_ln_pi": -0.06781048361
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Lacang",
+              "nama_ilmiah": "Bruguiera sp",
+              "jumlah": 510,
+              "pi": 0.070344827586,
+              "ln_pi": -2.65434602213,
+              "pi_x_ln_pi": -0.186719513281
+            }
+          ],
+          "akumulasi": 7250,
+          "indeks_h": 0.254529996891,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2026*",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Biawak",
+              "nama_ilmiah": "Varanus Salvator",
+              "jumlah": 1,
+              "pi": 0.166666666667,
+              "ln_pi": -1.791759469228,
+              "pi_x_ln_pi": -0.298626578205
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Kadal Mangrove",
+              "nama_ilmiah": "Emoia Atrocostata",
+              "jumlah": 1,
+              "pi": 0.000235294118,
+              "ln_pi": -8.354674261918,
+              "pi_x_ln_pi": -0.001965805709
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Cucak Kutilang",
+              "nama_ilmiah": "Pycnonotus Aurigaster",
+              "jumlah": 2,
+              "pi": 0.333333333333,
+              "ln_pi": -1.098612288668,
+              "pi_x_ln_pi": -0.366204096223
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Ikan Tembakul",
+              "nama_ilmiah": "Periophthalmus sp",
+              "jumlah": 2,
+              "pi": 0.000470588235,
+              "ln_pi": -7.661527081359,
+              "pi_x_ln_pi": -0.003605424509
+            }
+          ],
+          "akumulasi": 6,
+          "indeks_h": 0.670401904645,
+          "kelompok": "fauna"
+        }
+      ],
+      "catatan": "*Data bulan Januari hingga Juni",
+      "skema": {
+        "sebelum": {
+          "kiri": "Ekosistem dan Eksistensi Flora (Mangrove) di Area Teluk Balikpapan",
+          "kanan": "Area yang terdegradasi dan perlindungan populasi hayati yang belum optimal dan komprehensif",
+          "keterangan": "Belum adanya upaya pemulihan dan peningkatan pelestarian mangrove di area perusahaan Teluk Balikpapan"
+        },
+        "sesudah": {
+          "kiri": "Ekosistem dan Eksistensi Flora (Mangrove) di Area Teluk Balikpapan",
+          "kanan": "Adanya penanaman area terdegradasi dan perawatan/penambahan populasi kawasan hutan mangrove",
+          "keterangan": "Dilakukan penanaman dan perlindungan populasi flora di kawasan hutan mangrove Teluk Balikpapan"
+        }
+      },
+      "skema_sumber": "diagram gambar di Excel, ditranskrip manual",
+      "dokumentasi_foto": {
+        "jumlah": 4,
+        "file_di_xlsx": [
+          "xl/media/image27.jpeg",
+          "xl/media/image28.jpeg",
+          "xl/media/image29.jpeg",
+          "xl/media/image30.jpeg"
+        ],
+        "catatan": "foto tertanam di Excel; tidak disalin ke JSON"
+      }
+    },
+    {
+      "id": 3,
+      "sheet": "3. Pohon Biomassa",
+      "nama": "Greenhouse dan Pembibitan Pohon Biomassa",
+      "deskripsi_program": [
+        "Area konsesi PT PLN NP UP Kaltim Teluk Balikpapan dikelola dengan menyediakan ruang terbuka hijau yang cukup sebagai upaya pengelolaan berkelanjutan sehingga diharapkan membentuk ekosistem yang baik. Program penanaman pohon energi di area perusahaan berupaya untuk memperkaya keanekaragaman hayati yang ada. Pada program juga dilakukan perawatan, monitoring, dan upaya evaluasi dalam pengadaan dan penanaman flora serta area prioritas di lingkup area perusahaan. Hal tersebut dilakukan agar dapat mencapai sasaran berupa peningkatan kualitas hayati dan ekosistem di area perusahaan."
+      ],
+      "metode_perhitungan_absolut": [
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025 → 1494 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Wodyetia bifurcata (Lamtoro) di tahun 2025 → 1225 Individu",
+        "- Total individu flora di tahun 2025 → 1494  Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "185",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "→ indeks keanekaragaman hayati fauna tahun 2025 adalah 0,591 dengan keanekaragaman rendah",
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025 → 1494 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Wodyetia bifurcata (Lamtoro) di tahun 2025 → 1225 Individu",
+        "- Total individu flora di tahun 2025 → 1494  Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "p𝑖=1225/1494=0,112",
+        "ln⁡〖𝑝𝑖=ln⁡0,112 〗=−2,185",
+        "ℎ^′=𝑃𝑖×ln⁡〖𝑝𝑖=0,112×(−2,185)〗",
+        "ℎ^′=−0,246",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies∑_(𝑖=1)^𝑆▒(𝑝𝑖)(ln⁡𝑝𝑖 ) )=−0,591",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "𝐻^′=−(−0,591)=0,591  → indeks keanekaragaman hayati fauna tahun 2025 adalah 0,591 dengan keanekaragaman rendah"
+      ],
+      "perhitungan_h_prime": [
+        {
+          "tahun": "2022",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Lamtoro",
+              "nama_ilmiah": "Leucaena leucocephala",
+              "jumlah": 800,
+              "pi": 0.776699029126,
+              "ln_pi": -0.252702353556,
+              "pi_x_ln_pi": -0.196273672665
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Gamal",
+              "nama_ilmiah": "Gliricidia sepium",
+              "jumlah": 80,
+              "pi": 0.077669902913,
+              "ln_pi": -2.55528744655,
+              "pi_x_ln_pi": -0.198468927887
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Kaliandra",
+              "nama_ilmiah": "Calliandra",
+              "jumlah": 150,
+              "pi": 0.145631067961,
+              "ln_pi": -1.926678787127,
+              "pi_x_ln_pi": -0.280584289387
+            }
+          ],
+          "akumulasi": 1030,
+          "indeks_h": 0.67532688994,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2023",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Lamtoro",
+              "nama_ilmiah": "Leucaena leucocephala",
+              "jumlah": 800,
+              "pi": 0.776699029126,
+              "ln_pi": -0.252702353556,
+              "pi_x_ln_pi": -0.196273672665
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Gamal",
+              "nama_ilmiah": "Gliricidia sepium",
+              "jumlah": 80,
+              "pi": 0.077669902913,
+              "ln_pi": -2.55528744655,
+              "pi_x_ln_pi": -0.198468927887
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Kaliandra",
+              "nama_ilmiah": "Calliandra",
+              "jumlah": 150,
+              "pi": 0.145631067961,
+              "ln_pi": -1.926678787127,
+              "pi_x_ln_pi": -0.280584289387
+            }
+          ],
+          "akumulasi": 1030,
+          "indeks_h": 0.67532688994,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2024",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Lamtoro",
+              "nama_ilmiah": "Leucaena leucocephala",
+              "jumlah": 1100,
+              "pi": 0.814211695041,
+              "ln_pi": -0.205534879174,
+              "pi_x_ln_pi": -0.167348902362
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Gamal",
+              "nama_ilmiah": "Gliricidia sepium",
+              "jumlah": 101,
+              "pi": 0.098058252427,
+              "ln_pi": -2.322193564382,
+              "pi_x_ln_pi": -0.227710242721
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Kaliandra",
+              "nama_ilmiah": "Calliandra",
+              "jumlah": 150,
+              "pi": 0.145631067961,
+              "ln_pi": -1.926678787127,
+              "pi_x_ln_pi": -0.280584289387
+            }
+          ],
+          "akumulasi": 1351,
+          "indeks_h": 0.675643434471,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2025",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Lamtoro",
+              "nama_ilmiah": "Leucaena leucocephala",
+              "jumlah": 1225,
+              "pi": 0.819946452477,
+              "ln_pi": -0.198516242714,
+              "pi_x_ln_pi": -0.162772688972
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Gamal",
+              "nama_ilmiah": "Gliricidia sepium",
+              "jumlah": 101,
+              "pi": 0.067603748327,
+              "ln_pi": -2.694091848852,
+              "pi_x_ln_pi": -0.182130707319
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Kaliandra",
+              "nama_ilmiah": "Calliandra",
+              "jumlah": 168,
+              "pi": 0.112449799197,
+              "ln_pi": -2.18524838629,
+              "pi_x_ln_pi": -0.245730742233
+            }
+          ],
+          "akumulasi": 1494,
+          "indeks_h": 0.590634138524,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2026*",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Lamtoro",
+              "nama_ilmiah": "Leucaena leucocephala",
+              "jumlah": 1225,
+              "pi": 0.819946452477,
+              "ln_pi": -0.198516242714,
+              "pi_x_ln_pi": -0.162772688972
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Gamal",
+              "nama_ilmiah": "Gliricidia sepium",
+              "jumlah": 111,
+              "pi": 0.074297188755,
+              "ln_pi": -2.59968216438,
+              "pi_x_ln_pi": -0.19314907647
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Kaliandra",
+              "nama_ilmiah": "Calliandra",
+              "jumlah": 168,
+              "pi": 0.112449799197,
+              "ln_pi": -2.18524838629,
+              "pi_x_ln_pi": -0.245730742233
+            }
+          ],
+          "akumulasi": 1504,
+          "indeks_h": 0.601652507676,
+          "kelompok": "flora"
+        }
+      ],
+      "catatan": "*Data bulan Januari hingga Juni",
+      "skema": {
+        "sebelum": {
+          "kiri": "Eksistensi Flora (Pohon Biomassa) di Area Perusahaan",
+          "kanan": "Penambahan/perlindungan populasi pohon biomassa karena siklus pemanfaatan belum optimal",
+          "keterangan": "Belum adanya upaya pembibitan, penanaman, perawatan intensif dalam menambahkan populasi pohon biomassa dalam siklus pemanfaatan berkelanjutan"
+        },
+        "sesudah": {
+          "kiri": "Eksistensi Flora (Pohon Biomassa) di Area Perusahaan",
+          "kanan": "Fasilitas Greenhouse untuk pembibitan, penanaman, dan penambahan populasi yang lebih optimal",
+          "keterangan": "Dilakukan upaya pembibita, penanaman, dan penambahan populasi dengan adanya fasilitas greenhouse di area perusahaan"
+        }
+      },
+      "skema_sumber": "diagram gambar di Excel, ditranskrip manual",
+      "dokumentasi_foto": {
+        "jumlah": 2,
+        "file_di_xlsx": [
+          "xl/media/image33.png",
+          "xl/media/image34.png"
+        ],
+        "catatan": "foto tertanam di Excel; tidak disalin ke JSON"
+      }
+    },
+    {
+      "id": 4,
+      "sheet": "4. Hidroton-Anggrek",
+      "nama": "Implementasi Media Tanam Substrat Bio-hidroton untuk Budidaya Tanaman Anggrek Hitam (Coeloegyne Pandurata)",
+      "deskripsi_program": [
+        "PT PLN Nusantara Power UP Kaltim Teluk mengembangkan sebuah inovasi pelestarian keanekaragaman hayati (KEHATI) melalui budidaya anggrek hitam (Coelogyne pandurata) dengan media tanam  bi-hidroton berbasis limbah ramah lingkungan. Media tanam Bio-hidroton ini adalah campuran dibentuk dalam bulatan dengan campuran komponen, yakni kompos limbah FABA (Fly Ash Bottom Ash), penambahan vitamin anggrek, dan perekat. Bio-hidroton memiliki keunggulan dalam menjaga kelembapan dan meningkatkan aerasi udara dengan sifatnya yang memiliki banyak pori, komponen kompos FABA di dalamnya memberikan tambahan unsur hara yang mendukung pertumbuhan tanaman secara optimal, vitamin yang ditambahkan di dalam berfungsi untuk merangsang penyerapan nutrisi oleh akar dan membantu pembelahan/pertumbuhan sel. Inovasi ini tidak hanya berkontribusi terhadap pelestarian flora endemik Kalimantan yang terancam punah, tetapi juga menjadi wujud nyata penerapan prinsip ekonomi sirkular di lingkungan kerja melalui pemanfaatan limbah industri menjadi produk bermanfaat. Langkah ini mencerminkan komitmen PLN dalam menjaga lingkungan sekaligus memperkuat peran perusahaan dalam konservasi keanekaragaman hayati lokal."
+      ],
+      "metode_perhitungan_absolut": [
+        "Perhitungan absolut merupakan akumulatif jumlah tanaman Anggrek Hitam yang berhasil dikonservasi. Dalam program ini perhitungan dilakukan berdasarkan kegiatan monitoring dan evaluasi yang dilaksanakan secara rutin setiap tahun secara langsung oleh perusahaan.",
+        "Pehitungan absolut tahun ke N \t= jumlah Anggrek Hitam yang berhasil dikonservasi",
+        "Absolut tahun 2025\t\t= 20 pohon"
+      ],
+      "tabel_absolut": [
+        {
+          "nama_lokal": "Anggrek Hitam",
+          "nama_ilmiah": "Coelogyne pandurata",
+          "jumlah_individu_pohon": {
+            "2025": 20,
+            "2026*": 20
+          }
+        }
+      ],
+      "catatan": "*Data bulan Januari hingga Juni 2026",
+      "skema": {
+        "sebelum": {
+          "alur": [
+            "Anggrek Hitam (Coelogyne pandurata) merupakan Flora Endemik Kalimantan Timur dan Dilindungi berdasarkan PP 7/1999",
+            "Anggrek Hitam (Coelogyne pandurata) dibudidayakan dengan media tanam arang",
+            "Akar anggrek hitam membusuk karena terlalu lembab dan kurangnya pori udara"
+          ]
+        },
+        "sesudah": {
+          "alur": [
+            "Anggrek Hitam (Coelogyne pandurata) merupakan Flora Endemik Kalimantan Timur dan Dilindungi berdasarkan PP 7/1999",
+            "Perusahaan melakukan pemanfaatan kompos organik dan FABA hasil operasional untuk dibentuk Media Tanam Bio-Hidroton",
+            "Akar anggrek hitam memiliki pertumbuhan yang baik dan media tanam bio-hidroton dapat membantu menahan air dan memiliki pori udara yang cukup"
+          ]
+        }
+      },
+      "skema_sumber": "diagram gambar di Excel, ditranskrip manual",
+      "dokumentasi_foto": {
+        "jumlah": 5,
+        "file_di_xlsx": [
+          "xl/media/image35.jpeg",
+          "xl/media/image36.png",
+          "xl/media/image37.png",
+          "xl/media/image38.png",
+          "xl/media/image39.png"
+        ],
+        "catatan": "foto tertanam di Excel; tidak disalin ke JSON"
+      }
+    },
+    {
+      "id": 5,
+      "sheet": "5. Mangrove Kariangau",
+      "nama": "Penanaman dan Pelestarian Mangrove Kariangau",
+      "deskripsi_program": [
+        "Program Penanaman dan Pelestarian Mangrove Kariangau merupakan upaya PT PLN NP UP Kaltim Teluk Balikpapan dalam meningkatkan kondisi keanekaragaman hayati di area Kariangau bersama stakeholder, sekaligus menjadikan edukasi keanekaragaman hayati kepada masyarakat. Pada program ini, tentunya perusahaan melakukan konservasi dengan penanaman bibit mangrove, perawatan, dan monitoring kondisi mangrove.  Dalam jangka panjang mangrove di area masyarakat Kariangau dapat dikembangkan menjadi area wisata, seperti aktivitas dan pengalaman susur sungai, serta berdampak pada perhatian dan tidak melupakan tujuan awal, yakni kepedulian, perhatian, dan kontribusi nyata kepada masyarakat dalam perlindungan keanekaragaman hayati."
+      ],
+      "metode_perhitungan_absolut": [
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025 → 8000 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Rhizspora sp (Bakau) di tahun 2025 → 5000 Individu",
+        "- Total individu flora di tahun 2025 → 8000 Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "→ indeks keanekaragaman hayati fauna tahun 2025 adalah 0,622 dengan keanekaragaman rendah",
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks flora keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2025 → 8000 pohon",
+        "2) Perhitungan indeks flora keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Rhizspora sp (Bakau) di tahun 2025 → 5000 Individu",
+        "- Total individu flora di tahun 2025 → 8000 Individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "p𝑖=5000/8000=0,625",
+        "ln⁡〖𝑝𝑖=625〗=−0,294",
+        "ℎ^′=𝑃𝑖×ln⁡〖𝑝𝑖=0,625×(−0,470)〗",
+        "ℎ^′=−0,294",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies∑_(𝑖=1)^𝑆▒(𝑝𝑖)(ln⁡𝑝𝑖 ) )=−0,662",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "𝐻^′=−(−0,622)=0,662  → indeks keanekaragaman hayati fauna tahun 2025 adalah 0,622 dengan keanekaragaman rendah"
+      ],
+      "perhitungan_h_prime": [
+        {
+          "tahun": "2025",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 5000,
+              "pi": 0.625,
+              "ln_pi": -0.470003629246,
+              "pi_x_ln_pi": -0.293752268279
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Lacang",
+              "nama_ilmiah": "Bruguiera sp",
+              "jumlah": 3000,
+              "pi": 0.375,
+              "ln_pi": -0.980829253012,
+              "pi_x_ln_pi": -0.367810969879
+            }
+          ],
+          "akumulasi": 8000,
+          "indeks_h": 0.661563238158,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2026*",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Tupai Indochina",
+              "nama_ilmiah": "Dendrogale Murina",
+              "jumlah": 5,
+              "pi": 0.333333333333,
+              "ln_pi": -1.098612288668,
+              "pi_x_ln_pi": -0.366204096223
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Biawak",
+              "nama_ilmiah": "Varanus Salvator",
+              "jumlah": 3,
+              "pi": 0.2,
+              "ln_pi": -1.609437912434,
+              "pi_x_ln_pi": -0.321887582487
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Cucak Kutilang",
+              "nama_ilmiah": "Pycnonotus Aurigaster",
+              "jumlah": 2,
+              "pi": 0.133333333333,
+              "ln_pi": -2.014903020542,
+              "pi_x_ln_pi": -0.268653736072
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Kadal Mangrove",
+              "nama_ilmiah": "Emoia Atrocostata",
+              "jumlah": 1,
+              "pi": 0.066666666667,
+              "ln_pi": -2.708050201102,
+              "pi_x_ln_pi": -0.180536680073
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Capung Biru Rawa",
+              "nama_ilmiah": "Brachydiplax chalybea",
+              "jumlah": 2,
+              "pi": 0.133333333333,
+              "ln_pi": -2.014903020542,
+              "pi_x_ln_pi": -0.268653736072
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Ikan Tembakul",
+              "nama_ilmiah": "Periophthalmus sp",
+              "jumlah": 2,
+              "pi": 0.133333333333,
+              "ln_pi": -2.014903020542,
+              "pi_x_ln_pi": -0.268653736072
+            }
+          ],
+          "akumulasi": 15,
+          "indeks_h": 1.674589567,
+          "kelompok": "fauna"
+        }
+      ],
+      "catatan": "*Data bulan Januari hingga Juni 2026",
+      "skema": {
+        "sebelum": {
+          "kiri": "Ekosistem dan Eksistensi Flora (Mangrove) di Area Masyarakat Kelurahan Kariangau",
+          "kanan": "Area yang terdegradasi dan perlindungan populasi hayati yang belum optimal dan komprehensif",
+          "keterangan": "Belum adanya upaya pemulihan dan peningkatan pelestarian mangrove di area masyarakat Kelurahan Kariangau"
+        },
+        "sesudah": {
+          "kiri": "Ekosistem dan Eksistensi Flora (Mangrove) di Area Masyarakat Kelurahan Kariangau",
+          "kanan": "Adanya penanaman area terdegradasi dan perawatan/penambahan populasi kawasan hutan mangrove",
+          "keterangan": "Dilakukan penanaman dan perlindungan populasi flora di kawasan hutan mangrove Kelurahan Kariangau"
+        }
+      },
+      "skema_sumber": "diagram gambar di Excel, ditranskrip manual",
+      "dokumentasi_foto": {
+        "jumlah": 3,
+        "file_di_xlsx": [
+          "xl/media/image42.jpeg",
+          "xl/media/image43.jpeg",
+          "xl/media/image44.jpeg"
+        ],
+        "catatan": "foto tertanam di Excel; tidak disalin ke JSON"
+      }
+    },
+    {
+      "id": 6,
+      "sheet": "6. Benteng Mangrove",
+      "nama": "Rekayasa Modular Cylindrical Wave Barrier Berbasis FABA Composite untuk Perlindungan Bibit dan Area Mangrove dari Abrasi",
+      "deskripsi_program": [
+        "Kegiatan penanaman mangrove dengan penahan ombak berbahan limbah FABA (Fly Ash and Bottom Ash) merupakan salah satu upaya rehabilitasi ekosistem pesisir yang mengintegrasikan pemanfaatan limbah hasil pembakaran batu bara dengan perlindungan tanaman mangrove. Inovasi ini dirancang untuk meningkatkan keberhasilan pertumbuhan mangrove pada area pesisir yang memiliki tingkat gelombang dan energi arus yang relatif tinggi. Penahan ombak dibuat dengan memanfaatkan material FABA yang dicetak melalui proses pengecoran menjadi elemen berbentuk silinder menyerupai paralon. Penahan tersebut memiliki ketinggian ±60 cm dan ketebalan ±5 cm. Bentuk silinder dipilih agar struktur dapat berfungsi sebagai penghalang energi gelombang sekaligus tetap memberikan ruang bagi proses sedimentasi dan perkembangan sistem perakaran mangrove. Penahan ombak ditempatkan pada area sekitar lokasi penanaman dengan memperhatikan pola gelombang, arah arus, kondisi substrat, serta jarak tanam mangrove. Struktur ini tidak dimaksudkan untuk membentuk penghalang yang kedap atau menutup seluruh area perairan, tetapi berfungsi sebagai pemecah dan peredam energi gelombang sehingga tekanan langsung terhadap bibit mangrove dapat dikurangi.",
+        "Penggunaan FABA sebagai material penahan ombak juga merupakan bagian dari pendekatan circular economy, yaitu mengoptimalkan material sisa hasil kegiatan pembangkitan untuk menghasilkan produk yang memiliki fungsi perlindungan lingkungan. Dengan demikian, kegiatan tidak hanya berorientasi pada pengurangan dampak gelombang terhadap bibit mangrove, tetapi juga mendorong pemanfaatan material FABA secara lebih bernilai guna. Salah satu aspek penting dalam desain penahan ombak ini adalah tidak menghambat perkembangan akar mangrove dalam jangka panjang. Struktur dibuat dengan konfigurasi yang tidak membentuk penghalang permanen di sekitar zona perakaran, sehingga akar mangrove tetap memiliki ruang untuk tumbuh, menyebar, dan berkembang mengikuti kondisi substrat. Seiring pertumbuhan tanaman dan terbentuknya sistem perakaran yang lebih kuat, struktur penahan ombak diharapkan dapat berfungsi sebagai perlindungan awal pada fase pertumbuhan mangrove tanpa mengganggu akses dan perkembangan akar pada tahap selanjutnya. Secara ekologis, keberadaan penahan ombak diharapkan dapat membantu menciptakan kondisi perairan yang lebih tenang di sekitar area penanaman, mengurangi erosi dan penggerusan substrat, serta meningkatkan peluang terjadinya akumulasi sedimen. Kondisi tersebut mendukung pembentukan media tumbuh yang lebih stabil bagi mangrove dan meningkatkan tingkat keberhasilan rehabilitasi ekosistem pesisir. Dengan konsep tersebut, kegiatan Penanaman Mangrove dengan Penahan Ombak Berbahan FABA diharapkan menjadi inovasi pengelolaan lingkungan yang menggabungkan tiga aspek utama, yaitu rehabilitasi ekosistem pesisir, perlindungan kawasan pantai, dan pemanfaatan limbah FABA, dengan tetap mempertimbangkan keberlanjutan pertumbuhan mangrove dan fungsi ekologis kawasan pesisir."
+      ],
+      "metode_perhitungan_absolut": [
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks fauna keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2026 → 19 ekor",
+        "2) Perhitungan indeks fauna keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Perenjak Jawa (Prinia familiaris )di tahun 2025 → 5 Individu",
+        "- Total individu fauna di tahun 2025 → 19 individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "→ indeks keanekaragaman hayati fauna tahun 2025 adalah 0,702 dengan keanekaragaman rendah",
+        "Perhitungan absolut merupakan akumulatif individu dari berbagai spesies yang dilaksanakan sesuai program. Kemudian, dilakukan peritungan indeks fauna keanekaragaman jenis (H'). Indeks keragaman jenis dapat diketahui menggunakan metode Shannon-Wienner (Odum, 1996) dengan rumus:",
+        "H' \t= - ∑ Pi Ln (Pi), dimana Pi = (ni/N)",
+        "Keterangan:",
+        "H' \t= Indeks keanekaragaman Shannon-Wienner",
+        "ni \t= Jumlah individu jenis ke-i",
+        "N \t= Jumlah individu seluruh jenis",
+        "Kriteria nilai indeks keanekaragaman Shannon-Wiener (H')",
+        "H' ≤ 1 \t= keanekaragaman rendah",
+        "1 < H' < 3 \t= keanekaragaman sedang",
+        "H' ≥ 3 \t= keanekaragaman tinggi",
+        "Contoh perhitungan absolut pada tahun 2025 sebagai berikut:",
+        "1) Total individu pada tahun 2026 → 19 ekor",
+        "2) Perhitungan indeks fauna keanekaragaman hayati (H') tahun 2025:",
+        "- Contoh spesies Perenjak Jawa (Prinia familiaris )di tahun 2025 → 5 Individu",
+        "- Total individu fauna di tahun 2025 → 19 individu",
+        "maka :",
+        "pi = jumlah individu suatu spesies/jumlah total seluruh spesies",
+        "p𝑖=5/19=0,263",
+        "ln⁡〖𝑝𝑖=ln 0,263〗=−1,335",
+        "ℎ^′=𝑃𝑖×ln⁡〖𝑝𝑖=0,263×(−1,335)〗",
+        "ℎ^′=−0,351",
+        "- Kemudian dilakukan perhitungan h' (Pi x ln pi) pada setiap spesies dan mengakumulasi nilai h' (Pi x ln pi) dari masing-masing spesies∑_(𝑖=1)^𝑆▒(𝑝𝑖)(ln⁡𝑝𝑖 ) )=−0,702",
+        "Sehingga indeks keanekaragaman hayati tahun 2025 berdasarkan Shannon-Wiener adalah:",
+        "𝐻^′=−(−0,702)=0,702  → indeks keanekaragaman hayati fauna tahun 2025 adalah 0,702 dengan keanekaragaman rendah"
+      ],
+      "perhitungan_h_prime": [
+        {
+          "tahun": "2026*",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Bakau",
+              "nama_ilmiah": "Rhizophora sp",
+              "jumlah": 3740,
+              "pi": 1,
+              "ln_pi": 0,
+              "pi_x_ln_pi": 0
+            }
+          ],
+          "akumulasi": 3740,
+          "indeks_h": 0,
+          "kelompok": "flora"
+        },
+        {
+          "tahun": "2026*",
+          "spesies": [
+            {
+              "no": 1,
+              "nama_lokal": "Biawak",
+              "nama_ilmiah": "Varanus Salvator",
+              "jumlah": 1,
+              "pi": 0.052631578947,
+              "ln_pi": -2.944438979166,
+              "pi_x_ln_pi": -0.154970472588
+            },
+            {
+              "no": 2,
+              "nama_lokal": "Kadal Mangrove",
+              "nama_ilmiah": "Emoia Atrocostata",
+              "jumlah": 1,
+              "pi": 0.052631578947,
+              "ln_pi": -2.944438979166,
+              "pi_x_ln_pi": -0.154970472588
+            },
+            {
+              "no": 3,
+              "nama_lokal": "Cucak Kutilang",
+              "nama_ilmiah": "Pycnonotus Aurigaster",
+              "jumlah": 1,
+              "pi": 0.052631578947,
+              "ln_pi": -2.944438979166,
+              "pi_x_ln_pi": -0.154970472588
+            },
+            {
+              "no": 4,
+              "nama_lokal": "Ikan Tembakul",
+              "nama_ilmiah": "Periophthalmus sp",
+              "jumlah": 2,
+              "pi": 0.105263157895,
+              "ln_pi": -2.251291798606,
+              "pi_x_ln_pi": -0.236978084064
+            },
+            {
+              "no": 5,
+              "nama_lokal": "Perenjak Jawa",
+              "nama_ilmiah": "Prinia familiaris",
+              "jumlah": 5,
+              "pi": 0.263157894737,
+              "ln_pi": -1.335001066732,
+              "pi_x_ln_pi": -0.351316070193
+            },
+            {
+              "no": 6,
+              "nama_lokal": "Kipasan Belang",
+              "nama_ilmiah": "Rhipidura javanica",
+              "jumlah": 9,
+              "pi": 0.473684210526,
+              "ln_pi": -0.74721440183,
+              "pi_x_ln_pi": -0.353943664025
+            }
+          ],
+          "akumulasi": 19,
+          "indeks_h": 0.701889501827,
+          "kelompok": "fauna"
+        }
+      ],
+      "catatan": "*Data bulan Januari hingga Juni 2026",
+      "skema": {
+        "sebelum": {
+          "kiri": "Ekosistem dan Eksistensi Flora (Mangrove) di Area Konservasi Mangrove PT. PLN NP UP Kaltim Teluk",
+          "kanan": "Area yang terdegradasi dan perlindungan populasi hayati yang belum optimal dan komprehensif",
+          "keterangan": "Belum adanya upaya pemulihan dan peningkatan pelestarian mangrove di Area Konservasi Mangrove"
+        },
+        "sesudah": {
+          "kiri": "Ekosistem dan Eksistensi Flora (Mangrove) di Area Konservasi Mangrove PT. PLN NP UP Kaltim Teluk",
+          "kanan": "Adanya penanaman di area terdegradasi dan perawatan / penambahan populasi kawasan hutang mangrove",
+          "keterangan": "Dilakukan penanaman dan perlindungan populasi flora di Area Konservasi Mangrove"
+        }
+      },
+      "skema_sumber": "textbox dan sel di Excel (kata \"hutang\" di kotak kanan sesudah mengikuti teks asli)",
+      "dokumentasi_foto": {
+        "jumlah": 4,
+        "file_di_xlsx": [
+          "xl/media/image47.jpeg",
+          "xl/media/image48.jpeg",
+          "xl/media/image49.jpeg",
+          "xl/media/image50.jpeg"
+        ],
+        "catatan": "foto tertanam di Excel; tidak disalin ke JSON"
+      }
+    }
+  ],
+  "sdgs": {
+    "per_program": {
+      "per_program": [
+        {
+          "no": 1,
+          "program": "Penghijauan dan Pertamanan di Area Perusahaan",
+          "indikator": [
+            {
+              "target_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+              "kode": "15.9.1",
+              "indikator_sdgs": "Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan",
+              "satuan_atau_label": "Indeks Fauna (H')",
+              "hasil_absolut": {
+                "2024": 1.820283774538,
+                "2025": 1.960170082199,
+                "2026*": 2.062010971233
+              },
+              "anggaran_rp_juta": {
+                "2024": 125,
+                "2025": 150,
+                "2026*": 75
+              },
+              "target": {
+                "2024": 0.42,
+                "2025": 0.44,
+                "2026*": 0.47
+              },
+              "persen_capaian_terhadap_target": {
+                "2024": 433.4008986995,
+                "2025": 445.4932004999,
+                "2026*": 438.7257385603
+              },
+              "keterangan": "Menurut RPJMN 2020-2024 dan 2025-2029 (PERPRES No.18 Tahun 2020 dan No. 12 Tahun 2025), target indeks pengelolaan keanekaragaman hayati pada tahun 2024; 2025; dan 2026 adalah sebesar 0,42 H'; 0,44 H'; dan 0,47 H'\n\nKontribusi program terhadap sasaran SDGs yang sesuai dengan RPJMN 2020-2024 dan RPJMN 2025-2029 adalah sebagai berikut:\nTahun 2024\n= (1,83 H'/0,42 H') x 100%\n= 433,40%\nTahun 2025\n= (1,97 H'/ 0,44 H') x 100%\n= 445,49%\nTahun 2026\n= (2,07 H'/ 0,47 H') x 100%\n= 438,73%"
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "program": "Konservasi Hutan Mangrove di  PLTU Teluk Balikpapan",
+          "indikator": [
+            {
+              "target_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.3. Pada tahun 2030, menghentikan penggurunan, memulihkan lahan dan tanah kritis, termasuk lahan yang terkena penggurunan, kekeringan, banjir, dan berusaha mencapai dunia yang bebas dari lahan terdegradasi\n\n15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+              "kode": "15.3.1",
+              "indikator_sdgs": "Proporsi lahan yang terdegradasi terhadap luas lahan keseluruhan",
+              "satuan_atau_label": "Luasan (Ha)",
+              "hasil_absolut": {
+                "2024": 2.41,
+                "2025": 2.41,
+                "2026*": 2.95
+              },
+              "anggaran_rp_juta": {
+                "2024": 125,
+                "2025": 125,
+                "2026*": 62.5
+              },
+              "target": {
+                "2024": 475000,
+                "2025": 528000,
+                "2026*": 625000
+              },
+              "persen_capaian_terhadap_target": {
+                "2024": 0.0005073684,
+                "2025": 0.0004564394,
+                "2026*": 0.000472
+              },
+              "keterangan": "Menurut RPJMN 2020-2024 dan 2025-2029 (PERPRES No.18 Tahun 2020 dan No. 12 Tahun 2025), target indeks pengelolaan keanekaragaman hayati pada tahun 2024; 2025; dan 2026 adalah sebesar 475000 H'; 528000 H'; dan 625000 H'\n\nKontribusi program terhadap sasaran SDGs yang sesuai dengan RPJMN 2020-2024 dan RPJMN 2025-2029 adalah sebagai berikut:\nTahun 2024\n= (2,41 Ha/475000 Ha) x 100%\n= 0,0005%\nTahun 2025\n= (2,41 Ha/ 528000 Ha) x 100%\n= 0,0005%\nTahun 2026\n= (2,95 Ha/ 625000 Ha) x 100%\n= 0,0005%"
+            },
+            {
+              "target_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.3. Pada tahun 2030, menghentikan penggurunan, memulihkan lahan dan tanah kritis, termasuk lahan yang terkena penggurunan, kekeringan, banjir, dan berusaha mencapai dunia yang bebas dari lahan terdegradasi\n\n15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+              "kode": "15.9.1",
+              "indikator_sdgs": "Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan",
+              "satuan_atau_label": "Indeks Fauna (H')",
+              "hasil_absolut": {
+                "2024": 0.414602966066,
+                "2025": 0.366924991273,
+                "2026*": 0.254529996891
+              },
+              "anggaran_rp_juta": {
+                "2024": null,
+                "2025": null,
+                "2026*": null
+              },
+              "target": {
+                "2024": 0.42,
+                "2025": 0.44,
+                "2026*": 0.47
+              },
+              "persen_capaian_terhadap_target": {
+                "2024": 98.7149919204,
+                "2025": 83.3920434711,
+                "2026*": 54.1553184874
+              },
+              "keterangan": "Menurut RPJMN 2020-2024 dan 2025-2029 (PERPRES No.18 Tahun 2020 dan No. 12 Tahun 2025), target indeks pengelolaan keanekaragaman hayati pada tahun 2024; 2025; dan 2026 adalah sebesar 0,42 H'; 0,44 H'; dan 0,47 H'\n\nKontribusi program terhadap sasaran SDGs yang sesuai dengan RPJMN 2020-2024 dan RPJMN 2025-2029 adalah sebagai berikut:\nTahun 2024\n= (0,42 H'/0,42 H') x 100%\n= 98,71%\nTahun 2025\n= (0,37 H'/ 0,44 H') x 100%\n= 83,39%\nTahun 2026\n= (0,26 H'/ 0,47 H') x 100%\n= 54,16%"
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "program": "Greenhouse dan Pembibitan Pohon Biomassa",
+          "indikator": [
+            {
+              "target_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+              "kode": "15.9.1",
+              "indikator_sdgs": "Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan",
+              "satuan_atau_label": "Indeks Fauna (H')",
+              "hasil_absolut": {
+                "2024": 0.675643434471,
+                "2025": 0.590634138524,
+                "2026*": 0.601652507676
+              },
+              "anggaran_rp_juta": {
+                "2024": 100,
+                "2025": 110,
+                "2026*": 55
+              },
+              "target": {
+                "2024": 0.42,
+                "2025": 0.44,
+                "2026*": 0.47
+              },
+              "persen_capaian_terhadap_target": {
+                "2024": 160.8674843977,
+                "2025": 134.2350314828,
+                "2026*": 128.0111718459
+              },
+              "keterangan": "Menurut RPJMN 2020-2024 dan 2025-2029 (PERPRES No.18 Tahun 2020 dan No. 12 Tahun 2025), target peningkatan tutupan hutan dan lahan yang terehabilitasi secara nasional pada tahun 2024;2025;2026 adalah seluas 0,42 Ha; 0,44 Ha; dan 0,47 Ha\n\nKontribusi program terhadap sasaran SDGs yang sesuai dengan RPJMN 2020-2024 dan RPJMN 2025-2029 adalah sebagai berikut:\nTahun 2024\n= (0,68 H'/ 0,42 H') x 100%\n= 160,87%\nTahun 2025\n= (0,6 H'/ 0,44 H') x 100%\n= 134,24%\nTahun 2026\n= (0,61 H'/ 0,47 H';) x 100%\n= 128,01%"
+            }
+          ]
+        },
+        {
+          "no": 4,
+          "program": "Implementasi Media Tanam Substrat Bio-hidroton untuk Budidaya Tanaman Anggrek Hitam (Coeloegyne Pandurata)",
+          "indikator": [
+            {
+              "target_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.5 Melakukan tindakan cepat dan signifikan untuk mengurangi degradasi\nhabitat alami, menghentikan kehilangan keanekaragaman hayati, dan, pada tahun 2020, melindungi dan mencegah lenyapnya spesies yang terancam punah",
+              "kode": "15.5.1",
+              "indikator_sdgs": "Indeks daftar merah (Red-list index)",
+              "satuan_atau_label": "Jenis",
+              "hasil_absolut": {
+                "2024": null,
+                "2025": 1,
+                "2026*": 1
+              },
+              "anggaran_rp_juta": {
+                "2024": null,
+                "2025": 10,
+                "2026*": 5
+              },
+              "target": {
+                "2024": 25,
+                "2025": 25,
+                "2026*": 25
+              },
+              "persen_capaian_terhadap_target": {
+                "2024": 0,
+                "2025": 4.0,
+                "2026*": 4.0
+              },
+              "keterangan": "Menurut RPJMN 2020-2024 dan 2025-2029 (PERPRES No.18 Tahun 2020 dan No. 12 Tahun 2025), target peningkatan tutupan hutan dan lahan yang terehabilitasi secara nasional pada tahun 2024;2025;2026 adalah seluas 25 Ha; 25 Ha; dan 25 Ha\n\nKontribusi program terhadap sasaran SDGs yang sesuai dengan RPJMN 2020-2024 dan RPJMN 2025-2029 adalah sebagai berikut:\nTahun 2024\n= (0 Jenis/ 25 Jenis) x 100%\n= 0,00%\nTahun 2025\n= (1 Jenis/ 25 Jenis) x 100%\n= 4,00%\nTahun 2026\n= (1 Jenis/ 25 Jenis) x 100%\n= 4,00%"
+            }
+          ]
+        },
+        {
+          "no": 5,
+          "program": "Rekayasa Modular Cylindrical Wave Barrier Berbasis FABA Composite untuk Perlindungan Bibit dan Area Mangrove dari Abrasi",
+          "indikator": [
+            {
+              "target_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+              "kode": "15.9.1",
+              "indikator_sdgs": "Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan",
+              "satuan_atau_label": "Indeks Fauna (H')",
+              "hasil_absolut": {
+                "2024": null,
+                "2025": null,
+                "2026*": 0.701889501827
+              },
+              "anggaran_rp_juta": {
+                "2024": null,
+                "2025": null,
+                "2026*": 50
+              },
+              "target": {
+                "2024": 0.42,
+                "2025": 0.44,
+                "2026*": 0.47
+              },
+              "persen_capaian_terhadap_target": {
+                "2024": 0,
+                "2025": 0,
+                "2026*": 149.3381918781
+              },
+              "keterangan": "Menurut RPJMN 2020-2024 dan 2025-2029 (PERPRES No.18 Tahun 2020 dan No. 12 Tahun 2025), target peningkatan tutupan hutan dan lahan yang terehabilitasi secara nasional pada tahun 2024;2025;2026 adalah seluas 0,42 Ha; 0,44 Ha; dan 0,47 Ha\n\nKontribusi program terhadap sasaran SDGs yang sesuai dengan RPJMN 2020-2024 dan RPJMN 2025-2029 adalah sebagai berikut:\nTahun 2024\n= (0 H'/ 0,42 H') x 100%\n= 0,00%\nTahun 2025\n= (0 H'/ 0,44 H') x 100%\n= 0,00%\nTahun 2026\n= (0,71 H'/ 0,47 H') x 100%\n= 149,34%"
+            }
+          ]
+        },
+        {
+          "no": 6,
+          "program": "Penanaman dan Pelestarian Mangrove Kariangau",
+          "indikator": [
+            {
+              "target_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+              "kode": "15.9.1",
+              "indikator_sdgs": "Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan",
+              "satuan_atau_label": "Indeks Fauna (H')",
+              "hasil_absolut": {
+                "2024": null,
+                "2025": 0.661563238158,
+                "2026*": 1.674589567
+              },
+              "anggaran_rp_juta": {
+                "2024": null,
+                "2025": 120,
+                "2026*": 60
+              },
+              "target": {
+                "2024": 0.42,
+                "2025": 0.44,
+                "2026*": 0.47
+              },
+              "persen_capaian_terhadap_target": {
+                "2024": 0,
+                "2025": 150.3552813995,
+                "2026*": 356.2956525532
+              },
+              "keterangan": "Menurut RPJMN 2020-2024 dan 2025-2029 (PERPRES No.18 Tahun 2020 dan No. 12 Tahun 2025), target peningkatan tutupan hutan dan lahan yang terehabilitasi secara nasional pada tahun 2024;2025;2026 adalah seluas 0,42 Ha; 0,44 Ha; dan 0,47 Ha\n\nKontribusi program terhadap sasaran SDGs yang sesuai dengan RPJMN 2020-2024 dan RPJMN 2025-2029 adalah sebagai berikut:\nTahun 2024\n= (0 H'/ 0,42 H') x 100%\n= 0,00%\nTahun 2025\n= (0,67 H'/ 0,44 H') x 100%\n= 150,36%\nTahun 2026\n= (1,68 H'/ 0,47 H') x 100%\n= 356,30%"
+            }
+          ]
+        }
+      ],
+      "total_target": [
+        {
+          "kode": "15.3.1",
+          "satuan": "Ha",
+          "hasil_absolut": {
+            "2024": 2.41,
+            "2025": 2.41,
+            "2026*": 2.95
+          },
+          "persen": {
+            "2024": 0.0005073684,
+            "2025": 0.0004564394,
+            "2026*": 0.000472
+          }
+        },
+        {
+          "kode": "15.5.1",
+          "satuan": "Jenis",
+          "hasil_absolut": {
+            "2024": 0,
+            "2025": 1,
+            "2026*": 1
+          },
+          "persen": {
+            "2024": 0,
+            "2025": 4.0,
+            "2026*": 4.0
+          }
+        },
+        {
+          "kode": "15.9.1",
+          "satuan": "H'",
+          "hasil_absolut": {
+            "2024": 2.910530175074,
+            "2025": 3.579292450154,
+            "2026*": 5.294672544626
+          },
+          "persen": {
+            "2024": 692.9833750177,
+            "2025": 813.4755568533,
+            "2026*": 1126.5260733248
+          }
+        }
+      ]
+    },
+    "rekap": {
+      "indikator": [
+        {
+          "target_sdgs": "15.3 Pada tahun 2030, menghentikan penggurunan, memulihkan lahan dan tanah kritis, termasuk lahan yang terkena penggurunan, kekeringan, banjir, dan berusaha mencapai dunia yang bebas dari lahan terdegradasi",
+          "indikator": "15.3.1 Proporsi lahan yang terdegradasi terhadap luas lahan keseluruhan",
+          "satuan": "Ha",
+          "per_tahun": {
+            "2024": {
+              "target": 475000,
+              "capaian": 2.41,
+              "persentase_persen": 0.0005073684
+            },
+            "2025": {
+              "target": 528000,
+              "capaian": 2.41,
+              "persentase_persen": 0.0004564394
+            },
+            "2026*": {
+              "target": 625000,
+              "capaian": 2.95,
+              "persentase_persen": 0.000472
+            }
+          },
+          "narasi": "2024 sebesar 2,41 Ha berkontribusi 0,00051% dari indikasi target, pada tahun 2025 sebesar 2,41 Ha  berkontribusi 0,00046% dari indikasi target, dan pada tahun 2026 sebesar 2,95 Ha berkontribusi 0,00047% dari indikasi target."
+        },
+        {
+          "target_sdgs": "15.5 Melakukan tindakan cepat dan signifikan untuk mengurangi degradasi habitat alami, menghentikan kehilangan keanekaragaman hayati, dan, pada tahun 2030, melindungi dan mencegah lenyapnya spesies yang terancam punah",
+          "indikator": "15.5.1 Indeks daftar merah (Red-list index)",
+          "satuan": "Jenis",
+          "per_tahun": {
+            "2024": {
+              "target": 25,
+              "capaian": 0,
+              "persentase_persen": 0
+            },
+            "2025": {
+              "target": 25,
+              "capaian": 1,
+              "persentase_persen": 4.0
+            },
+            "2026*": {
+              "target": 25,
+              "capaian": 1,
+              "persentase_persen": 4.0
+            }
+          },
+          "narasi": "2024 sebesar 0,00 Jenis berkontribusi 0,00% dari indikasi target, pada tahun 2025 sebesar 1,00 Jenis  berkontribusi 4,00% dari indikasi target, dan pada tahun 2026 sebesar 1,00 Jenis berkontribusi 4,00% dari indikasi target."
+        },
+        {
+          "target_sdgs": "15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+          "indikator": "15.9.1 Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan",
+          "satuan": "Indeks (H')",
+          "per_tahun": {
+            "2024": {
+              "target": 0.42,
+              "capaian": 2.910530175074,
+              "persentase_persen": 692.9833750177
+            },
+            "2025": {
+              "target": 0.44,
+              "capaian": 3.579292450154,
+              "persentase_persen": 813.4755568533
+            },
+            "2026*": {
+              "target": 0.47,
+              "capaian": 5.294672544626,
+              "persentase_persen": 1126.5260733248
+            }
+          },
+          "narasi": "2024 sebesar 2,92 berkontribusi 693,0% dari indikasi target, pada tahun 2025 sebesar 3,58  berkontribusi 813,5%  dari indikasi target, dan pada tahun 2026 sebesar 5,30 berkontribusi 1.126,5% dari indikasi target."
+        }
+      ],
+      "jumlah_program": {
+        "2024": 3,
+        "2025": 5,
+        "2026*": 6
+      }
+    },
+    "metadata": {
+      "tujuan_sdgs": "15. Melindungi, Merestorasi dan Meningkatkan Pemanfaatan Berkelanjutan Ekosistem Daratan, Mengelola Hutan Secara Lestari, Menghentikan Penggurunan, Memulihkan Degradasi Lahan, serta Menghentikan Kehilangan Keanekaragaman Hayati\n\n15.3. Pada tahun 2030, menghentikan penggurunan, memulihkan lahan dan tanah kritis, termasuk lahan yang terkena penggurunan, kekeringan, banjir, dan berusaha mencapai dunia yang bebas dari lahan terdegradasi\n\n15.5 Melakukan tindakan cepat dan signifikan untuk mengurangi degradasi\nhabitat alami, menghentikan kehilangan keanekaragaman hayati, dan, pada tahun 2020, melindungi dan mencegah lenyapnya spesies yang terancam punah\n\n15.9 Pada tahun 2030, mengintegrasikan nilai-nilai ekosistem dan keanekaragaman hayati ke dalam perencanaan pembangunan nasional dan lokal, proses pengurangan kemiskinan, dan strategi pembangunan",
+      "target_sdgs": [
+        {
+          "nomor": "15.3.1",
+          "indikator_sdgs": "Proporsi lahan yang terdegradasi terhadap luas lahan keseluruhan"
+        },
+        {
+          "nomor": "15.5.1",
+          "indikator_sdgs": "Indeks daftar merah (Red-list index)"
+        },
+        {
+          "nomor": "15.9.1",
+          "indikator_sdgs": "Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan"
+        }
+      ],
+      "target_nasional": [
+        {
+          "program_nasional_atau_keterangan": "02 PN: Memantapkan Sistem Pertahanan Keamanan Negara dan Mendorong Kemandirian Bangsa melalui Swasembada Pangan, Energi, Air, Ekonomi Syariah, Ekonomi Digital, Ekonomi Hijau, dan Ekonomi Biru",
+          "sasaran": "06 Terwujudnya transformasi ekonomi hijau",
+          "indikator": "03 Indeks Pengelolaan Keanekaragaman Hayati",
+          "indikator_sdgs": "15.9.1 - Jumlah negara yang menetapkan target yang jelas tentang integrasi nilai keanekaragaman hayati ke dalam kebijakan nasional dan perencanaan pembangunan",
+          "satuan": "H'",
+          "nilai": {
+            "2023": 0.4,
+            "baseline_2024": 0.42,
+            "target_2025": 0.44,
+            "target_2026": 0.47,
+            "target_2029": 0.55
+          }
+        },
+        {
+          "program_nasional_atau_keterangan": "02.16.02 KP: Pengurangan Status Keterancaman Spesies Tumbuhan, Satwa, dan Biota Perairan",
+          "sasaran": "01 Berkurangnya status keterancaman spesies",
+          "indikator": "01 Indeks daftar merah nasional status keterancaman spesies",
+          "indikator_sdgs": "15.5.1 - Indeks daftar merah (Red-list index)",
+          "satuan": "H'",
+          "nilai": {
+            "2023": 0.75,
+            "baseline_2024": 0.75,
+            "target_2025": 0.75,
+            "target_2026": 0.75,
+            "target_2029": 0.76
+          }
+        },
+        {
+          "program_nasional_atau_keterangan": null,
+          "sasaran": "032.FD.2362.REB.001",
+          "indikator": "Konservasi Biota Perairan Terancam Punah, Dilindungi dan/atau Appendix CITES (Kumulatif)",
+          "indikator_sdgs": "15.5.1 - Indeks daftar merah (Red-list index)",
+          "satuan": "Jenis",
+          "nilai": {
+            "2023": 25,
+            "baseline_2024": 25,
+            "target_2025": 25,
+            "target_2026": 25,
+            "target_2029": 25
+          }
+        },
+        {
+          "program_nasional_atau_keterangan": "SDGs Lama",
+          "sasaran": "Pemulihan Pencemaran dan Kerusakan Sumber Daya Alam dan Lingkungan Hidup",
+          "indikator": "Jumlah spesies TSL terancam punah yang ditingkatkan populasinya (jenis)",
+          "indikator_sdgs": "15.5.1 - Indeks daftar merah (Red-list index)",
+          "satuan": "Jenis",
+          "nilai": {
+            "2023": 25,
+            "baseline_2024": 25,
+            "target_2025": 25,
+            "target_2026": 25,
+            "target_2029": 25
+          }
+        },
+        {
+          "program_nasional_atau_keterangan": "02.16.01 KP: Perlindungan dan Pengelolaan Ekosistem serta areal bernilai keanekaragaman hayati tinggi",
+          "sasaran": "06 Meningkatnya pemulihan ekosistem terdegradasi",
+          "indikator": "01 Luas pemulihan ekosistem di KSA, KPA, dan TB",
+          "indikator_sdgs": "15.3.1 - Proporsi lahan yang terdegradasi terhadap luas lahan keseluruhan",
+          "satuan": "ha",
+          "nilai": {
+            "2023": null,
+            "baseline_2024": 29734.22,
+            "target_2025": 20000,
+            "target_2026": 32500,
+            "target_2029": 70000
+          }
+        },
+        {
+          "program_nasional_atau_keterangan": null,
+          "sasaran": "04 Meningkatnya pengelolaan areal preservasi",
+          "indikator": "01 - Luas areal preservasi yagn dikembangkan",
+          "indikator_sdgs": "15.3.1 - Proporsi lahan yang terdegradasi terhadap luas lahan keseluruhan",
+          "satuan": "ha",
+          "nilai": {
+            "2023": 450000,
+            "baseline_2024": 475000,
+            "target_2025": 528000,
+            "target_2026": 625000,
+            "target_2029": 1000000
+          }
+        },
+        {
+          "program_nasional_atau_keterangan": "SDGs Lama",
+          "sasaran": null,
+          "indikator": "Luas hutan dan lahan yang terehabilitasi secara nasional (Hektar)",
+          "indikator_sdgs": "15.3.1 - Proporsi lahan yang terdegradasi terhadap luas lahan keseluruhan",
+          "satuan": "ha",
+          "nilai": {
+            "2023": 450000,
+            "baseline_2024": 475000,
+            "target_2025": 500000,
+            "target_2026": null,
+            "target_2029": 1000000
+          }
+        },
+        {
+          "program_nasional_atau_keterangan": "02.17.07 KP: Penguatan Kelembagaan Pengendalian Penertiban dan Penegakan Hukum LHK dan Penataan Ruang",
+          "sasaran": "02 Menurunnya tingkat kerawanan kawasan hutan",
+          "indikator": "01 Luas kawasan hutan yang diamankan",
+          "indikator_sdgs": "15.3.1 - Proporsi lahan yang terdegradasi terhadap luas lahan keseluruhan",
+          "satuan": "ha",
+          "nilai": {
+            "2023": null,
+            "baseline_2024": 458960,
+            "target_2025": 800000,
+            "target_2026": null,
+            "target_2029": 1200000
+          }
+        }
+      ]
+    }
+  },
+  "perencanaan": {
+    "renstra_versi_2_0": {
+      "catatan": null,
+      "tanggal_disetujui": "7 Januari 2023",
+      "program": [
+        {
+          "no_di_renstra": 1,
+          "nama": "Penghijauan dan Pertamanan di Area Perusahaan",
+          "tujuan": "Menjaga kelestarian dan keanekaragaman hayati flora di area perusahaan",
+          "sasaran": "Meningkatkan populasi spesies flora di area perusahaan",
+          "metode_pelaksanaan": "Melakukan perlindungan, penataan, perawatan, dan penambahan populasi flora di area perusahaan",
+          "indikator_keberhasilan": "Meningkatnya populasi spesies flora",
+          "anggaran_rencana_rp": 500000000
+        },
+        {
+          "no_di_renstra": 2,
+          "nama": "Konservasi Hutan Mangrove di  PLTU Teluk Balikpapan",
+          "tujuan": "Melakukan perlindungan kawasan hutan mangrove Teluk Balikpapan",
+          "sasaran": "Mempertahankan dan meningkatkan populasi mangrove di area PLTU Balikpapan",
+          "metode_pelaksanaan": "Melakukan perawatan dan penanaman mangrove di area PLTU Balikpapan",
+          "indikator_keberhasilan": "Meningkatnya populasi mangrove",
+          "anggaran_rencana_rp": 472500000
+        },
+        {
+          "no_di_renstra": 3,
+          "nama": "Greenhouse dan Pembibitan Pohon Biomassa",
+          "tujuan": "Menjaga kelestarian dan keanekaragaman hayati flora di area perusahaan",
+          "sasaran": "Meningkatkan populasi pohon biomassa di area perusahaan",
+          "metode_pelaksanaan": "Melakukan pembibitan, penanaman, dan perawatan di Greenhouse pada pohon biomassa",
+          "indikator_keberhasilan": "Meningkatnya populasi pohon biomassa",
+          "anggaran_rencana_rp": 415000000
+        },
+        {
+          "no_di_renstra": 4,
+          "nama": "Implementasi Media Tanam Substrat Bio-hidroton untuk Budidaya Tanaman Anggrek Hitam (Coeloegyne Pandurata)",
+          "tujuan": "Melakukan konservasi flora dilindungi berdasarkan PP No. 7 Tahun 1999",
+          "sasaran": "Melakukan penjagaan dan penambahan populasi anggrek hitam",
+          "metode_pelaksanaan": "Melakukan media tanam bio-hidroton untuk budidaya tanaman anggrek hitam",
+          "indikator_keberhasilan": "Meningkatnya populasi tanaman anggrek hitam",
+          "anggaran_rencana_rp": 15000000
+        },
+        {
+          "no_di_renstra": 5,
+          "nama": "Rekayasa Modular Cylindrical Wave Barrier Berbasis FABA Composite untuk Perlindungan Bibit dan Area Mangrove dari Abrasi",
+          "tujuan": "Meningkatkan keberhasilan rehabilitasi ekosistem mangrove melalui penerapan Modular Cylindrical Wave Barrier berbasis FABA Composite yang berfungsi mengurangi paparan langsung arus dan gelombang, menjaga kestabilan substrat, serta memberikan perlindungan terhadap bibit dan area mangrove pada fase awal pertumbuhan",
+          "sasaran": "Meningkatkan ketahanan dan keberhasilan pertumbuhan bibit mangrove pada area rehabilitasi Teluk Balikpapan",
+          "metode_pelaksanaan": "Melakukan perawatan dan penanaman mangrove di area Teluk Balikpapan",
+          "indikator_keberhasilan": "Meningkatnya populasi mangrove",
+          "anggaran_rencana_rp": 50000000
+        },
+        {
+          "no_di_renstra": 5,
+          "nama": "Penanaman dan Pelestarian Mangrove Kariangau",
+          "tujuan": "Melakukan perlindungan kawasan hutan mangrove Kariangau",
+          "sasaran": "Mempertahankan dan meningkatkan populasi mangrove di area Kariangau",
+          "metode_pelaksanaan": "Melakukan perawatan dan penanaman mangrove di area Kariangau",
+          "indikator_keberhasilan": "Meningkatnya populasi mangrove",
+          "anggaran_rencana_rp": 180000000
+        }
+      ]
+    },
+    "ketersediaan_dana": {
+      "tanggal_disetujui": "13 Januari 2026",
+      "program": [
+        {
+          "no_di_ketersediaan_dana": 1,
+          "program": "Penghijauan dan Pertamanan di Area Perusahaan",
+          "rupiah": {
+            "2022": 50000000,
+            "2023": 100000000,
+            "2024": 125000000,
+            "2025": 150000000,
+            "2026*": 75000000
+          },
+          "total_rupiah": 500000000
+        },
+        {
+          "no_di_ketersediaan_dana": 2,
+          "program": "Konservasi Hutan Mangrove di  PLTU Teluk Balikpapan",
+          "rupiah": {
+            "2022": 70000000,
+            "2023": 90000000,
+            "2024": 125000000,
+            "2025": 125000000,
+            "2026*": 62500000
+          },
+          "total_rupiah": 472500000
+        },
+        {
+          "no_di_ketersediaan_dana": 3,
+          "program": "Greenhouse dan Pembibitan Pohon Biomassa",
+          "rupiah": {
+            "2022": 75000000,
+            "2023": 75000000,
+            "2024": 100000000,
+            "2025": 110000000,
+            "2026*": 55000000
+          },
+          "total_rupiah": 415000000
+        },
+        {
+          "no_di_ketersediaan_dana": 4,
+          "program": "Implementasi Media Tanam Substrat Bio-hidroton untuk Budidaya Tanaman Anggrek Hitam (Coeloegyne Pandurata)",
+          "rupiah": {
+            "2022": null,
+            "2023": null,
+            "2024": null,
+            "2025": 10000000,
+            "2026*": 5000000
+          },
+          "total_rupiah": 15000000
+        },
+        {
+          "no_di_ketersediaan_dana": 5,
+          "program": "Rekayasa Modular Cylindrical Wave Barrier Berbasis FABA Composite untuk Perlindungan Bibit dan Area Mangrove dari Abrasi",
+          "rupiah": {
+            "2022": null,
+            "2023": null,
+            "2024": null,
+            "2025": null,
+            "2026*": 50000000
+          },
+          "total_rupiah": 50000000
+        },
+        {
+          "no_di_ketersediaan_dana": 6,
+          "program": "Penanaman dan Pelestarian Mangrove Kariangau",
+          "rupiah": {
+            "2022": null,
+            "2023": null,
+            "2024": null,
+            "2025": 120000000,
+            "2026*": 60000000
+          },
+          "total_rupiah": 180000000
+        }
+      ],
+      "total_per_tahun_rupiah": {
+        "2022": 195000000,
+        "2023": 265000000,
+        "2024": 350000000,
+        "2025": 515000000,
+        "2026*": 307500000
+      }
+    }
+  },
+  "catatan_kualitas_data": [
+    {
+      "lokasi": "status.total_flora[\"2021\"]",
+      "masalah": "Total tertulis 182, padahal jumlah baris flora 2021 = 912 (Bakau 500 + Lacang 230 ikut terjumlah). Angka 182 hanya sama dengan total Program 1."
+    },
+    {
+      "lokasi": "status.total_flora[\"2025\"] dan [\"2026*\"]",
+      "masalah": "2025: total tertulis 14974, jumlah baris 14994 (selisih 20). 2026*: total tertulis 23984, jumlah baris 24004 (selisih 20)."
+    },
+    {
+      "lokasi": "status.flora Ketapang Kencana 2025",
+      "masalah": "Status = 40, Tabel Absolut = 27 (Status 2026* = 27)."
+    },
+    {
+      "lokasi": "status.flora Gamal dan Kaliandra 2026*",
+      "masalah": "Keduanya 1225 di Status (sama dengan Lamtoro). Tabel Absolut dan sheet 3. Pohon Biomassa: Gamal 111, Kaliandra 168."
+    },
+    {
+      "lokasi": "program_detail[].perhitungan_h_prime dan absolut[].indeks_h_*",
+      "masalah": "Beberapa kolom Pi memakai pembagi (N) tahun lama sehingga H' tertulis tidak sama dengan hitung ulang Shannon dari jumlah individu. Tertulis vs hitung ulang: Program 1 2024 = 1.8203 vs 1.677; Program 1 2026* = 2.062 vs 1.983; Program 2 flora 2024 = 0.4146 vs 0.3669; Program 2 fauna 2026* = 0.6704 vs 1.3297 (Pi Kadal Mangrove 0.0002 dan Ikan Tembakul 0.0005); Program 3 2024 = 0.6756 vs 0.6053; Program 3 2026* = 0.6017 vs 0.6043."
+    },
+    {
+      "lokasi": "absolut program 5 (Kariangau) indeks_h_flora[\"2026*\"]",
+      "masalah": "Bernilai 1.6746, sama persis dengan H' fauna program yang sama. Hitung ulang dari Bakau 5000 dan Lacang 3000 = 0.6616 (sama dengan 2025)."
+    },
+    {
+      "lokasi": "sdgs.per_program[].indikator[].satuan_atau_label",
+      "masalah": "Program 1, 2, 3 berlabel \"Indeks Fauna (H')\" padahal nilainya H' flora (sama dengan indeks flora di Tabel Absolut). Program 6 (Kariangau): 2025 = H' flora (0.6616), 2026* = H' fauna (1.6746)."
+    },
+    {
+      "lokasi": "sdgs.rekap indikator 15.9.1",
+      "masalah": "Capaian H' = penjumlahan H' per program (2024: 2.9105, 2025: 3.5793, 2026*: 5.2947), sehingga ikut terdampak masalah H' di atas."
+    },
+    {
+      "lokasi": "penomoran program",
+      "masalah": "Sheet program: 5 = Mangrove Kariangau, 6 = Benteng Mangrove (Rekayasa Modular). Tabel Absolut: 6 = Kariangau, 5 = Rekayasa. SDGs Kehati: 5 = Rekayasa, 6 = Kariangau. RENSTRA 2.0: nomor 5 dipakai dua kali. Ketersediaan Dana: 5 = Rekayasa, 6 = Kariangau. JSON ini memakai nomor sheet program."
+    },
+    {
+      "lokasi": "absolut[].anggaran_rp_juta[\"2021\"]",
+      "masalah": "Program 1 dan 2 punya anggaran 2021 (50 Rp Juta) di Tabel Absolut, tetapi Ketersediaan Dana baru mulai 2022."
+    }
+  ]
+}
