@@ -1,4 +1,5 @@
-const penanamanData = {
+// data/kehati/mangroveKariangauData.js
+const mangroveKariangauData = {
   2025: {
     species: [
       {
@@ -23,6 +24,90 @@ const penanamanData = {
     akumulasiSpesies: 8000,
     indeksH: 0.662,
   },
+  2026: {
+    species: [
+      {
+        no: 1,
+        namaLokal: "Bakau",
+        namaIlmiah: "Rhizophora sp",
+        jumlah: 5000,
+        pi: 0.625,
+        lnPi: -0.47,
+        piLnPi: -0.294,
+      },
+      {
+        no: 2,
+        namaLokal: "Lacang",
+        namaIlmiah: "Bruguiera sp",
+        jumlah: 3000,
+        pi: 0.375,
+        lnPi: -0.981,
+        piLnPi: -0.368,
+      },
+    ],
+    akumulasiSpesies: 8000,
+    indeksH: 0.662,
+    fauna: {
+      species: [
+        {
+          no: 1,
+          namaLokal: "Tupai Indochina",
+          namaIlmiah: "Dendrogale murina",
+          jumlah: 5,
+          pi: 0.333,
+          lnPi: -1.099,
+          piLnPi: -0.366,
+        },
+        {
+          no: 2,
+          namaLokal: "Biawak",
+          namaIlmiah: "Varanus salvator",
+          jumlah: 3,
+          pi: 0.2,
+          lnPi: -1.609,
+          piLnPi: -0.322,
+        },
+        {
+          no: 3,
+          namaLokal: "Cucak Kutilang",
+          namaIlmiah: "Pycnonotus aurigaster",
+          jumlah: 2,
+          pi: 0.133,
+          lnPi: -2.015,
+          piLnPi: -0.269,
+        },
+        {
+          no: 4,
+          namaLokal: "Kadal Mangrove",
+          namaIlmiah: "Emoia atrocostata",
+          jumlah: 1,
+          pi: 0.067,
+          lnPi: -2.708,
+          piLnPi: -0.181,
+        },
+        {
+          no: 5,
+          namaLokal: "Capung Biru Rawa",
+          namaIlmiah: "Brachydiplax chalybea",
+          jumlah: 2,
+          pi: 0.133,
+          lnPi: -2.015,
+          piLnPi: -0.269,
+        },
+        {
+          no: 6,
+          namaLokal: "Ikan Tembakul",
+          namaIlmiah: "Periophthalmus sp",
+          jumlah: 2,
+          pi: 0.133,
+          lnPi: -2.015,
+          piLnPi: -0.269,
+        },
+      ],
+      akumulasiSpesies: 15,
+      indeksH: 1.675,
+    },
+  },
 };
 
-export default penanamanData;
+export default mangroveKariangauData;

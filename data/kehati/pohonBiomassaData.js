@@ -1,5 +1,5 @@
-// data/penanamanData.js
-const penanamanData = {
+// data/kehati/pohonBiomassaData.js
+const pohonBiomassaData = {
   2022: {
     species: [
       {
@@ -82,22 +82,22 @@ const penanamanData = {
         namaLokal: "Gamal",
         namaIlmiah: "Gliricidia sepium",
         jumlah: 101,
-        pi: 0.098,
-        lnPi: -2.322,
-        piLnPi: -0.228,
+        pi: 0.075,
+        lnPi: -2.593,
+        piLnPi: -0.194,
       },
       {
         no: 3,
         namaLokal: "Kaliandra",
         namaIlmiah: "Calliandra",
         jumlah: 150,
-        pi: 0.146,
-        lnPi: -1.927,
-        piLnPi: -0.281,
+        pi: 0.111,
+        lnPi: -2.198,
+        piLnPi: -0.244,
       },
     ],
     akumulasiSpesies: 1351,
-    indeksH: 0.676,
+    indeksH: 0.605,
   },
   2025: {
     species: [
@@ -132,6 +132,39 @@ const penanamanData = {
     akumulasiSpesies: 1494,
     indeksH: 0.591,
   },
+  2026: {
+    species: [
+      {
+        no: 1,
+        namaLokal: "Lamtoro",
+        namaIlmiah: "Leucaena leucocephala",
+        jumlah: 1225,
+        pi: 0.814,
+        lnPi: -0.205,
+        piLnPi: -0.167,
+      },
+      {
+        no: 2,
+        namaLokal: "Gamal",
+        namaIlmiah: "Gliricidia sepium",
+        jumlah: 111,
+        pi: 0.074,
+        lnPi: -2.606,
+        piLnPi: -0.192,
+      },
+      {
+        no: 3,
+        namaLokal: "Kaliandra",
+        namaIlmiah: "Calliandra",
+        jumlah: 168,
+        pi: 0.112,
+        lnPi: -2.192,
+        piLnPi: -0.245,
+      },
+    ],
+    akumulasiSpesies: 1504,
+    indeksH: 0.604,
+  },
 };
 
-export default penanamanData;
+export default pohonBiomassaData;

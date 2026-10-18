@@ -4,7 +4,7 @@ import { useYearParam } from "@/hooks/use-query-state";
 import kehatiData from "@/data/kehati/kehatiData";
 
 export default function KehatiTable() {
-  const tahunList = [2021, 2022, 2023, 2024, 2025];
+  const tahunList = [2021, 2022, 2023, 2024, 2025, 2026];
   const [tahunParam, setTahunParam] = useYearParam(tahunList);
   const tahun = Number(tahunParam);
 
@@ -19,9 +19,7 @@ export default function KehatiTable() {
           className="border rounded p-2"
         >
           {tahunList.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
+            <option key={t} value={t}>{t === 2026 ? "2026*" : t}</option>
           ))}
         </select>
       </div>
@@ -91,6 +89,7 @@ export default function KehatiTable() {
           ))}
         </tbody>
       </table>
+      <p className="mt-2 text-xs text-gray-500">*Data periode Januari–Juni 2026</p>
     </div>
   );
 }

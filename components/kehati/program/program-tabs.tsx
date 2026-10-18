@@ -7,6 +7,7 @@ import TabMangrovePLTU from "@/components/kehati/program/mangrove-pltu";
 import TabMangroveKariangau from "@/components/kehati/program/mangrove-kariangau";
 import TabPohonBiomassa from "@/components/kehati/program/pohon-biomassa";
 import TabHidrotenAnggrek from "@/components/kehati/program/hidroton-anggrek";
+import TabBentengMangrove from "@/components/kehati/program/benteng-mangrove";
 import {
   Table,
   TableHeader,
@@ -23,6 +24,7 @@ const SUB_IDS = [
   "pohon-biomassa",
   "hidroten-anggrek",
   "mangrove-kariangau",
+  "benteng-mangrove",
 ];
 
 export default function ProgramKehati() {
@@ -34,7 +36,7 @@ export default function ProgramKehati() {
     <div className="w-full">
       {/* GANTI defaultValue dengan value + onValueChange */}
       <Tabs value={sub} onValueChange={setSub} className="w-full">
-        <TabsList className="grid grid-cols-5">
+        <TabsList className="grid h-auto grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-6">
           <TabsTrigger value="penanaman">Penanaman</TabsTrigger>
           <TabsTrigger value="mangrove-pltu">Mangrove PLTU</TabsTrigger>
           <TabsTrigger value="pohon-biomassa">Pohon Biomassa</TabsTrigger>
@@ -42,6 +44,7 @@ export default function ProgramKehati() {
           <TabsTrigger value="mangrove-kariangau">
             Mangrove Kariangau
           </TabsTrigger>
+          <TabsTrigger value="benteng-mangrove">Benteng Mangrove</TabsTrigger>
         </TabsList>
 
         <TabsContent value="penanaman">
@@ -60,6 +63,9 @@ export default function ProgramKehati() {
         </TabsContent>
         <TabsContent value="mangrove-kariangau">
           <TabMangroveKariangau />
+        </TabsContent>
+        <TabsContent value="benteng-mangrove">
+          <TabBentengMangrove />
         </TabsContent>
       </Tabs>
     </div>

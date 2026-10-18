@@ -27,7 +27,8 @@ const COLORS = { flora: "#0891b2", fauna: "#059669", luas: "#d97706" };
 
 const nf = new Intl.NumberFormat("id-ID", { maximumFractionDigits: 1 });
 const fmt = (v: number) => nf.format(v);
-const yearLabel = (v: string | number) => String(v);
+const yearLabel = (v: string | number) =>
+  String(v) === "2026" ? "2026*" : String(v);
 
 type Point = { tahun: string | number; [key: string]: number | string };
 type SpeciesRow = {
@@ -41,7 +42,7 @@ const fauna = dataFaunaFlora.fauna.total as unknown as Point[];
 const luas = (dataFaunaFlora.kawasanKonservasi || []) as unknown as Point[];
 
 // Daftar tahun diambil dari data, jadi tidak perlu diedit tiap tahun
-const YEARS = ["2021", "2022", "2023", "2024", "2025"];
+const YEARS = ["2021", "2022", "2023", "2024", "2025", "2026"];
 
 const AXIS_TICK = { fontSize: 12, fill: "#6b7280" };
 const CHART_MARGIN = { top: 8, right: 16, left: 0, bottom: 0 };
@@ -301,6 +302,7 @@ export default function KehatiTableChart() {
           </Table>
         </CardContent>
       </Card>
+      <p className="text-xs text-gray-500">*Data periode Januari–Juni 2026</p>
     </div>
   );
 }

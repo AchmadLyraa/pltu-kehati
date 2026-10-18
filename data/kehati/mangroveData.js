@@ -1,4 +1,4 @@
-// data/mangroveData.js
+// data/kehati/mangroveData.js
 const mangroveData = {
   2021: {
     species: [
@@ -94,7 +94,7 @@ const mangroveData = {
       },
     ],
     akumulasiSpesies: 4250,
-    indeksH: 0.366,
+    indeksH: 0.367,
   },
   2025: {
     species: [
@@ -119,6 +119,72 @@ const mangroveData = {
     ],
     akumulasiSpesies: 4250,
     indeksH: 0.367,
+  },
+  2026: {
+    species: [
+      {
+        no: 1,
+        namaLokal: "Bakau",
+        namaIlmiah: "Rhizophora sp",
+        jumlah: 6740,
+        pi: 0.93,
+        lnPi: -0.073,
+        piLnPi: -0.068,
+      },
+      {
+        no: 2,
+        namaLokal: "Lacang",
+        namaIlmiah: "Bruguiera sp",
+        jumlah: 510,
+        pi: 0.07,
+        lnPi: -2.654,
+        piLnPi: -0.187,
+      },
+    ],
+    akumulasiSpesies: 7250,
+    indeksH: 0.255,
+    fauna: {
+      species: [
+        {
+          no: 1,
+          namaLokal: "Biawak",
+          namaIlmiah: "Varanus salvator",
+          jumlah: 1,
+          pi: 0.167,
+          lnPi: -1.792,
+          piLnPi: -0.299,
+        },
+        {
+          no: 2,
+          namaLokal: "Kadal Mangrove",
+          namaIlmiah: "Emoia atrocostata",
+          jumlah: 1,
+          pi: 0.167,
+          lnPi: -1.792,
+          piLnPi: -0.299,
+        },
+        {
+          no: 3,
+          namaLokal: "Cucak Kutilang",
+          namaIlmiah: "Pycnonotus aurigaster",
+          jumlah: 2,
+          pi: 0.333,
+          lnPi: -1.099,
+          piLnPi: -0.366,
+        },
+        {
+          no: 4,
+          namaLokal: "Ikan Tembakul",
+          namaIlmiah: "Periophthalmus sp",
+          jumlah: 2,
+          pi: 0.333,
+          lnPi: -1.099,
+          piLnPi: -0.366,
+        },
+      ],
+      akumulasiSpesies: 6,
+      indeksH: 1.33,
+    },
   },
 };
 

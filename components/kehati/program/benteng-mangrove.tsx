@@ -2,10 +2,13 @@
 import bentengMangroveData, {
   deskripsiProgram,
   metodePerhitungan,
-} from "@/data/bentengMangroveData";
+} from "@/data/kehati/bentengMangroveData";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
+import { useYearParam } from "@/hooks/use-query-state";
+import { yearTabsStyle } from "@/lib/year-tabs";
+
 
 type Row = {
   no: number;
@@ -100,6 +103,7 @@ function BlockTable({ title, block }: { title: string; block: Block }) {
 export default function BentengMangrovePage() {
   const data = bentengMangroveData as Record<string, YearBlock>;
   const years = Object.keys(data);
+  const [selectedYear, setSelectedYear] = useYearParam(years);
 
   return (
     <Card className="p-4 shadow-lg rounded-2xl">
@@ -125,8 +129,8 @@ export default function BentengMangrovePage() {
       </div>
 
       {/* Tabs untuk Data */}
-      <Tabs defaultValue={years[years.length - 1]}>
-        <TabsList className="grid h-auto grid-cols-3 gap-2 mb-4 sm:grid-cols-6">
+      <Tabs value={selectedYear} onValueChange={setSelectedYear}>
+        <TabsList className="grid h-auto gap-2 mb-4" style={yearTabsStyle(years.length)}>
           {years.map((year) => (
             <TabsTrigger key={year} value={year}>
               {year}

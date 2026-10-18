@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { yearTabsStyle } from "@/lib/year-tabs";
 
+import { FaunaTable } from "@/components/kehati/program/fauna-table";
 import { AdvancedImageModal } from "@/components/shared/advanced-image-modal";
 
 const skemaSebelumItems = [
@@ -194,8 +195,7 @@ export default function PenanamanPage() {
         </TabsList>
 
         {years.map((year) => {
-          const { species, akumulasiSpesies, indeksH } =
-            mangroveKariangauData[year];
+          const { species, akumulasiSpesies, indeksH, fauna } = mangroveKariangauData[year];
           return (
             <TabsContent key={year} value={year}>
               <div className="rounded-md border overflow-auto max-h-[600px]">
@@ -274,6 +274,7 @@ export default function PenanamanPage() {
                   </tbody>
                 </table>
               </div>
+              {fauna && <FaunaTable data={fauna} />}
             </TabsContent>
           );
         })}
