@@ -14,15 +14,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const heroImages = [
   {
-    src: "/monkey-eating-leaves-in-forest.jpg",
+    src: "/home/hero/monkey-eating-leaves-in-forest.jpg",
     alt: "Monyet di habitat alami",
   },
   {
-    src: "/tropical-forest-biodiversity.jpg",
+    src: "/home/hero/tropical-forest-biodiversity.jpg",
     alt: "Keanekaragaman hayati hutan tropis",
   },
   {
-    src: "/wildlife-conservation-area.jpg",
+    src: "/home/hero/wildlife-conservation-area.jpg",
     alt: "Area konservasi satwa liar",
   },
 ];

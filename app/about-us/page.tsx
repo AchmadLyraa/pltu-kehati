@@ -18,7 +18,7 @@ export default function AboutUsPage() {
 
           <figure className="mb-12">
             <img
-              src="/about-us.png"
+              src="/about/about-us.png"
               alt="Fasilitas PLN Cirata"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />

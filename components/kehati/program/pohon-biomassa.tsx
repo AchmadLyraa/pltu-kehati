@@ -47,14 +47,14 @@ const dokumentasiItems = [
   {
     id: 1,
     title: "Kegiatan Penanaman",
-    src: "/program-kehati/pohon-biomassa-1.png",
+    src: "/program-kehati/pohon-biomassa/dokumentasi-1.png",
     alt: "Dokumentasi kegiatan penanaman pohon",
     description: "Kegiatan penanaman pohon oleh tim",
   },
   {
     id: 2,
     title: "Pemeliharaan Tanaman",
-    src: "/program-kehati/pohon-biomassa-2.png",
+    src: "/program-kehati/pohon-biomassa/dokumentasi-2.png",
     alt: "Kegiatan pemeliharaan tanaman",
     description: "Aktivitas perawatan dan pemeliharaan pohon",
   },

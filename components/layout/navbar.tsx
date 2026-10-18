@@ -72,7 +72,7 @@ const X = ({ className }) => (
 // Struktur data yang sama
 const navigationData = {
   brand: {
-    logo: "/logo-3.png",
+    logo: "/brand/logo-3.png",
     href: "/",
   },
   menuItems: [

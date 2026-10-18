@@ -9,7 +9,7 @@ export function Footer() {
           {/* Logo and Company Name */}
           <div className="flex items-center space-x-4">
             <Image
-              src="/final-logo-kehati.png"
+              src="/brand/final-logo-kehati.png"
               alt="PLN Logo"
               width={48}
               height={48}

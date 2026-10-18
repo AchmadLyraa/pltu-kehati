@@ -9,7 +9,7 @@ export function MapSection() {
   const mapImages = [
     {
       id: 1,
-      src: "/homepage-1.jpeg",
+      src: "/home/map/homepage-1.jpeg",
       alt: "Peta Area Konservasi PT PLN Nusantara Power UP Kaltim Teluk",
       title: "Peta Konservasi",
       description:
@@ -17,7 +17,7 @@ export function MapSection() {
     },
     {
       id: 2,
-      src: "/homepage-2.jpeg",
+      src: "/home/map/homepage-2.jpeg",
       alt: "Peta Area Kawasan Kariangau",
       title: "Peta Area Kawasan Kariangau",
       description:
